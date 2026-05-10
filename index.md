@@ -10,6 +10,8 @@ title: uFawkes
     <iframe
       src="https://tally.so/embed/wQ6aZ6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
       title="Email signup form"
+      width="100%"
+      height="290"
       loading="lazy"
     ></iframe>
   </section>
