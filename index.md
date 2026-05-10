@@ -21,7 +21,7 @@ title: uFawkes
       width="100%"
       height="290"
       loading="lazy"
-      sandbox="allow-forms allow-scripts allow-same-origin"
+      sandbox="allow-forms allow-scripts"
       referrerpolicy="no-referrer"
     ></iframe>
   </section>
