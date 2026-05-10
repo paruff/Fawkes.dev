@@ -4,6 +4,14 @@ title: uFawkes
 ---
 
 <div class="hero-layout">
+  <section class="hero-copy">
+    <h1>Production platform engineering in minutes. Open source. DORA AI-ready.</h1>
+    <p class="problem-statement">
+      Your team adopted AI coding tools. Your delivery metrics got worse. DORA research shows why:
+      AI amplifies weak platforms. uFawkes gives you the platform.
+    </p>
+  </section>
+
   <section class="email-capture" aria-labelledby="email-capture-title">
     <h2 id="email-capture-title">Get notified when new stacks ship</h2>
     <p>Free DORA primer PDF included.</p>
@@ -13,15 +21,9 @@ title: uFawkes
       width="100%"
       height="290"
       loading="lazy"
+      sandbox="allow-forms allow-scripts allow-same-origin"
+      referrerpolicy="no-referrer"
     ></iframe>
-  </section>
-
-  <section class="hero-copy">
-    <h1>Production platform engineering in minutes. Open source. DORA AI-ready.</h1>
-    <p class="problem-statement">
-      Your team adopted AI coding tools. Your delivery metrics got worse. DORA research shows why:
-      AI amplifies weak platforms. uFawkes gives you the platform.
-    </p>
   </section>
 </div>
 

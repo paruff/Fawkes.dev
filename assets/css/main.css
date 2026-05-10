@@ -56,6 +56,14 @@ body {
 }
 
 @media (max-width: 767px) {
+  .hero-copy {
+    order: 2;
+  }
+
+  .email-capture {
+    order: 1;
+  }
+
   .hero-layout,
   .stack-grid,
   .capability-grid {
