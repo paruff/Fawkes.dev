@@ -1,0 +1,90 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.problem-statement {
+  font-size: 1.05rem;
+}
+
+.email-capture,
+.stack-card,
+.capability-card {
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.email-capture h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.email-capture iframe {
+  width: 100%;
+  min-height: 290px;
+  border: 0;
+}
+
+.stack-grid,
+.capability-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stack-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.capability-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-card h3,
+.capability-card h3 {
+  margin-top: 0;
+}
+
+.home-footer {
+  margin: 2rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+  .hero-layout,
+  .stack-grid,
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111827;
+    color: #e5e7eb;
+  }
+
+  a {
+    color: #93c5fd;
+  }
+
+  .email-capture,
+  .stack-card,
+  .capability-card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+}
