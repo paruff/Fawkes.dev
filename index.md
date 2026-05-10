@@ -5,7 +5,7 @@ title: uFawkes
 
 <div class="hero-layout">
   <section class="email-capture" aria-labelledby="email-capture-title">
-    <h2 id="email-capture-title">Get notified when new stacks ship.</h2>
+    <h2 id="email-capture-title">Get notified when new stacks ship</h2>
     <p>Free DORA primer PDF included.</p>
     <iframe
       src="https://tally.so/embed/wQ6aZ6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"

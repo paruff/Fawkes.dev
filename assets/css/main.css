@@ -35,7 +35,6 @@ body {
 
 .email-capture iframe {
   width: 100%;
-  min-height: 290px;
   border: 0;
 }
 
