@@ -4,8 +4,6 @@ title: Build in public blog
 permalink: /blog/
 ---
 
-# Build in public updates
-
 {% if site.posts.size > 0 %}
 {% for post in site.posts limit:10 %}
 ## [{{ post.title }}]({{ post.url | relative_url }})
