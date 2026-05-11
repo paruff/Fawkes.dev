@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="stack-page">
+  <section class="stack-hero">
+    <div class="hero-copy">
+      <p class="stack-kicker">
+        {{ page.stack_name }}
+        {% if page.coming_soon %}
+          <img alt="{{ page.stack_name }} status" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" />
+        {% else %}
+          <img alt="{{ page.stack_name }} status" src="https://img.shields.io/badge/status-live-16a34a" />
+        {% endif %}
+      </p>
+      <h1>{{ page.hero }}</h1>
+      {% if page.summary %}
+        <p class="problem-statement">{{ page.summary }}</p>
+      {% endif %}
+      <p class="stack-actions">
+        <a href="{{ page.repo_url }}">GitHub repo</a>
+        <img alt="{{ page.stack_name }} stars" src="https://img.shields.io/github/stars/{{ page.repo_name }}?style=social" />
+      </p>
+    </div>
+
+    {% if page.coming_soon %}
+      <section class="email-capture" aria-labelledby="notify-title">
+        <h2 id="notify-title">{{ page.notify_title }}</h2>
+        <p>{{ page.notify_copy }}</p>
+        <iframe
+          src="https://tally.so/embed/wQ6aZ6?alignLeft=1&hideTitle=1&transparentBackground=1"
+          title="{{ page.notify_title }}"
+          width="100%"
+          height="290"
+          loading="lazy"
+          sandbox="allow-forms allow-scripts"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </section>
+    {% else %}
+      <section class="stack-card stack-screenshot" aria-labelledby="screenshot-title">
+        <h2 id="screenshot-title">Screenshot placeholder</h2>
+        <div class="screenshot-placeholder">
+          <p>{{ page.screenshot_placeholder }}</p>
+        </div>
+      </section>
+    {% endif %}
+  </section>
+
+  {% unless page.coming_soon %}
+    <section class="stack-grid stack-section">
+      <article class="stack-card">
+        <h2>What you get</h2>
+        <ul class="stack-feature-list">
+          {% for feature in page.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <article class="stack-card">
+        <h2>Quick start</h2>
+        <ol class="stack-command-list">
+          {% for command in page.quick_start %}
+            <li><code>{{ command }}</code></li>
+          {% endfor %}
+        </ol>
+      </article>
+    </section>
+
+    <section class="stack-card stack-section">
+      <h2>Compose with other stacks</h2>
+      <ul class="compose-list">
+        {% for item in page.compose_with %}
+          <li>
+            <a href="{{ item.url | relative_url }}">{{ item.name }}</a> — {{ item.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endunless %}
+</div>

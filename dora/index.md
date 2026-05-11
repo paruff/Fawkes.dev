@@ -1,0 +1,30 @@
+---
+layout: stack
+title: uFawkesDORA
+stack_name: uFawkesDORA
+hero: DORA dashboards for AI delivery teams. 60 seconds to running.
+summary: Implementation-ready delivery performance insights that help teams improve flow, stability, and outcomes.
+repo_name: paruff/ufawkes-dora
+repo_url: https://github.com/paruff/ufawkes-dora
+screenshot_placeholder: Add real screenshot after the stack is running.
+features:
+  - DORA dashboards with deployment, lead time, and recovery views
+  - AI workflow metrics that connect delivery changes to team outcomes
+  - Alerting on regressions in speed, stability, and flow efficiency
+  - Jenkins integration to ingest build, release, and failure events
+  - Education layer that explains how to act on the metrics
+quick_start:
+  - git clone https://github.com/paruff/ufawkes-dora.git
+  - cd ufawkes-dora
+  - docker compose up -d
+compose_with:
+  - name: uFawkesObs
+    url: /obs/
+    description: Combine DORA reporting with service and platform observability.
+  - name: uFawkesPipe
+    url: /pipe/
+    description: Feed DORA dashboards with composable delivery pipeline events.
+  - name: uFawkesDevX
+    url: /devx/
+    description: Pair metrics with guided developer workflows as DevX ships.
+---
