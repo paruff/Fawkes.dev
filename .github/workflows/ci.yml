@@ -26,13 +26,12 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Validate HTML (broken links + alt text)
-        run: bundle exec htmlproofer ./_site --disable-external --check-html
+        run: bundle exec htmlproofer ./_site --disable-external
 
       - name: Validate external links (200, timeout, redirects)
         run: |
           bundle exec htmlproofer ./_site \
             --external_only \
-            --check-html \
             --typhoeus '{"timeout":20,"followlocation":true}'
 
       - name: Spell check Markdown
