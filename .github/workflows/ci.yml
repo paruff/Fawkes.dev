@@ -33,7 +33,7 @@ jobs:
           bundle exec htmlproofer ./_site \
             --external_only \
             --check-html \
-            --typhoeus '{"connecttimeout":10,"timeout":20,"followlocation":true}'
+            --typhoeus '{"timeout":20,"followlocation":true}'
 
       - name: Spell check Markdown
         uses: crate-ci/typos@v1
