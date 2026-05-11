@@ -130,6 +130,7 @@ body {
 }
 
 .stack-link:hover,
+.stack-link:focus,
 .stack-link:focus-visible {
   text-decoration: underline;
   text-underline-offset: 0.15em;
