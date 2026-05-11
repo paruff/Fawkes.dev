@@ -28,3 +28,7 @@ compose_with:
     url: /devx/
     description: Pair metrics with guided developer workflows as DevX ships.
 ---
+
+## Build in public
+
+Read the latest updates in the [uFawkes blog]({{ '/blog/' | relative_url }}), including [why I'm building the platform engineering stack]({{ '/blog/why-im-building-the-ufawkes-open-source-platform-engineering-stack/' | relative_url }}).
