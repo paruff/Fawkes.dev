@@ -5,10 +5,7 @@ description: Education hub for DORA primers, AI capability guidance, and observa
 og_title: Learn | uFawkes Guides
 og_description: Read practical primers on DORA, AI capabilities, and observability for modern platform teams.
 og_type: website
-og_url: https://ufawkes.dev/learn/
 ---
-
-# Education hub
 
 Start here for the web-first versions of the uFawkes education guides.
 

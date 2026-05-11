@@ -5,14 +5,12 @@ description: Learn the four DORA metrics, common failure modes, and an action pl
 og_title: DORA Primer for AI Delivery Teams
 og_description: A practical DORA primer with metric definitions, targets, and next actions.
 og_type: article
-og_url: https://ufawkes.dev/learn/dora-primer/
 ---
-
-# DORA primer for AI delivery teams
 
 DORA gives teams a shared language for delivery performance. In AI-assisted development, that matters even more: faster coding only helps when the platform keeps quality and flow stable.
 
-Share: [X](https://twitter.com/intent/tweet?text=DORA%20Primer%20for%20AI%20Delivery%20Teams&url=https://ufawkes.dev/learn/dora-primer/) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https://ufawkes.dev/learn/dora-primer/) · [Email](mailto:?subject=DORA%20Primer&body=https://ufawkes.dev/learn/dora-primer/)
+{% assign share_url = page.url | absolute_url %}
+Share: [X](https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ share_url | uri_escape }}) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}) · [Email](mailto:?subject={{ page.title | uri_escape }}&body={{ share_url | uri_escape }})
 
 ## The four DORA metrics
 

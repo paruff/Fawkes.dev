@@ -5,14 +5,12 @@ description: Understand AI capability maturity across tooling, workflow, governa
 og_title: AI Capabilities Guide for Platform Teams
 og_description: A practical model for moving AI from isolated experiments to measurable delivery impact.
 og_type: article
-og_url: https://ufawkes.dev/learn/ai-capabilities/
 ---
-
-# AI capabilities guide for platform teams
 
 AI adoption is not one capability. It is a stack of capabilities that must mature together: development workflow, platform guardrails, observability, and team operating model.
 
-Share: [X](https://twitter.com/intent/tweet?text=AI%20Capabilities%20Guide%20for%20Platform%20Teams&url=https://ufawkes.dev/learn/ai-capabilities/) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https://ufawkes.dev/learn/ai-capabilities/) · [Email](mailto:?subject=AI%20Capabilities%20Guide&body=https://ufawkes.dev/learn/ai-capabilities/)
+{% assign share_url = page.url | absolute_url %}
+Share: [X](https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ share_url | uri_escape }}) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}) · [Email](mailto:?subject={{ page.title | uri_escape }}&body={{ share_url | uri_escape }})
 
 ## Capability layers
 

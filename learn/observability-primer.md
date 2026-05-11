@@ -5,14 +5,12 @@ description: Learn how metrics, logs, traces, and alerts work together to improv
 og_title: Observability Primer for Delivery and Platform Teams
 og_description: A practical observability primer adapted for web reading with next-step actions.
 og_type: article
-og_url: https://ufawkes.dev/learn/observability-primer/
 ---
-
-# Observability primer for delivery and platform teams
 
 Modern delivery performance depends on fast feedback loops. Observability gives you those loops by turning runtime behavior into actionable signals.
 
-Share: [X](https://twitter.com/intent/tweet?text=Observability%20Primer%20for%20Delivery%20and%20Platform%20Teams&url=https://ufawkes.dev/learn/observability-primer/) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https://ufawkes.dev/learn/observability-primer/) · [Email](mailto:?subject=Observability%20Primer&body=https://ufawkes.dev/learn/observability-primer/)
+{% assign share_url = page.url | absolute_url %}
+Share: [X](https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ share_url | uri_escape }}) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}) · [Email](mailto:?subject={{ page.title | uri_escape }}&body={{ share_url | uri_escape }})
 
 ## The four signal types
 
@@ -47,7 +45,7 @@ Use weekly metric reviews to answer:
 
 Then close the loop with the [DORA primer]({{ '/learn/dora-primer/' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}).
 
-Run this yourself: [GitHub repo link](https://github.com/paruff/uFawkesObs)
+Run this yourself: [GitHub repo link](https://github.com/paruff/ufawkes-obs)
 
 ## Get notified when new guides ship
 
