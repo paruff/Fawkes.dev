@@ -87,8 +87,7 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.stack-card h2,
-.email-capture h2 {
+.stack-card h2 {
   margin-top: 0;
 }
 
@@ -128,6 +127,12 @@ body {
 
 .stack-link {
   text-decoration: none;
+}
+
+.stack-link:hover,
+.stack-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 @media (max-width: 767px) {

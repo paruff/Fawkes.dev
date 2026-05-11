@@ -79,4 +79,10 @@ layout: default
       </ul>
     </section>
   {% endunless %}
+
+  {% if content != blank %}
+    <section class="stack-section">
+      {{ content }}
+    </section>
+  {% endif %}
 </div>
