@@ -55,6 +55,87 @@ body {
   font-size: 0.95rem;
 }
 
+.stack-page {
+  margin: 1rem 0 2rem;
+}
+
+.stack-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack-kicker {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.stack-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.stack-actions img {
+  vertical-align: middle;
+}
+
+.stack-section {
+  margin-bottom: 1.25rem;
+}
+
+.stack-card h2 {
+  margin-top: 0;
+}
+
+.stack-card ul,
+.stack-card ol {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.stack-command-list li + li,
+.stack-feature-list li + li,
+.compose-list li + li {
+  margin-top: 0.5rem;
+}
+
+.stack-command-list code {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.stack-screenshot {
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshot-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  border: 1px dashed #9ca3af;
+  border-radius: 10px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+  text-align: center;
+  color: #4b5563;
+}
+
+.stack-link {
+  text-decoration: none;
+}
+
+.stack-link:hover,
+.stack-link:focus,
+.stack-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 @media (max-width: 767px) {
   .hero-copy {
     order: 2;
@@ -65,6 +146,7 @@ body {
   }
 
   .hero-layout,
+  .stack-hero,
   .stack-grid,
   .capability-grid {
     grid-template-columns: 1fr;
@@ -86,5 +168,11 @@ body {
   .capability-card {
     background: #1f2937;
     border-color: #374151;
+  }
+
+  .screenshot-placeholder {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    border-color: #4b5563;
+    color: #d1d5db;
   }
 }
