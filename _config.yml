@@ -3,3 +3,5 @@ description: Open-source platform engineering stacks for teams building with AI
 baseurl: ""
 url: "https://ufawkes.dev"
 theme: minima
+plugins:
+  - jekyll-feed

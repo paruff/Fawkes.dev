@@ -28,3 +28,7 @@ compose_with:
     url: /sec/
     description: Layer in secure-by-default checks as the security stack ships.
 ---
+
+## Build in public
+
+Follow stack progress in the [uFawkes blog]({{ '/blog/' | relative_url }}), starting with [the founding story]({{ '/blog/why-im-building-the-ufawkes-open-source-platform-engineering-stack/' | relative_url }}).
