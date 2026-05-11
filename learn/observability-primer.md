@@ -1,0 +1,62 @@
+---
+layout: page
+title: Observability Primer for Delivery and Platform Teams
+description: Learn how metrics, logs, traces, and alerts work together to improve DORA outcomes and incident response.
+og_title: Observability Primer for Delivery and Platform Teams
+og_description: A practical observability primer adapted for web reading with next-step actions.
+og_type: article
+og_url: https://ufawkes.dev/learn/observability-primer/
+---
+
+# Observability primer for delivery and platform teams
+
+Modern delivery performance depends on fast feedback loops. Observability gives you those loops by turning runtime behavior into actionable signals.
+
+Share: [X](https://twitter.com/intent/tweet?text=Observability%20Primer%20for%20Delivery%20and%20Platform%20Teams&url=https://ufawkes.dev/learn/observability-primer/) · [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https://ufawkes.dev/learn/observability-primer/) · [Email](mailto:?subject=Observability%20Primer&body=https://ufawkes.dev/learn/observability-primer/)
+
+## The four signal types
+
+- **Metrics**: numeric time-series for trend and threshold monitoring.
+- **Logs**: event detail for debugging and incident timelines.
+- **Traces**: request-level path and latency breakdown across services.
+- **Alerts**: routing logic that tells the right team when thresholds or conditions fail.
+
+## What to stand up first
+
+1. A metrics dashboard for platform health.
+2. Log exploration with service-level filters.
+3. Alert rules tied to user-facing symptoms.
+4. A short incident runbook for top failure modes.
+
+This follows the same progression seen in uFawkes observability docs: get metrics and logs reliable first, then expand into trace instrumentation for deeper diagnostics.
+
+## Common implementation gaps
+
+- Tracing backend is running, but apps emit no spans.
+- Dashboards exist, but queries do not match available metric names.
+- Alerts trigger, but no runbook owner is defined.
+- Data is present, but not connected to DORA review cadences.
+
+## Connect observability to delivery outcomes
+
+Use weekly metric reviews to answer:
+
+- Which pipeline stage is extending lead time?
+- Which services drive change failures?
+- How fast does the team restore production health?
+
+Then close the loop with the [DORA primer]({{ '/learn/dora-primer/' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}).
+
+Run this yourself: [GitHub repo link](https://github.com/paruff/uFawkesObs)
+
+## Get notified when new guides ship
+
+<iframe
+  src="https://tally.so/embed/wQ6aZ6?alignLeft=1&hideTitle=1&transparentBackground=1"
+  title="Get notified when new guides ship"
+  width="100%"
+  height="290"
+  loading="lazy"
+  sandbox="allow-forms allow-scripts"
+  referrerpolicy="no-referrer"
+></iframe>
