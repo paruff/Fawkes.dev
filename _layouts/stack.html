@@ -18,8 +18,12 @@ layout: default
         <p class="problem-statement">{{ page.summary }}</p>
       {% endif %}
       <p class="stack-actions">
-        <a href="{{ page.repo_url }}">GitHub repo</a>
-        <img alt="{{ page.stack_name }} stars" src="https://img.shields.io/github/stars/{{ page.repo_name }}?style=social" />
+        {% if page.repo_url %}
+          <a href="{{ page.repo_url }}">GitHub repo</a>
+          <img alt="{{ page.stack_name }} stars" src="https://img.shields.io/github/stars/{{ page.repo_name }}?style=social" />
+        {% else %}
+          <span>GitHub repo coming soon</span>
+        {% endif %}
       </p>
     </div>
 

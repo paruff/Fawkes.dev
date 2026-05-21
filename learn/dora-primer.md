@@ -43,7 +43,7 @@ Together these show both speed and stability. Optimize all four; over-optimizing
 
 For capability planning, continue with the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}). For signal quality and instrumentation, read the [observability primer]({{ '/learn/observability-primer/' | relative_url }}).
 
-Run this yourself: [GitHub repo link](https://github.com/paruff/ufawkes-dora)
+Run this yourself: GitHub repo coming soon
 
 ## Get notified when new guides ship
 

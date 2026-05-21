@@ -45,7 +45,7 @@ Use weekly metric reviews to answer:
 
 Then close the loop with the [DORA primer]({{ '/learn/dora-primer/' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}).
 
-Run this yourself: [GitHub repo link](https://github.com/paruff/ufawkes-obs)
+Run this yourself: GitHub repo coming soon
 
 ## Get notified when new guides ship
 
