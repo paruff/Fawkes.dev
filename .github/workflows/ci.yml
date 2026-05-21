@@ -31,7 +31,7 @@ jobs:
       - name: Validate external links (200, timeout, redirects)
         run: |
           bundle exec htmlproofer ./_site \
-            --external_only \
+            --disable-internal \
             --checks "Links" \
             --typhoeus '{"timeout":20,"followlocation":true}'
 
