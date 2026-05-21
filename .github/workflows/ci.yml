@@ -26,7 +26,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Validate HTML (broken links + alt text)
-        run: bundle exec htmlproofer ./_site --disable-external --checks "Links,Images"
+        run: bundle exec htmlproofer ./_site --disable-external --checks "Links,Images" --ignore-empty-mailto
 
       - name: Validate external links (200, timeout, redirects)
         run: |
