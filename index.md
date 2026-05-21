@@ -36,7 +36,7 @@ title: uFawkes
     <p>Operational telemetry and reliability visibility for AI-enabled delivery teams.</p>
     <p><code>docker compose up obs</code></p>
     <p>
-      <a href="https://github.com/paruff/ufawkes-obs">GitHub repo</a> ·
+      GitHub repo coming soon ·
       <img alt="Obs stars" src="https://img.shields.io/github/stars/paruff/ufawkes-obs?style=social" />
     </p>
   </article>
@@ -45,7 +45,7 @@ title: uFawkes
     <p>Composable CI/CD pipelines with fast feedback and resilient release controls.</p>
     <p><code>docker compose up pipe</code></p>
     <p>
-      <a href="https://github.com/paruff/ufawkes-pipe">GitHub repo</a> ·
+      GitHub repo coming soon ·
       <img alt="Pipe stars" src="https://img.shields.io/github/stars/paruff/ufawkes-pipe?style=social" />
     </p>
   </article>
@@ -54,7 +54,7 @@ title: uFawkes
     <p>DORA metrics and continuous delivery performance insights made implementation-ready.</p>
     <p><code>docker compose up dora</code></p>
     <p>
-      <a href="https://github.com/paruff/ufawkes-dora">GitHub repo</a> ·
+      GitHub repo coming soon ·
       <img alt="DORA stars" src="https://img.shields.io/github/stars/paruff/ufawkes-dora?style=social" />
     </p>
   </article>
@@ -63,7 +63,7 @@ title: uFawkes
     <p>Secure-by-default guardrails and checks designed for high-speed AI shipping.</p>
     <p><code>docker compose up sec</code></p>
     <p>
-      <a href="https://github.com/paruff/ufawkes-sec">GitHub repo</a> ·
+      GitHub repo coming soon ·
       <img alt="Sec stars" src="https://img.shields.io/github/stars/paruff/ufawkes-sec?style=social" />
     </p>
   </article>
@@ -72,7 +72,7 @@ title: uFawkes
     <p>Developer experience golden paths that make platform adoption simple and fast.</p>
     <p><code>docker compose up devx</code></p>
     <p>
-      <a href="https://github.com/paruff/ufawkes-devx">GitHub repo</a> ·
+      GitHub repo coming soon ·
       <img alt="DevX stars" src="https://img.shields.io/github/stars/paruff/ufawkes-devx?style=social" />
     </p>
   </article>
@@ -95,11 +95,11 @@ title: uFawkes
 ## Social proof
 
 <p>
-  <a href="https://github.com/paruff/ufawkes-obs"><img alt="Obs stars" src="https://img.shields.io/github/stars/paruff/ufawkes-obs?label=Obs%20stars" /></a>
-  <a href="https://github.com/paruff/ufawkes-pipe"><img alt="Pipe stars" src="https://img.shields.io/github/stars/paruff/ufawkes-pipe?label=Pipe%20stars" /></a>
-  <a href="https://github.com/paruff/ufawkes-dora"><img alt="DORA stars" src="https://img.shields.io/github/stars/paruff/ufawkes-dora?label=DORA%20stars" /></a>
-  <a href="https://github.com/paruff/ufawkes-sec"><img alt="Sec stars" src="https://img.shields.io/github/stars/paruff/ufawkes-sec?label=Sec%20stars" /></a>
-  <a href="https://github.com/paruff/ufawkes-devx"><img alt="DevX stars" src="https://img.shields.io/github/stars/paruff/ufawkes-devx?label=DevX%20stars" /></a>
+  <img alt="Obs stars" src="https://img.shields.io/github/stars/paruff/ufawkes-obs?label=Obs%20stars" />
+  <img alt="Pipe stars" src="https://img.shields.io/github/stars/paruff/ufawkes-pipe?label=Pipe%20stars" />
+  <img alt="DORA stars" src="https://img.shields.io/github/stars/paruff/ufawkes-dora?label=DORA%20stars" />
+  <img alt="Sec stars" src="https://img.shields.io/github/stars/paruff/ufawkes-sec?label=Sec%20stars" />
+  <img alt="DevX stars" src="https://img.shields.io/github/stars/paruff/ufawkes-devx?label=DevX%20stars" />
 </p>
 <p>
   Built by <a href="https://github.com/paruff">@paruff</a> ·
@@ -110,11 +110,11 @@ title: uFawkes
 
 <footer class="home-footer">
   <p>
-    <a href="https://github.com/paruff/ufawkes-obs">Obs</a> ·
-    <a href="https://github.com/paruff/ufawkes-pipe">Pipe</a> ·
-    <a href="https://github.com/paruff/ufawkes-dora">DORA</a> ·
-    <a href="https://github.com/paruff/ufawkes-sec">Sec</a> ·
-    <a href="https://github.com/paruff/ufawkes-devx">DevX</a> ·
+    Obs ·
+    Pipe ·
+    DORA ·
+    Sec ·
+    DevX ·
     <a href="https://github.com/sponsors/paruff">GitHub Sponsors</a> ·
     <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> ·
     <a href="https://dora.dev/">DORA.dev</a>
