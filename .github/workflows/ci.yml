@@ -31,14 +31,12 @@ jobs:
       - name: Validate external links (200, timeout, redirects)
         run: |
           bundle exec htmlproofer ./_site \
-            --disable-internal \
             --checks "Links" \
             --typhoeus '{"timeout":20,"followlocation":true}'
-
-      - name: Spell check Markdown
-        uses: crate-ci/typos@v1
-        with:
-          files: "**/*.md"
+            - name: Spell check Markdown
+              uses: crate-ci/typos@v1
+              with:
+                files: "**/*.md"
 
   preview:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
