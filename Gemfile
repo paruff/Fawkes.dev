@@ -1,6 +1,12 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4"
+gem "jekyll", "~> 4.3"
 gem "minima", "~> 2.5"
-gem "webrick", "~> 1.9"
-gem "html-proofer", "~> 5.0"
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+end
+
+group :development, :test do
+  gem "html-proofer", "~> 5.0"
+end
