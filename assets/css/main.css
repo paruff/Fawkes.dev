@@ -2,6 +2,135 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 56px;
+}
+
+.site-header__logo {
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.main-nav__item {
+  position: relative;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: #374151;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus-visible,
+.main-nav__link[aria-current="page"] {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.main-nav__link--accent {
+  background: #f0fdf4;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.main-nav__link--accent:hover,
+.main-nav__link--accent:focus-visible {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.main-nav__dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 200;
+  min-width: 220px;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav__dropdown[hidden] {
+  display: none;
+}
+
+.main-nav__dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #374151;
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav__dropdown-link:hover,
+.main-nav__dropdown-link:focus-visible {
+  background: #f3f4f6;
+}
+
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  padding: 4px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #374151;
+  border-radius: 2px;
+}
+
 .hero-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -153,6 +282,66 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .main-nav.is-open {
+    display: block;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .main-nav__link {
+    width: 100%;
+    text-align: left;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .main-nav__dropdown {
+    position: static;
+    border: 0;
+    border-left: 2px solid #e5e7eb;
+    border-radius: 0;
+    box-shadow: none;
+    min-width: 0;
+    margin-left: 1rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-header__inner {
+    padding: 0 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .site-header__logo {
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    padding: 0.75rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #111827;
@@ -174,5 +363,34 @@ body {
     background: linear-gradient(135deg, #111827, #1f2937);
     border-color: #4b5563;
     color: #d1d5db;
+  }
+
+  .site-header {
+    background: #111827;
+    border-bottom-color: #374151;
+  }
+
+  .site-header__logo,
+  .main-nav__link,
+  .main-nav__dropdown-link {
+    color: #e5e7eb;
+  }
+
+  .main-nav__link:hover,
+  .main-nav__link:focus-visible,
+  .main-nav__link[aria-current="page"],
+  .main-nav__dropdown-link:hover,
+  .main-nav__dropdown-link:focus-visible {
+    color: #fff;
+    background: #1f2937;
+  }
+
+  .main-nav__dropdown {
+    background: #111827;
+    border-color: #374151;
+  }
+
+  .nav-toggle span {
+    background: #e5e7eb;
   }
 }

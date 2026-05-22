@@ -1,0 +1,22 @@
+main:
+  - title: "Stacks"
+    dropdown: true
+    children:
+      - title: "👁️ Obs — Observability"
+        url: "/obs/"
+      - title: "🔁 Pipe — CI/CD"
+        url: "/pipe/"
+      - title: "📈 DORA — Metrics"
+        url: "/dora/"
+      - title: "🛡️ Sec — Security"
+        url: "/sec/"
+      - title: "🧭 DevX — Developer Experience"
+        url: "/devx/"
+  - title: "Learn"
+    url: "/learn/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "🟢 Dojo"
+    url: "https://paruff.github.io/fawkes/dojo/"
+    external: true
+    accent: true
