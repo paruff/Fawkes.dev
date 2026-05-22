@@ -5,3 +5,4 @@ url: "https://ufawkes.dev"
 theme: minima
 plugins:
   - jekyll-feed
+header_pages: []
