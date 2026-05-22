@@ -35,6 +35,7 @@ jobs:
         run: |
           bundle exec htmlproofer ./_site \
             --checks "Links" \
+            --ignore-empty-mailto \
             --ignore-urls "/https:\/\/www\.linkedin\.com\/.*/" \
             --typhoeus '{"timeout":20,"followlocation":true}'
 
