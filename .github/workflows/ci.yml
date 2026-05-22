@@ -3,6 +3,9 @@ name: CI
 on:
   pull_request:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 permissions:
   contents: read
   pages: write
@@ -32,7 +35,6 @@ jobs:
         run: |
           bundle exec htmlproofer ./_site \
             --checks "Links" \
-            --disable-internal \
             --ignore-urls "/https:\/\/www\.linkedin\.com\/.*/" \
             --typhoeus '{"timeout":20,"followlocation":true}'
 
