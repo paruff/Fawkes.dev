@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Validate HTML (broken links + alt text)
+        run: bundle exec htmlproofer ./_site --disable-external --checks "Links,Images" --ignore-empty-mailto
+
+      - name: Validate external links (200, timeout, redirects)
+        run: |
+          bundle exec htmlproofer ./_site \
+            --checks "Links" \
+            --ignore-empty-mailto \
+            --ignore-urls "/https:\/\/www\.linkedin\.com\/.*/" \
+            --typhoeus '{"timeout":20,"followlocation":true}'
+
+      - name: Spell check Markdown
+        uses: crate-ci/typos@v1
+        with:
+          files: "**/*.md"

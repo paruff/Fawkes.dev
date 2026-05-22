@@ -4,8 +4,6 @@ title: uFawkesPipe
 stack_name: uFawkesPipe
 hero: Composable CI/CD pipelines with fast feedback. 60 seconds to running.
 summary: Golden-path delivery automation for teams that need resilient releases without heavyweight platform work.
-repo_name: paruff/ufawkes-pipe
-repo_url: https://github.com/paruff/ufawkes-pipe
 screenshot_placeholder: Add real screenshot after the stack is running.
 features:
   - Opinionated pipeline templates for fast feedback loops
