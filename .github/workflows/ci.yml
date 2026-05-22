@@ -32,7 +32,8 @@ jobs:
         run: |
           bundle exec htmlproofer ./_site \
             --checks "Links" \
-            --url-ignore "/https:\/\/www\.linkedin\.com\/.*/" \
+            --disable-internal \
+            --ignore-urls "/https:\/\/www\.linkedin\.com\/.*/" \
             --typhoeus '{"timeout":20,"followlocation":true}'
 
       - name: Spell check Markdown
