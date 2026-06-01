@@ -44,7 +44,7 @@ title: uFawkes
     <p>GitHub repo coming soon</p>
   </article>
   <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="DORA status" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
+    <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="DORA status" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" /></h3>
     <p>DORA metrics and continuous delivery performance insights made implementation-ready.</p>
     <p><code>docker compose up dora</code></p>
     <p>GitHub repo coming soon</p>
