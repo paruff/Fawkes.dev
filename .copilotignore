@@ -1,0 +1,49 @@
+# Generated Jekyll output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby/Bundler local artifacts
+.bundle/
+vendor/bundle/
+vendor/cache/
+
+# Node/tooling caches (future-proof)
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Build/test/temp artifacts
+coverage/
+dist/
+build/
+tmp/
+.temp/
+.cache/
+
+# Logs and local environment files
+*.log
+.env
+.env.*
+!.env.example
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# VCS and local metadata
+.git/
+
+# Archives and binary packages
+*.zip
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
