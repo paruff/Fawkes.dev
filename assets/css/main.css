@@ -18,6 +18,7 @@ body {
   align-items: center;
   gap: 1rem;
   min-height: 56px;
+  position: relative;
 }
 
 .site-header__logo {
@@ -29,7 +30,22 @@ body {
 }
 
 .main-nav {
-  margin-left: auto;
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 1.25rem;
+  z-index: 200;
+  width: min(320px, calc(100vw - 2rem));
+  margin-left: 0;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.main-nav.is-open {
+  display: block;
 }
 
 .main-nav__list {
@@ -37,27 +53,44 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  gap: 0.25rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.2rem;
 }
 
-.main-nav__item {
-  position: relative;
+.main-nav__item + .main-nav__item {
+  margin-top: 0.25rem;
+}
+
+.main-nav__group-title {
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.main-nav__group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__link {
   display: block;
-  padding: 0.4rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   border: 0;
-  border-radius: 4px;
+  border-radius: 6px;
   background: none;
   color: #374151;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 500;
   line-height: 1.4;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .main-nav__link:hover,
@@ -73,47 +106,18 @@ body {
   font-weight: 600;
 }
 
+.main-nav__link--child {
+  padding-left: 1rem;
+}
+
 .main-nav__link--accent:hover,
 .main-nav__link--accent:focus-visible {
   background: #dcfce7;
   color: #15803d;
 }
 
-.main-nav__dropdown {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  z-index: 200;
-  min-width: 220px;
-  list-style: none;
-  margin: 0;
-  padding: 0.4rem 0;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.main-nav__dropdown[hidden] {
-  display: none;
-}
-
-.main-nav__dropdown-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #374151;
-  font-size: 0.875rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.main-nav__dropdown-link:hover,
-.main-nav__dropdown-link:focus-visible {
-  background: #f3f4f6;
-}
-
 .nav-toggle {
-  display: none;
+  display: flex;
   margin-left: auto;
   padding: 4px;
   border: 0;
@@ -129,6 +133,22 @@ body {
   height: 2px;
   background: #374151;
   border-radius: 2px;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-toggle span {
+  transition: transform 160ms ease, opacity 160ms ease;
 }
 
 .hero-layout {
@@ -283,47 +303,15 @@ body {
 }
 
 @media (max-width: 640px) {
-  .nav-toggle {
-    display: flex;
-  }
-
   .main-nav {
-    display: none;
-    position: absolute;
-    top: 56px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-  .main-nav.is-open {
-    display: block;
-  }
-
-  .main-nav__list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    left: 0.75rem;
+    right: 0.75rem;
+    width: auto;
   }
 
   .main-nav__link {
     width: 100%;
     text-align: left;
-    padding: 0.6rem 0.5rem;
-  }
-
-  .main-nav__dropdown {
-    position: static;
-    border: 0;
-    border-left: 2px solid #e5e7eb;
-    border-radius: 0;
-    box-shadow: none;
-    min-width: 0;
-    margin-left: 1rem;
-    padding: 0;
   }
 }
 
@@ -338,7 +326,10 @@ body {
   }
 
   .main-nav {
-    padding: 0.75rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    width: auto;
+    padding: 0.6rem;
   }
 }
 
@@ -371,21 +362,22 @@ body {
   }
 
   .site-header__logo,
-  .main-nav__link,
-  .main-nav__dropdown-link {
+  .main-nav__link {
     color: #e5e7eb;
+  }
+
+  .main-nav__group-title {
+    color: #9ca3af;
   }
 
   .main-nav__link:hover,
   .main-nav__link:focus-visible,
-  .main-nav__link[aria-current="page"],
-  .main-nav__dropdown-link:hover,
-  .main-nav__dropdown-link:focus-visible {
+  .main-nav__link[aria-current="page"] {
     color: #fff;
     background: #1f2937;
   }
 
-  .main-nav__dropdown {
+  .main-nav {
     background: #111827;
     border-color: #374151;
   }

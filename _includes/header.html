@@ -10,20 +10,18 @@
       <span></span><span></span><span></span>
     </button>
 
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation" hidden>
       <ul class="main-nav__list">
         {% for item in site.data.navigation.main %}
-          <li class="main-nav__item{% if item.dropdown %} main-nav__item--has-dropdown{% endif %}">
+          <li class="main-nav__item">
             {% if item.dropdown %}
-              <button class="main-nav__link main-nav__link--dropdown" aria-expanded="false" aria-haspopup="true">
-                {{ item.title }} <span aria-hidden="true">▾</span>
-              </button>
-              <ul class="main-nav__dropdown" hidden>
+              <p class="main-nav__group-title">{{ item.title }}</p>
+              <ul class="main-nav__group-list">
                 {% for child in item.children %}
                   <li>
                     <a
                       href="{{ child.url | relative_url }}"
-                      class="main-nav__dropdown-link"
+                      class="main-nav__link main-nav__link--child"
                       {% if page.url == child.url %}aria-current="page"{% endif %}>
                       {{ child.title }}
                     </a>
@@ -55,40 +53,39 @@
 
 <script>
   (function () {
-    var dropdownButtons = document.querySelectorAll(".main-nav__link--dropdown");
-
-    function closeAllDropdowns() {
-      dropdownButtons.forEach(function (btn) {
-        btn.setAttribute("aria-expanded", "false");
-        if (btn.nextElementSibling) {
-          btn.nextElementSibling.hidden = true;
-        }
-      });
-    }
-
-    dropdownButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var expanded = this.getAttribute("aria-expanded") === "true";
-        closeAllDropdowns();
-        if (!expanded && this.nextElementSibling) {
-          this.setAttribute("aria-expanded", "true");
-          this.nextElementSibling.hidden = false;
-        }
-      });
-    });
-
-    document.addEventListener("click", function (event) {
-      if (!event.target.closest(".main-nav__item--has-dropdown")) {
-        closeAllDropdowns();
-      }
-    });
-
     var toggle = document.querySelector(".nav-toggle");
     var nav = document.getElementById("main-nav");
+
+    function setMenuState(open) {
+      nav.hidden = !open;
+      nav.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    }
+
     if (toggle && nav) {
       toggle.addEventListener("click", function () {
-        var open = nav.classList.toggle("is-open");
-        toggle.setAttribute("aria-expanded", String(open));
+        var open = toggle.getAttribute("aria-expanded") !== "true";
+        setMenuState(open);
+      });
+
+      nav.addEventListener("click", function (event) {
+        if (event.target.closest("a")) {
+          setMenuState(false);
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest(".site-header__inner") && toggle.getAttribute("aria-expanded") === "true") {
+          setMenuState(false);
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+          setMenuState(false);
+          toggle.focus();
+        }
       });
     }
   })();
