@@ -12,20 +12,7 @@ title: ''
     </p>
   </section>
 
-  <section class="email-capture" aria-labelledby="email-capture-title">
-    <h2 id="email-capture-title">Get notified when new stacks ship</h2>
-    <p>Get the DORA Primer guide link by email.</p>
-    <iframe
-      src="https://tally.so/embed/ODbbpR?alignLeft=1&hideTitle=1&transparentBackground=1"
-      title="Email signup form"
-      width="100%"
-      height="290"
-      loading="lazy"
-      sandbox="allow-forms allow-scripts"
-      referrerpolicy="no-referrer"
-    ></iframe>
-    <p><a href="/learn/dora-primer.html">Read the DORA Primer now →</a></p>
-  </section>
+
 </div>
 
 ## Stack Family
