@@ -1,6 +1,6 @@
 ---
 layout: home
-title: uFawkes
+title: ''
 ---
 
 <div class="hero-layout">
