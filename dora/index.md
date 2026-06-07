@@ -4,7 +4,6 @@ title: uFawkesDORA
 stack_name: uFawkesDORA
 hero: DORA dashboards for AI delivery teams. 60 seconds to running.
 summary: Implementation-ready delivery performance insights that help teams improve flow, stability, and outcomes.
-screenshot_placeholder: Add real screenshot after the stack is running.
 features:
   - DORA dashboards with deployment, lead time, and recovery views
   - AI workflow metrics that connect delivery changes to team outcomes
