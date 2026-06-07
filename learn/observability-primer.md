@@ -48,7 +48,7 @@ Use weekly metric reviews to answer:
 
 Then close the loop with the [DORA primer]({{ '/learn/dora-primer.html' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities.html' | relative_url }}).
 
-Run this yourself: GitHub repo coming soon
+Repos launching soon — [get notified](https://tally.so/embed/ODbbpR)
 
 {% include guide-meta.html %}
 

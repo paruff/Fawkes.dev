@@ -46,7 +46,7 @@ Together these show both speed and stability. Optimize all four; over-optimizing
 
 For capability planning, continue with the [AI capabilities guide]({{ '/learn/ai-capabilities.html' | relative_url }}). For signal quality and instrumentation, read the [observability primer]({{ '/learn/observability-primer.html' | relative_url }}).
 
-Run this yourself: GitHub repo coming soon
+Repos launching soon — [get notified](https://tally.so/embed/ODbbpR)
 
 {% include guide-meta.html %}
 

@@ -16,7 +16,7 @@
 | 3 | Remove `## Social proof` zero-star badges; replace with maintainer bio line | ✅ Done | index.md |
 | 4 | Fix raw badge alt text in Stack Family headings | ✅ Done | index.md — replace with plain `/obs/` paths |
 | 5 | Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities | ✅ Done | index.md + assets/css/main.css |
-| 9 | Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link | ⬜ Not started | index.md — Stack Family section |
+| 9 | Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link | ✅ Done | index.md — Stack Family section |
 | 10 | Add visible primary CTA button above the fold ("See the stacks ↓") | ⬜ Not started | index.md + assets/css/main.css |
 | 11 | Rename "Posts" section → "From the blog" | ⬜ Not started | index.md |
 | 12 | DORA AI Capabilities — add one-sentence description to each of 7 items | ✅ Done | index.md |
@@ -54,10 +54,10 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: #5 — Fawkes Dojo callout div
+[ ] Last completed: #9 — Consolidated "GitHub repo coming soon" → single "Repos launching soon" notice
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: #9 — Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link
+[ ] Next task: #10 — Add visible primary CTA button above the fold ("See the stacks ↓")
 ```
 
 ---
