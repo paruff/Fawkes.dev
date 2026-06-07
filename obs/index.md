@@ -4,6 +4,8 @@ title: uFawkesObs
 stack_name: uFawkesObs
 hero: Prometheus + Grafana + AI observability. 60 seconds to running.
 summary: Operational telemetry, DORA context, and AI delivery visibility in one starter stack.
+repo_url: https://github.com/paruff/ufawkes-obs
+repo_name: paruff/ufawkes-obs
 screenshot_placeholder: Add real screenshot after the stack is running.
 features:
   - DORA dashboards wired to delivery and reliability signals
