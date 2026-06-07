@@ -20,6 +20,13 @@
     }
   },
   "plugin": ["opencode-cross-repo"],
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest", "--headless"],
+      "enabled": true
+    }
+  },
   "permission": {
     "skill": {
       "*": "allow",
