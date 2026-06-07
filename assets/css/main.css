@@ -119,12 +119,22 @@ body {
 .nav-toggle {
   display: flex;
   margin-left: auto;
-  padding: 4px;
+  padding: 10px;
   border: 0;
+  border-radius: 6px;
   background: none;
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+}
+
+.nav-toggle:hover {
+  background: #f3f4f6;
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
 }
 
 .nav-toggle span {
@@ -381,6 +391,10 @@ body {
   .nav-toggle span {
     background: #e5e7eb;
   }
+
+  .nav-toggle:hover {
+    background: #1f2937;
+  }
 }
 
 .cta-button {
@@ -398,6 +412,19 @@ body {
 .cta-button:hover,
 .cta-button:focus-visible {
   background: #15803d;
+}
+
+.cta-button--secondary {
+  background: transparent;
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.cta-button--secondary:hover,
+.cta-button--secondary:focus-visible {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #15803d;
 }
 
 .try-now {
@@ -495,20 +522,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-.cta-button--secondary {
-  background: transparent;
-  color: #16a34a;
-  border: 2px solid #16a34a;
-}
-
-.cta-button--secondary:hover,
-.cta-button--secondary:focus-visible {
-  background: #f0fdf4;
-  color: #15803d;
-  border-color: #15803d;
-}
-
-@media (prefers-color-scheme: dark) {
   .cta-button--secondary {
     color: #4ade80;
     border-color: #4ade80;
@@ -520,10 +533,13 @@ body {
     color: #86efac;
     border-color: #86efac;
   }
-}
 
-.dojo-callout {
+  .dojo-callout {
     background: linear-gradient(135deg, #1c1917, #1f2937);
     border-color: #374151;
+  }
+
+  .guide-meta__next a {
+    color: #93c5fd;
   }
 }

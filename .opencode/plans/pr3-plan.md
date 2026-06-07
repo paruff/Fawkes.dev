@@ -61,13 +61,13 @@ P0: 3 | P1: 5 | P2: 6 | P3: 4 findings
 
 | # | Issue | File | Dependencies |
 |---|-------|------|-------------|
-| 3.1 | Fix broken dark-mode CSS nesting — un-nest `.cta-button--secondary` and `.dojo-callout` | `assets/css/main.css` | None |
-| 3.2 | Add `.cta-button--secondary` light mode | `assets/css/main.css` | 3.1 |
-| 3.3 | Complete `.dojo-callout` dark mode (border-color, fix duplication) | `assets/css/main.css` | 3.1 |
-| 3.4 | Add `.guide-meta__next` dark mode link color | `assets/css/main.css` | None |
-| 3.5 | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping | `index.md` + CSS | None |
-| 3.6 | Change DORA stack page badge from "live" to "coming soon" | `dora/index.md` | None |
-| 3.7 | Fix learn hub guide links: trailing-slash → `.html` | `learn/index.md` | None |
+| 3.1 | Fix broken dark-mode CSS nesting — un-nest `.cta-button--secondary` and `.dojo-callout` | `assets/css/main.css` | ✅ Done |
+| 3.2 | Add `.cta-button--secondary` light mode | `assets/css/main.css` | ✅ Done |
+| 3.3 | Complete `.dojo-callout` dark mode (border-color, fix duplication) | `assets/css/main.css` | ✅ Done |
+| 3.4 | Add `.guide-meta__next` dark mode link color | `assets/css/main.css` | ✅ Done |
+| 3.5 | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | `index.md` + CSS | ⬜ Deferred |
+| 3.6 | Change DORA stack page badge from "live" to "coming soon" | `dora/index.md` | ✅ Done |
+| 3.7 | Fix learn hub guide links: trailing-slash → `.html` | `learn/index.md` | ✅ Already correct — no change needed |
 
 ### Sprint 4 — Content
 

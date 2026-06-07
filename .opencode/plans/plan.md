@@ -33,9 +33,12 @@
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
-| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | assets/css/main.css ~80 lines — broken down into pr3-plan.md Sprint 1–2 |
-| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | index.md — Sprint 3.5 |
-| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Content task — not code — Sprint 4 |
+| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | Sprint 1–2 |
+| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | Sprint 3.5 |
+| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Sprint 4 |
+| S1 | Sprint 3: Fix broken dark-mode nesting, add cta-button--secondary light mode, dojo-callout dark mode, guide-meta dark link | ✅ Done | assets/css/main.css |
+| S2 | Sprint 3: Fix DORA badge from live→coming-soon | ✅ Done | dora/index.md |
+| S3 | Sprint 3: Navigation redesign — larger hit area, hover/focus states | ✅ Done | assets/css/main.css
 
 ### PR 4 — Agent & skill infrastructure (can run parallel to PR 2)
 
@@ -54,10 +57,10 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: #11 — Renamed "Posts" → "From the blog"
+[ ] Last completed: Sprint 3 — Dark mode fixes, nav redesign, DORA badge
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: PR 3 — Design system (deferred until PR 1+2 merged — all PR 1+2 now complete)
+[ ] Next task: Sprint 1 — Foundation: tokens, typography, border standardization
 ```
 
 ---

@@ -4,6 +4,7 @@ title: uFawkesDORA
 stack_name: uFawkesDORA
 description: "Implementation-ready DORA dashboards with deployment frequency, lead time, change failure rate, and MTTR views for AI delivery teams."
 hero: DORA dashboards for AI delivery teams. 60 seconds to running.
+coming_soon: true
 summary: Implementation-ready delivery performance insights that help teams improve flow, stability, and outcomes.
 features:
   - DORA dashboards with deployment, lead time, and recovery views
