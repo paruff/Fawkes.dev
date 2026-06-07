@@ -47,7 +47,7 @@
 | 2 | Component styling: cards, code, badges, focus | P2c, P2d, P2e, P1f, P2k, P3e | ✅ Done — `main.css` |
 | 3 | Navigation: breadcrumbs, favicon, 404, nav polish | P1d, P1e, P2h, P2i, P3b, P3f | ✅ Done — `404.html`, `_includes/breadcrumbs.html`, `main.css`, `header.html` |
 | 4 | Content: blog expansion, DORA mapping | P1b, P2g, P3a, P3d | ✅ Done — `_posts/*.md`, `index.md`, `main.css` |
-| 5 | Dark mode polish, stack differentiation | P2l, P3c, P3g | `main.css`, `_layouts/stack.html` |
+| 5 | Dark mode polish, stack differentiation | P2l, P3c, P3g | ✅ Done — `main.css`, `_layouts/stack.html`, all stack `index.md` |
 | 6 | Screenshots & trust signals | P1a, P2 | Stack pages + `assets/images/` |
 
 ### PR 5 — Agent & skill infrastructure (can run parallel)
@@ -67,12 +67,11 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: PR 4 Sprint 4 — Content (blog expansion 860 words, DORA 2-col mapping)
+[ ] Last completed: PR 4 Sprint 5 — Dark mode polish + per-stack accent colors
 [ ] In progress: none
-[ ] Blockers: none
-[ ] Next task: PR 4 Sprint 5 — Dark mode polish + stack page differentiation
+[ ] Blockers: Sprint 6 blocked on real screenshots
+[ ] Next task: Push Sprint 5, deploy, then Sprint 6 if screenshots available
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
-[ ] GitOps: CI ignore pattern for unreleased repos, branch protection pending in GitHub UI
 ```
 
 ---
