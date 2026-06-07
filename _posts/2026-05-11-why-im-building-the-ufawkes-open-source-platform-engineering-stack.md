@@ -75,8 +75,8 @@ The stacks are early. Some are live, some are launching soon. But the foundation
 Run the Observability stack right now:
 
 ```
-git clone https://github.com/paruff/ufawkes-obs.git
-cd ufawkes-obs
+git clone https://github.com/paruff/ufawkesobs.git
+cd ufawkesobs
 docker compose up -d
 ```
 

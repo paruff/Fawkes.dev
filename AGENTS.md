@@ -45,7 +45,7 @@ server-side logic.
 
 Custom agents and reusable skills live at `~/.config/opencode/` (global),
 not in this repo. This makes them reusable across all uFawkes repos
-(ufawkes-obs, ufawkes-pipe, etc.). Only project-specific permission overrides
+(ufawkesobs, ufawkespipe, etc.). Only project-specific permission overrides
 and MCP config live in `.opencode/opencode.json`.
 
 Run `./consolidate-agents.sh --dry-run` to preview the migration.
@@ -207,14 +207,14 @@ stack_name: Obs
 hero: "Prometheus + Grafana + AI observability. 60 seconds to running."
 summary: "One-line summary for cards"
 coming_soon: false
-repo_url: https://github.com/paruff/ufawkes-obs
-repo_name: ufawkes-obs
+repo_url: https://github.com/paruff/ufawkesobs
+repo_name: ufawkesobs
 screenshot_placeholder: false
 features:
   - DORA dashboards wired to delivery signals
 quick_start:
-  - step: git clone https://github.com/paruff/ufawkes-obs.git
-  - step: cd ufawkes-obs
+  - step: git clone https://github.com/paruff/ufawkesobs.git
+  - step: cd ufawkesobs
   - step: docker compose up -d
 compose_with:
   - url: /pipe/

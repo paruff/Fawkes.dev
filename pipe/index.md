@@ -5,8 +5,8 @@ stack_name: uFawkesPipe
 description: "Composable CI/CD pipelines with fast feedback and resilient release controls. Docker Compose setup in 60 seconds."
 hero: Composable CI/CD pipelines with fast feedback. 60 seconds to running.
 summary: Golden-path delivery automation for teams that need resilient releases without heavyweight platform work.
-repo_url: https://github.com/paruff/ufawkes-pipe
-repo_name: paruff/ufawkes-pipe
+repo_url: https://github.com/paruff/ufawkespipe
+repo_name: paruff/ufawkespipe
 features:
   - Opinionated pipeline templates for fast feedback loops
   - Delivery metrics hooks that feed DORA reporting
@@ -14,8 +14,8 @@ features:
   - Jenkins integration for existing controller and agent fleets
   - Education layer to help teams adopt delivery best practices
 quick_start:
-  - git clone https://github.com/paruff/ufawkes-pipe.git
-  - cd ufawkes-pipe
+  - git clone https://github.com/paruff/ufawkespipe.git
+  - cd ufawkespipe
   - docker compose up -d
 compose_with:
   - name: uFawkesObs

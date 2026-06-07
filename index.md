@@ -33,13 +33,13 @@ title: ''
     <h3><a class="stack-link" href="{{ '/obs/' | relative_url }}">👁️ Obs</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>Operational telemetry and reliability visibility for AI-enabled delivery teams.</p>
     <p><code>docker compose up obs</code></p>
-    <p><a href="https://github.com/paruff/ufawkes-obs" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
+    <p><a href="https://github.com/paruff/ufawkesobs" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
     <h3><a class="stack-link" href="{{ '/pipe/' | relative_url }}">🔁 Pipe</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>Composable CI/CD pipelines with fast feedback and resilient release controls.</p>
     <p><code>docker compose up pipe</code></p>
-    <p><a href="https://github.com/paruff/ufawkes-pipe" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
+    <p><a href="https://github.com/paruff/ufawkespipe" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
     <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="Coming soon" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" /></h3>

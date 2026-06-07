@@ -5,8 +5,8 @@ stack_name: uFawkesObs
 description: "Deploy Prometheus + Grafana observability in 60 seconds. DORA dashboards, AI metrics, and Jenkins integration for AI-enabled delivery teams."
 hero: Prometheus + Grafana + AI observability. 60 seconds to running.
 summary: Operational telemetry, DORA context, and AI delivery visibility in one starter stack.
-repo_url: https://github.com/paruff/ufawkes-obs
-repo_name: paruff/ufawkes-obs
+repo_url: https://github.com/paruff/ufawkesobs
+repo_name: paruff/ufawkesobs
 features:
   - DORA dashboards wired to delivery and reliability signals
   - AI metrics for copilots, agents, and assisted workflows
@@ -14,8 +14,8 @@ features:
   - Jenkins integration for CI telemetry and deployment traces
   - Education layer that explains what the signals mean
 quick_start:
-  - git clone https://github.com/paruff/ufawkes-obs.git
-  - cd ufawkes-obs
+  - git clone https://github.com/paruff/ufawkesobs.git
+  - cd ufawkesobs
   - docker compose up -d
 compose_with:
   - name: uFawkesPipe

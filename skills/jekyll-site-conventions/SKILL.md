@@ -101,8 +101,8 @@ stack_name: Obs
 hero: "One-line hero text."
 summary: "One-line summary for cards"
 coming_soon: false
-repo_url: https://github.com/paruff/ufawkes-obs
-repo_name: ufawkes-obs
+repo_url: https://github.com/paruff/ufawkesobs
+repo_name: ufawkesobs
 screenshot_placeholder: false
 features:
   - Feature one
