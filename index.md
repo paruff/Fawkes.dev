@@ -94,18 +94,4 @@ title: ''
     referrerpolicy="no-referrer"></iframe>
 </section>
 
-Built by <a href="https://github.com/paruff">@paruff</a> · <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> — 20+ years in platform engineering, CI/CD, and developer experience. Building uFawkes to give every team the platform foundation that makes AI delivery actually work.
----
-
-<footer class="home-footer">
-  <p>
-    <a href="{{ '/obs/' | relative_url }}">Obs</a> ·
-    <a href="{{ '/pipe/' | relative_url }}">Pipe</a> ·
-    <a href="{{ '/dora/' | relative_url }}">DORA</a> ·
-    <a href="{{ '/sec/' | relative_url }}">Sec</a> ·
-    <a href="{{ '/devx/' | relative_url }}">DevX</a> ·
-    <a href="https://github.com/sponsors/paruff">GitHub Sponsors</a> ·
-    <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> ·
-    <a href="https://dora.dev/">DORA.dev</a>
-  </p>
-</footer>
+<p class="maintainer-bio">Built by <a href="https://github.com/paruff">@paruff</a> · <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> — 20+ years in platform engineering, CI/CD, and developer experience. Building uFawkes to give every team the platform foundation that makes AI delivery actually work.</p>

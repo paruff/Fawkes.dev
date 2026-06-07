@@ -29,18 +29,28 @@
 | 7 | Add `read_time` + `next_guide_url/title` to learn guides; create `_includes/guide-meta.html`; fix cross-link URL patterns | ✅ Done | learn/*.html + new include |
 | 8 | Fix per-page `description` meta on all stack pages (currently shows global tagline) | ✅ Done | obs/ pipe/ dora/ sec/ devx/ front matter |
 
-### PR 3 — Design system (FDS bootstrap — see `pr3-plan.md` for detailed sprint breakdown)
+### PR 3 — Design system — Sprint 3 (dark mode fixes) complete
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
-| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | Sprint 1–2 |
-| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | Sprint 3.5 |
-| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Sprint 4 |
 | S1 | Sprint 3: Fix broken dark-mode nesting, add cta-button--secondary light mode, dojo-callout dark mode, guide-meta dark link | ✅ Done | assets/css/main.css |
 | S2 | Sprint 3: Fix DORA badge from live→coming-soon | ✅ Done | dora/index.md |
-| S3 | Sprint 3: Navigation redesign — larger hit area, hover/focus states | ✅ Done | assets/css/main.css
+| S3 | Sprint 3: Navigation redesign — larger hit area, hover/focus states | ✅ Done | assets/css/main.css |
 
-### PR 4 — Agent & skill infrastructure (can run parallel to PR 2)
+### PR 4 — Design System: Foundation, Components & Content (see `pr4-plan.md` for full audit + sprint breakdown)
+
+6 sprints covering 28 issues (3 P0, 6 P1, 12 P2, 7 P3).
+
+| Sprint | Theme | Issues | Key files |
+|--------|-------|--------|-----------|
+| 1 | Foundation: typography, borders, 3 P0 fixes | P0a-c, P2a, P2f, P2j, P2b | ✅ Done — `_layouts/home.html`, `_layouts/default.html`, `index.md`, `main.css` |
+| 2 | Component styling: cards, code, badges, focus | P2c, P2d, P2e, P1f, P2k, P3e | `main.css` |
+| 3 | Navigation: breadcrumbs, favicon, 404, nav polish | P1d, P1e, P2h, P2i, P3b, P3f | `404.html`, `_includes/breadcrumbs.html`, `main.css` |
+| 4 | Content: blog expansion, DORA mapping | P1b, P2g, P3a, P3d | `_posts/*.md`, `index.md`, `main.css` |
+| 5 | Dark mode polish, stack differentiation | P2l, P3c, P3g | `main.css`, `_layouts/stack.html` |
+| 6 | Screenshots & trust signals | P1a, P2 | Stack pages + `assets/images/` |
+
+### PR 5 — Agent & skill infrastructure (can run parallel)
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
@@ -57,10 +67,11 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: Sprint 3 — Dark mode fixes, nav redesign, DORA badge
+[ ] Last completed: PR 4 Sprint 1 — Foundation (P0 fixes + typography + borders)
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: Sprint 1 — Foundation: tokens, typography, border standardization
+[ ] Next task: PR 4 Sprint 2 — Component styling (cards, code, badges, focus, reduced motion)
+[ ] PR 4 plan written to: .opencode/plans/pr4-plan.md (28 issues, 6 sprints)
 ```
 
 ---
