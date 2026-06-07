@@ -63,21 +63,7 @@ title: ''
   <article class="capability-card"><h3>6. Golden path enablement</h3><p>DevX + Pipe</p></article>
   <article class="capability-card"><h3>7. Continuous improvement</h3><p>DORA + DevX</p></article>
 </section>
-
-## Social proof
-
-<p>
-  <img alt="Obs stars" src="https://img.shields.io/github/stars/paruff/ufawkes-obs?label=Obs%20stars" />
-  <img alt="Pipe stars" src="https://img.shields.io/github/stars/paruff/ufawkes-pipe?label=Pipe%20stars" />
-  <img alt="DORA stars" src="https://img.shields.io/github/stars/paruff/ufawkes-dora?label=DORA%20stars" />
-  <img alt="Sec stars" src="https://img.shields.io/github/stars/paruff/ufawkes-sec?label=Sec%20stars" />
-  <img alt="DevX stars" src="https://img.shields.io/github/stars/paruff/ufawkes-devx?label=DevX%20stars" />
-</p>
-<p>
-  Built by <a href="https://github.com/paruff">@paruff</a> ·
-  <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a>
-</p>
-
+Built by <a href="https://github.com/paruff">@paruff</a> · <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> — 20+ years in platform engineering, CI/CD, and developer experience. Building uFawkes to give every team the platform foundation that makes AI delivery actually work.
 ---
 
 <footer class="home-footer">
