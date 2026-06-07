@@ -11,6 +11,7 @@ title: ''
       AI amplifies weak platforms. uFawkes gives you the platform.
     </p>
     <a href="{{ '/obs/' | relative_url }}" class="cta-button">Run Obs in 60 seconds →</a>
+    <a href="#stack-family" class="cta-button cta-button--secondary">See the stacks ↓</a>
   </section>
 
 
@@ -25,7 +26,7 @@ title: ''
   </div>
 </section>
 
-## Stack Family
+<h2 id="stack-family">Stack Family</h2>
 
 <section class="stack-grid" aria-label="uFawkes stack family">
   <article class="stack-card">

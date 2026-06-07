@@ -495,7 +495,34 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dojo-callout {
+.cta-button--secondary {
+  background: transparent;
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+
+.cta-button--secondary:hover,
+.cta-button--secondary:focus-visible {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #15803d;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cta-button--secondary {
+    color: #4ade80;
+    border-color: #4ade80;
+  }
+
+  .cta-button--secondary:hover,
+  .cta-button--secondary:focus-visible {
+    background: #1f2937;
+    color: #86efac;
+    border-color: #86efac;
+  }
+}
+
+.dojo-callout {
     background: linear-gradient(135deg, #1c1917, #1f2937);
     border-color: #374151;
   }
