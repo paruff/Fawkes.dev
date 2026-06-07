@@ -29,13 +29,13 @@
 | 7 | Add `read_time` + `next_guide_url/title` to learn guides; create `_includes/guide-meta.html`; fix cross-link URL patterns | ✅ Done | learn/*.html + new include |
 | 8 | Fix per-page `description` meta on all stack pages (currently shows global tagline) | ✅ Done | obs/ pipe/ dora/ sec/ devx/ front matter |
 
-### PR 3 — Design system (deferred — do not start until PR 1+2 merged)
+### PR 3 — Design system (FDS bootstrap — see `pr3-plan.md` for detailed sprint breakdown)
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
-| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | assets/css/main.css ~80 lines |
-| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | index.md |
-| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Content task — not code |
+| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | assets/css/main.css ~80 lines — broken down into pr3-plan.md Sprint 1–2 |
+| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | index.md — Sprint 3.5 |
+| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Content task — not code — Sprint 4 |
 
 ### PR 4 — Agent & skill infrastructure (can run parallel to PR 2)
 
