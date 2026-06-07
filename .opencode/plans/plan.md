@@ -45,7 +45,7 @@
 |--------|-------|--------|-----------|
 | 1 | Foundation: typography, borders, 3 P0 fixes | P0a-c, P2a, P2f, P2j, P2b | ✅ Done — `_layouts/home.html`, `_layouts/default.html`, `index.md`, `main.css` |
 | 2 | Component styling: cards, code, badges, focus | P2c, P2d, P2e, P1f, P2k, P3e | `main.css` |
-| 3 | Navigation: breadcrumbs, favicon, 404, nav polish | P1d, P1e, P2h, P2i, P3b, P3f | `404.html`, `_includes/breadcrumbs.html`, `main.css` |
+| 3 | Navigation: breadcrumbs, favicon, 404, nav polish | P1d, P1e, P2h, P2i, P3b, P3f | ✅ Done — `404.html`, `_includes/breadcrumbs.html`, `main.css`, `header.html` |
 | 4 | Content: blog expansion, DORA mapping | P1b, P2g, P3a, P3d | `_posts/*.md`, `index.md`, `main.css` |
 | 5 | Dark mode polish, stack differentiation | P2l, P3c, P3g | `main.css`, `_layouts/stack.html` |
 | 6 | Screenshots & trust signals | P1a, P2 | Stack pages + `assets/images/` |
@@ -67,10 +67,10 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: PR 4 Sprint 1 — Foundation (P0 fixes + typography + borders)
+[ ] Last completed: PR 4 Sprint 3 — Navigation (favicon, 404, breadcrumbs, nav transition, active states)
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: PR 4 Sprint 2 — Component styling (cards, code, badges, focus, reduced motion)
+[ ] Next task: PR 4 Sprint 4 — Content (blog expansion + DORA mapping rewrite)
 [ ] PR 4 plan written to: .opencode/plans/pr4-plan.md (28 issues, 6 sprints)
 ```
 
