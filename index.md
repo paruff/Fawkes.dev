@@ -16,6 +16,15 @@ title: ''
 
 </div>
 
+<section class="try-now">
+  <h2>Try it now</h2>
+  <p>Pick a stack and run it locally in 60 seconds:</p>
+  <div class="try-now__commands">
+    <code class="try-now__command">docker compose up obs</code>
+    <code class="try-now__command">docker compose up pipe</code>
+  </div>
+</section>
+
 ## Stack Family
 
 <section class="stack-grid" aria-label="uFawkes stack family">
@@ -64,6 +73,20 @@ title: ''
   <article class="capability-card"><h3>6. Golden path enablement</h3><p>DevX + Pipe</p></article>
   <article class="capability-card"><h3>7. Continuous improvement</h3><p>DORA + DevX</p></article>
 </section>
+
+<section class="email-capture" aria-labelledby="notify-title">
+  <h2 id="notify-title">Stay updated</h2>
+  <p>Get notified when new stacks ship and guides are published.</p>
+  <iframe
+    src="https://tally.so/embed/ODbbpR?alignLeft=1&hideTitle=1&transparentBackground=1"
+    title="Stay updated"
+    width="100%"
+    height="290"
+    loading="lazy"
+    sandbox="allow-forms allow-scripts"
+    referrerpolicy="no-referrer"></iframe>
+</section>
+
 Built by <a href="https://github.com/paruff">@paruff</a> · <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> — 20+ years in platform engineering, CI/CD, and developer experience. Building uFawkes to give every team the platform foundation that makes AI delivery actually work.
 ---
 

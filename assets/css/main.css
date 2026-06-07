@@ -403,3 +403,43 @@ body {
 .cta-button:focus-visible {
   background: #15803d;
 }
+
+.try-now {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #f0fdf4;
+  text-align: center;
+}
+
+.try-now h2 {
+  margin-top: 0;
+}
+
+.try-now__commands {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.try-now__command {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .try-now {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  .try-now__command {
+    background: #111827;
+    border-color: #374151;
+  }
+}
