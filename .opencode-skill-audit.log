@@ -1,0 +1,32 @@
+# Skill consolidation audit — Sun Jun  7 10:45:29 WEST 2026
+# Old skill → New skill
+accessibility → accessibility-workflow
+accessibility-review → accessibility-workflow
+accessibility-implementation → accessibility-workflow
+astro-components → DELETED (stack conflict)
+code-quality → code-quality
+component-anatomy → component-workflow
+component-implementation → component-workflow
+component-styling → component-workflow
+content-strategy → content-strategy
+cross-agent-coordination → cross-agent-coordination
+dependency-mapping → cross-agent-coordination
+design-system-compliance → design-system-workflow
+design-system-documentation → design-system-workflow
+experience-principles → ux-audit
+information-architecture → ux-audit
+interaction-motion → visual-design
+layout-composition → visual-design
+layout-implementation → responsive-layout
+pattern-library → design-system-workflow
+prioritization → planning-workflow
+responsive-design → responsive-layout
+roadmapping → planning-workflow
+success-criteria → planning-workflow
+tailwind-tokens → DELETED (stack conflict)
+token-system → design-system-workflow
+ui-consistency → visual-design
+user-journeys → ux-audit
+ux-alignment → ux-audit
+visual-hierarchy → visual-design
+wireframing → ux-audit

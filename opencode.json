@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "name": "Ollama",
+      "api": "openai",
+      "options": {
+        "baseURL": "http://192.168.1.79:11434/v1",
+        "apiKey": "ollama"
+      },
+      "models": {
+        "gemma4:e4b-32k": {
+          "name": "Gemma 4 (32k)",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "plugin": ["opencode-cross-repo"],
+  "permission": {
+    "skill": {
+      "*": "allow",
+      "tailwind-tokens": "deny",
+      "astro-components": "deny",
+      "wireframing": "deny"
+    },
+    "bash": {
+      "make build": "allow",
+      "make serve": "allow",
+      "bundle exec jekyll build": "allow",
+      "bundle exec jekyll serve --livereload": "allow",
+      "git status": "allow",
+      "git log --oneline *": "allow",
+      "git diff *": "allow",
+      "git add *": "ask",
+      "git commit *": "ask",
+      "git push *": "ask",
+      "*": "ask"
+    }
+  }
+}
