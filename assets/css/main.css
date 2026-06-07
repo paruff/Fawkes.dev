@@ -693,3 +693,155 @@ a:focus-visible {
     color: #fbbf24;
   }
 }
+
+/* Sprint 3 — Navigation & Layout */
+
+/* Breadcrumbs */
+.breadcrumbs {
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.breadcrumbs__item + .breadcrumbs__item::before {
+  content: "/";
+  margin-right: 0.25rem;
+  color: #9ca3af;
+}
+
+.breadcrumbs__item a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.breadcrumbs__item a:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+.breadcrumbs__item--current {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* 404 page */
+.error-page {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.error-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.error-page p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.error-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.error-page__links a {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.error-page__links a:hover {
+  border-color: #16a34a;
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+/* Nav transition */
+.main-nav {
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.main-nav.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Active nav state */
+.main-nav__link[aria-current="page"] {
+  background: #f0fdf4;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Guide meta back link */
+.guide-meta__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guide-meta__back {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.guide-meta__back:hover {
+  color: #16a34a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .breadcrumbs__item a {
+    color: #9ca3af;
+  }
+
+  .breadcrumbs__item a:hover {
+    color: #4ade80;
+  }
+
+  .breadcrumbs__item--current {
+    color: #e5e7eb;
+  }
+
+  .error-page__links a {
+    border-color: #374151;
+    color: #e5e7eb;
+  }
+
+  .error-page__links a:hover {
+    border-color: #4ade80;
+    background: #1f2937;
+    color: #4ade80;
+  }
+
+  .main-nav__link[aria-current="page"] {
+    background: #064e3b;
+    color: #4ade80;
+  }
+
+  .guide-meta__back {
+    color: #9ca3af;
+  }
+
+  .guide-meta__back:hover {
+    color: #4ade80;
+  }
+}

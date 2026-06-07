@@ -10,7 +10,7 @@
       <span></span><span></span><span></span>
     </button>
 
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation" hidden>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <ul class="main-nav__list">
         {% for item in site.data.navigation.main %}
           <li class="main-nav__item">
@@ -57,7 +57,6 @@
     var nav = document.getElementById("main-nav");
 
     function setMenuState(open) {
-      nav.hidden = !open;
       nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");

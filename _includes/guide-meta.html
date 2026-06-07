@@ -1,6 +1,9 @@
 {% if page.read_time %}
 <div class="guide-meta">
-  <p class="guide-meta__read-time">{{ page.read_time }} min read</p>
+  <div class="guide-meta__left">
+    <a class="guide-meta__back" href="{{ '/learn/' | relative_url }}">← All guides</a>
+    <p class="guide-meta__read-time">{{ page.read_time }} min read</p>
+  </div>
   {% if page.next_guide_url and page.next_guide_title %}
   <p class="guide-meta__next">Next: <a href="{{ page.next_guide_url | relative_url }}">{{ page.next_guide_title }} →</a></p>
   {% endif %}
