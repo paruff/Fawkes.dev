@@ -11,11 +11,11 @@
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
-| 1 | Fix double H1 — change `# uFawkes` to `<span class="sr-only">uFawkes</span>` | ⬜ Not started | index.md line 1 after front matter |
-| 2 | Move email form below fold; add `## Try it now` docker compose CTA above Stack Family | ⬜ Not started | index.md structural reorder |
-| 3 | Remove `## Social proof` zero-star badges; replace with maintainer bio line | ⬜ Not started | index.md |
-| 4 | Fix raw badge alt text in Stack Family headings | ⬜ Not started | index.md — replace with plain `/obs/` paths |
-| 5 | Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities | ⬜ Not started | index.md + assets/css/main.css |
+| 1 | Fix double H1 — change `# uFawkes` to `<span class="sr-only">uFawkes</span>` | ✅ Done | index.md line 1 after front matter |
+| 2 | Move email form below fold; add `## Try it now` docker compose CTA above Stack Family | ✅ Done | index.md structural reorder |
+| 3 | Remove `## Social proof` zero-star badges; replace with maintainer bio line | ✅ Done | index.md |
+| 4 | Fix raw badge alt text in Stack Family headings | ✅ Done | index.md — replace with plain `/obs/` paths |
+| 5 | Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities | ✅ Done | index.md + assets/css/main.css |
 | 9 | Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link | ⬜ Not started | index.md — Stack Family section |
 | 10 | Add visible primary CTA button above the fold ("See the stacks ↓") | ⬜ Not started | index.md + assets/css/main.css |
 | 11 | Rename "Posts" section → "From the blog" | ⬜ Not started | index.md |
@@ -25,9 +25,9 @@
 
 | # | Issue | Status | Notes |
 |---|-------|--------|-------|
-| 6 | Remove `## Screenshot placeholder` text from all five stack pages | ⬜ Not started | obs/ pipe/ dora/ sec/ devx/ index.md — one file per commit |
-| 7 | Add `read_time` + `next_guide_url/title` to learn guides; create `_includes/guide-meta.html`; fix cross-link URL patterns | ⬜ Not started | learn/*.html + new include |
-| 8 | Fix per-page `description` meta on all stack pages (currently shows global tagline) | ⬜ Not started | obs/ pipe/ dora/ sec/ devx/ front matter |
+| 6 | Remove `## Screenshot placeholder` text from all five stack pages | ✅ Done | obs/ pipe/ dora/ sec/ devx/ index.md — one file per commit |
+| 7 | Add `read_time` + `next_guide_url/title` to learn guides; create `_includes/guide-meta.html`; fix cross-link URL patterns | ✅ Done | learn/*.html + new include |
+| 8 | Fix per-page `description` meta on all stack pages (currently shows global tagline) | ✅ Done | obs/ pipe/ dora/ sec/ devx/ front matter |
 
 ### PR 3 — Design system (deferred — do not start until PR 1+2 merged)
 
@@ -54,10 +54,10 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: #12 — DORA AI Capabilities descriptions — index.md
+[ ] Last completed: #5 — Fawkes Dojo callout div
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: #5 — Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities
+[ ] Next task: #9 — Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link
 ```
 
 ---

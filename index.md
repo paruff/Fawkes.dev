@@ -60,6 +60,12 @@ title: ''
   </article>
 </section>
 
+<section class="dojo-callout">
+  <h2>🟢 Try the Fawkes Dojo</h2>
+  <p>Interactive learning sandbox. Run real stacks in your browser — no install required.</p>
+  <a href="https://paruff.github.io/fawkes/dojo/" class="cta-button" target="_blank" rel="noopener noreferrer">Launch Dojo →</a>
+</section>
+
 ## DORA AI Capabilities
 
 <p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong></p>
