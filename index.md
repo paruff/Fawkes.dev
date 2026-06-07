@@ -65,13 +65,13 @@ title: ''
 <p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong></p>
 
 <section class="capability-grid" aria-label="DORA AI capabilities by stack">
-  <article class="capability-card"><h3>1. Fast feedback loops</h3><p>Pipe + DevX</p></article>
-  <article class="capability-card"><h3>2. Reliable delivery flow</h3><p>Pipe</p></article>
-  <article class="capability-card"><h3>3. AI-ready observability</h3><p>Obs</p></article>
-  <article class="capability-card"><h3>4. Secure-by-default controls</h3><p>Sec</p></article>
-  <article class="capability-card"><h3>5. Outcome measurement</h3><p>DORA + Obs</p></article>
-  <article class="capability-card"><h3>6. Golden path enablement</h3><p>DevX + Pipe</p></article>
-  <article class="capability-card"><h3>7. Continuous improvement</h3><p>DORA + DevX</p></article>
+  <article class="capability-card"><h3>1. Fast feedback loops</h3><p>Shorten cycle time with real-time pipeline insights and developer-centric alerts. Pipe + DevX</p></article>
+  <article class="capability-card"><h3>2. Reliable delivery flow</h3><p>Ensure consistent, repeatable deliveries with artifact promotion and approval gates. Pipe</p></article>
+  <article class="capability-card"><h3>3. AI-ready observability</h3><p>Surface structured telemetry and anomaly signals designed for AI-assisted analysis. Obs</p></article>
+  <article class="capability-card"><h3>4. Secure-by-default controls</h3><p>Enforce policy-as-code and automated security checks throughout the delivery lifecycle. Sec</p></article>
+  <article class="capability-card"><h3>5. Outcome measurement</h3><p>Track DORA metrics and delivery trends to measure the real impact of platform improvements. DORA + Obs</p></article>
+  <article class="capability-card"><h3>6. Golden path enablement</h3><p>Provide opinionated templates and golden paths that reduce cognitive load for teams. DevX + Pipe</p></article>
+  <article class="capability-card"><h3>7. Continuous improvement</h3><p>Automate retrospective data collection and identify bottlenecks using platform telemetry. DORA + DevX</p></article>
 </section>
 
 <section class="email-capture" aria-labelledby="notify-title">

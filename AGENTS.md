@@ -65,9 +65,10 @@ Run `./consolidate-agents.sh` to execute it.
 | ux | `~/.config/opencode/agents/ux.md` | Audit live pages, define IA, wireframes, content strategy | webfetch: allow, edit: deny |
 | ui | `~/.config/opencode/agents/ui.md` | Visual specs — typography, layout, component styling | read: allow, edit: deny |
 | design-system | `~/.config/opencode/agents/design-system.md` | Token definitions, pattern library, DS compliance | read: allow, edit: deny |
-| planning | `~/.config/opencode/agents/planning.md` | Prioritize issues, update AGENTS.md Sections 8+12 | edit: AGENTS.md only |
+| planning | `~/.config/opencode/agents/planning.md` | Prioritize issues, update `.opencode/plans/plan.md` | edit: `.opencode/plans/plan.md` only |
 | review | `~/.config/opencode/agents/review.md` | Validate builds — read-only, no edits | bash: make build only |
-| build | `~/.config/opencode/agents/build.md` | Implement Jekyll/CSS/Liquid changes — one file per task | edit: allow, bash: make build |
+| build | built-in | Default — full file + bash access | all tools enabled |
+| build-pages | `~/.config/opencode/agents/build-pages.md` | Implement Jekyll/CSS/Liquid changes — one file per task | edit: allow, bash: make build |
 | infra | `~/.config/opencode/agents/infra.md` | GitHub Pages, _config.yml, Gemfile, opencode.json | bash: allow |
 
 ### Skills (auto-discovered — no linking required)
@@ -115,7 +116,7 @@ Deleted: `tailwind-tokens` (contradicts vanilla CSS), `astro-components`
 4. build      → implement ONE file → run make build → report
 5. @review    → approve or block with exact finding
 6. build      → commit: fix(scope): description (#N)
-7. @planning  → mark ✅ in Section 8, update Section 12
+7. @planning  → mark ✅ in `.opencode/plans/plan.md`, update Handoff
 ```
 
 ---
@@ -127,7 +128,8 @@ uFawkes.dev/
 ├── AGENTS.md                    ← this file
 ├── consolidate-agents.sh        ← migration script
 ├── .opencode/
-│   └── opencode.json            ← permissions + MCP config (project-specific)
+│   ├── opencode.json            ← permissions + MCP config (project-specific)
+│   └── plans/plan.md            ← issue tracker and handoff state
 ├── _config.yml
 ├── _data/
 │   ├── navigation.yml
@@ -165,7 +167,7 @@ Global (not in this repo):
 │   ├── design-system.md
 │   ├── planning.md
 │   ├── review.md
-│   ├── build.md
+│   ├── build-pages.md
 │   └── infra.md
 └── skills/
     ├── jekyll-site-conventions/SKILL.md
@@ -298,46 +300,8 @@ next_guide_title: Next Guide Title
 
 ## 8. Issue status tracker
 
-### PR 1 — Trust & conversion (index.md)
-
-| # | Issue | Status | Notes |
-|---|-------|--------|-------|
-| 1 | Fix double H1 — change `# uFawkes` to `<span class="sr-only">uFawkes</span>` | ⬜ Not started | index.md line 1 after front matter |
-| 2 | Move email form below fold; add `## Try it now` docker compose CTA above Stack Family | ⬜ Not started | index.md structural reorder |
-| 3 | Remove `## Social proof` zero-star badges; replace with maintainer bio line | ⬜ Not started | index.md |
-| 4 | Fix raw badge alt text in Stack Family headings | ⬜ Not started | index.md — replace with plain `/obs/` paths |
-| 5 | Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities | ⬜ Not started | index.md + assets/css/main.css |
-| 9 | Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link | ⬜ Not started | index.md — Stack Family section |
-| 10 | Add visible primary CTA button above the fold ("See the stacks ↓") | ⬜ Not started | index.md + assets/css/main.css |
-| 11 | Rename "Posts" section → "From the blog" | ⬜ Not started | index.md |
-| 12 | DORA AI Capabilities — add one-sentence description to each of 7 items | ⬜ Not started | index.md |
-
-### PR 2 — Content quality (stack pages + learn guides)
-
-| # | Issue | Status | Notes |
-|---|-------|--------|-------|
-| 6 | Remove `## Screenshot placeholder` text from all five stack pages | ⬜ Not started | obs/ pipe/ dora/ sec/ devx/ index.md — one file per commit |
-| 7 | Add `read_time` + `next_guide_url/title` to learn guides; create `_includes/guide-meta.html`; fix cross-link URL patterns | ⬜ Not started | learn/*.html + new include |
-| 8 | Fix per-page `description` meta on all stack pages (currently shows global tagline) | ⬜ Not started | obs/ pipe/ dora/ sec/ devx/ front matter |
-
-### PR 3 — Design system (deferred — do not start until PR 1+2 merged)
-
-| # | Issue | Status | Notes |
-|---|-------|--------|-------|
-| A | Minimal design system: type scale, spacing, code block styles, focus states | ⬜ Deferred | assets/css/main.css ~80 lines |
-| B | Rewrite DORA AI Capabilities as 2-col stack-to-capability mapping with links | ⬜ Deferred | index.md |
-| C | Expand founding blog post to 800–1200 words | ⬜ Deferred | Content task — not code |
-
-### PR 4 — Agent & skill infrastructure (can run parallel to PR 2)
-
-| # | Issue | Status | Notes |
-|---|-------|--------|-------|
-| D | Run consolidate-agents.sh — migrate agents to ~/.config/opencode/agents/ | ⬜ Not started | Repo root → run script |
-| E | Install 12 consolidated skills to ~/.config/opencode/skills/ | ⬜ Not started | Run script — verify report |
-| F | Verify opencode.json written correctly — deny tailwind-tokens + astro-components | ⬜ Not started | .opencode/opencode.json |
-| G | Delete old .opencode/agents/ and .opencode/skills/ after verification | ⬜ Not started | Only after D+E confirmed working |
-| H | Add playwright MCP — test UX agent screenshot of live site | ⬜ Not started | Requires Node + npx |
-| I | Add GitHub MCP — test planning agent creating a test issue | ⬜ Not started | Requires GitHub Copilot subscription |
+See `.opencode/plans/plan.md` — issue tracker, priorities, and handoff state live there.
+The planning agent (`@planning`) reads and updates this file.
 
 ---
 
@@ -378,7 +342,7 @@ Valid scopes: `index` `obs` `pipe` `dora` `sec` `devx` `learn` `css` `nav` `incl
 opencode                                    # launch TUI
 Tab                                         # switch Build ↔ Plan
 @ux "audit https://ufawkes.dev/obs/"        # invoke UX subagent
-@planning "update Section 8 and 12"        # invoke planning subagent
+@planning "update plan.md"                  # invoke planning subagent
 @review "check issue #6 obs/index.md"      # invoke review subagent
 ```
 
@@ -423,14 +387,14 @@ gemini
 ## 12. What to do next
 
 ```
-[ ] Current branch: ___
-[ ] Last completed: #___ — ___
-[ ] In progress: #___ — ___ — stopped at: ___
-[ ] Blockers: ___
-[ ] Next task: ___
+[ ] Current branch: main
+[ ] Last completed: #12 — DORA AI Capabilities descriptions — index.md
+[ ] In progress: none
+[ ] Blockers: none
+[ ] Next task: #5 — Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities
 ```
 
 ---
 
 *Last updated: 2026-06-06*
-*Update Sections 8 and 12 before every handoff.*
+*Update `.opencode/plans/plan.md` before every handoff.*
