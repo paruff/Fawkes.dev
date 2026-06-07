@@ -18,7 +18,7 @@
 | 5 | Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities | ✅ Done | index.md + assets/css/main.css |
 | 9 | Replace 5× "GitHub repo coming soon" with single consolidated notice + notify link | ✅ Done | index.md — Stack Family section |
 | 10 | Add visible primary CTA button above the fold ("See the stacks ↓") | ✅ Done | index.md + assets/css/main.css |
-| 11 | Rename "Posts" section → "From the blog" | ⬜ Not started | index.md |
+| 11 | Rename "Posts" section → "From the blog" | ✅ Done | index.md |
 | 12 | DORA AI Capabilities — add one-sentence description to each of 7 items | ✅ Done | index.md |
 
 ### PR 2 — Content quality (stack pages + learn guides)
@@ -54,10 +54,10 @@
 
 ```
 [ ] Current branch: main
-[ ] Last completed: #10 — "See the stacks ↓" CTA button above the fold
+[ ] Last completed: #11 — Renamed "Posts" → "From the blog"
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: #11 — Rename "Posts" section → "From the blog"
+[ ] Next task: PR 3 — Design system (deferred until PR 1+2 merged — all PR 1+2 now complete)
 ```
 
 ---
