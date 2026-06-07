@@ -69,16 +69,76 @@ title: ''
 
 ## DORA AI Capabilities
 
-<p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong></p>
+<p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong> Each capability maps to one or more stacks — start with what you need, compose the rest.</p>
 
-<section class="capability-grid" aria-label="DORA AI capabilities by stack">
-  <article class="capability-card"><h3>1. Fast feedback loops</h3><p>Shorten cycle time with real-time pipeline insights and developer-centric alerts. Pipe + DevX</p></article>
-  <article class="capability-card"><h3>2. Reliable delivery flow</h3><p>Ensure consistent, repeatable deliveries with artifact promotion and approval gates. Pipe</p></article>
-  <article class="capability-card"><h3>3. AI-ready observability</h3><p>Surface structured telemetry and anomaly signals designed for AI-assisted analysis. Obs</p></article>
-  <article class="capability-card"><h3>4. Secure-by-default controls</h3><p>Enforce policy-as-code and automated security checks throughout the delivery lifecycle. Sec</p></article>
-  <article class="capability-card"><h3>5. Outcome measurement</h3><p>Track DORA metrics and delivery trends to measure the real impact of platform improvements. DORA + Obs</p></article>
-  <article class="capability-card"><h3>6. Golden path enablement</h3><p>Provide opinionated templates and golden paths that reduce cognitive load for teams. DevX + Pipe</p></article>
-  <article class="capability-card"><h3>7. Continuous improvement</h3><p>Automate retrospective data collection and identify bottlenecks using platform telemetry. DORA + DevX</p></article>
+<section class="capability-map" aria-label="DORA AI capabilities by stack">
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>1. Fast feedback loops</h3>
+      <p>Shorten cycle time with real-time pipeline insights and developer-centric alerts.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>2. Reliable delivery flow</h3>
+      <p>Ensure consistent, repeatable deliveries with artifact promotion and approval gates.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>3. AI-ready observability</h3>
+      <p>Surface structured telemetry and anomaly signals designed for AI-assisted analysis.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>4. Secure-by-default controls</h3>
+      <p>Enforce policy-as-code and automated security checks throughout the delivery lifecycle.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/sec/' | relative_url }}" class="badge badge--coming-soon">Sec</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>5. Outcome measurement</h3>
+      <p>Track DORA metrics and delivery trends to measure the real impact of platform improvements.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/dora/' | relative_url }}" class="badge badge--coming-soon">DORA</a>
+      <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>6. Golden path enablement</h3>
+      <p>Provide opinionated templates and golden paths that reduce cognitive load for teams.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>7. Continuous improvement</h3>
+      <p>Automate retrospective data collection and identify bottlenecks using platform telemetry.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/dora/' | relative_url }}" class="badge badge--coming-soon">DORA</a>
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+    </div>
+  </article>
 </section>
 
 <section class="email-capture" aria-labelledby="notify-title">
