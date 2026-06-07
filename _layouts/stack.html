@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="stack-page">
-  <section class="stack-hero">
+  <section class="stack-hero{% if page.stack_color %} stack-hero--{{ page.stack_color }}{% endif %}">
     <div class="hero-copy">
       <p class="stack-kicker">
         {{ page.stack_name }}

@@ -2,6 +2,7 @@
 layout: stack
 title: uFawkesPipe
 stack_name: uFawkesPipe
+stack_color: purple
 description: "Composable CI/CD pipelines with fast feedback and resilient release controls. Docker Compose setup in 60 seconds."
 hero: Composable CI/CD pipelines with fast feedback. 60 seconds to running.
 summary: Golden-path delivery automation for teams that need resilient releases without heavyweight platform work.

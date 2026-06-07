@@ -2,6 +2,7 @@
 layout: stack
 title: uFawkesDORA
 stack_name: uFawkesDORA
+stack_color: amber
 description: "Implementation-ready DORA dashboards with deployment frequency, lead time, change failure rate, and MTTR views for AI delivery teams."
 hero: DORA dashboards for AI delivery teams. 60 seconds to running.
 coming_soon: true
