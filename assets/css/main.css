@@ -439,3 +439,38 @@ body {
     border-color: #374151;
   }
 }
+
+.guide-meta {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.guide-meta__read-time {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.guide-meta__next {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .guide-meta {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  .guide-meta__read-time {
+    color: #9ca3af;
+  }
+}

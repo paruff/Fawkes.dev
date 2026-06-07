@@ -5,6 +5,9 @@ description: Learn how metrics, logs, traces, and alerts work together to improv
 og_title: Observability Primer for Delivery and Platform Teams
 og_description: A practical observability primer adapted for web reading with next-step actions.
 og_type: article
+read_time: 7
+next_guide_url: /learn/dora-primer.html
+next_guide_title: DORA Primer
 ---
 
 Modern delivery performance depends on fast feedback loops. Observability gives you those loops by turning runtime behavior into actionable signals.
@@ -43,9 +46,11 @@ Use weekly metric reviews to answer:
 - Which services drive change failures?
 - How fast does the team restore production health?
 
-Then close the loop with the [DORA primer]({{ '/learn/dora-primer/' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}).
+Then close the loop with the [DORA primer]({{ '/learn/dora-primer.html' | relative_url }}) and capability planning in the [AI capabilities guide]({{ '/learn/ai-capabilities.html' | relative_url }}).
 
 Run this yourself: GitHub repo coming soon
+
+{% include guide-meta.html %}
 
 ## Get notified when new guides ship
 

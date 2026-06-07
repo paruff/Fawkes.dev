@@ -5,6 +5,9 @@ description: Learn the four DORA metrics, common failure modes, and an action pl
 og_title: DORA Primer for AI Delivery Teams
 og_description: A practical DORA primer with metric definitions, targets, and next actions.
 og_type: article
+read_time: 8
+next_guide_url: /learn/ai-capabilities.html
+next_guide_title: AI Capabilities Guide
 ---
 
 DORA gives teams a shared language for delivery performance. In AI-assisted development, that matters even more: faster coding only helps when the platform keeps quality and flow stable.
@@ -41,9 +44,11 @@ Together these show both speed and stability. Optimize all four; over-optimizing
 3. Ship one platform change (automation, guardrail, or dashboard).
 4. Compare DORA movement after two release cycles.
 
-For capability planning, continue with the [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }}). For signal quality and instrumentation, read the [observability primer]({{ '/learn/observability-primer/' | relative_url }}).
+For capability planning, continue with the [AI capabilities guide]({{ '/learn/ai-capabilities.html' | relative_url }}). For signal quality and instrumentation, read the [observability primer]({{ '/learn/observability-primer.html' | relative_url }}).
 
 Run this yourself: GitHub repo coming soon
+
+{% include guide-meta.html %}
 
 ## Get notified when new guides ship
 

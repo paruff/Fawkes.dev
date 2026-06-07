@@ -11,13 +11,13 @@ Start here for the web-first versions of the uFawkes education guides.
 
 ## Guides
 
-- [DORA primer]({{ '/learn/dora-primer/' | relative_url }})  
+- [DORA primer]({{ '/learn/dora-primer.html' | relative_url }})  
   A practical introduction to the four DORA metrics, what good looks like, and how to improve steadily.
 
-- [AI capabilities guide]({{ '/learn/ai-capabilities/' | relative_url }})  
+- [AI capabilities guide]({{ '/learn/ai-capabilities.html' | relative_url }})  
   How to map AI adoption from experimentation to measurable delivery outcomes.
 
-- [Observability primer]({{ '/learn/observability-primer/' | relative_url }})  
+- [Observability primer]({{ '/learn/observability-primer.html' | relative_url }})  
   A clear walkthrough of metrics, logs, traces, and alerting with an operator-first lens.
 
 ## Why these web guides

@@ -5,6 +5,9 @@ description: Understand AI capability maturity across tooling, workflow, governa
 og_title: AI Capabilities Guide for Platform Teams
 og_description: A practical model for moving AI from isolated experiments to measurable delivery impact.
 og_type: article
+read_time: 6
+next_guide_url: /learn/observability-primer.html
+next_guide_title: Observability Primer
 ---
 
 AI adoption is not one capability. It is a stack of capabilities that must mature together: development workflow, platform guardrails, observability, and team operating model.
@@ -38,9 +41,11 @@ Rate each area from 1 (ad hoc) to 5 (reliable):
 
 Revisit the score monthly and prioritize the lowest scoring domain first.
 
-If you need the delivery baseline first, start with the [DORA primer]({{ '/learn/dora-primer/' | relative_url }}). Then use the [observability primer]({{ '/learn/observability-primer/' | relative_url }}) to improve signal quality.
+If you need the delivery baseline first, start with the [DORA primer]({{ '/learn/dora-primer.html' | relative_url }}). Then use the [observability primer]({{ '/learn/observability-primer.html' | relative_url }}) to improve signal quality.
 
 Run this yourself: [GitHub repo link](https://github.com/paruff/uFawkesAI)
+
+{% include guide-meta.html %}
 
 ## Get notified when new guides ship
 
