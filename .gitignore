@@ -3,7 +3,5 @@ _site/
 .jekyll-cache/
 
 # OpenCode agent/skill infrastructure (lives at ~/.config/opencode/)
-agents/
-skills/
 .opencode-skills-consolidated/
 consolidate-agents.sh
