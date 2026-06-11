@@ -57,22 +57,48 @@
 
 ---
 
-## 3. Portfolio Map
+## 3. Current State
 
-| Repo | Status | Description | Stars | DORA AI Capability | Research Alignment |
-|------|--------|-------------|-------|-------------------|-------------------|
-| **fawkes** | ✅ Exists | Modular GitOps IDP — core platform | 1 | Quality internal platform | CNCF Platforms White Paper |
-| **uFawkesObs** | ✅ Exists (fix needed) | Observability — Prometheus + Grafana + AI | 0 | Healthy data ecosystem, AI-accessible data | DORA AI Capabilities |
-| **uFawkesPipe** | ✅ Exists | CI/CD — Jenkins + Buildpacks + DevSecOps | 0 | Strong version control, working in small batches | CNCF App Delivery, DORA |
-| **uFawkesAI** | ✅ Exists (model repo) | Agent templates for golden paths | 2 | Clear AI stance, user-centric focus | DORA AI Capabilities |
-| **uFawkesDevX** | ✅ Exists (fix needed) | Golden paths + developer experience | 0 | Quality internal platform, user-centric focus | CNCF Platforms, SPACE |
-| **uFawkesDORA** | ❌ Create | DORA dashboards + VSM + metrics | — | All 7 capabilities measured | DORA metrics, VSM |
-| **uFawkesSec** | ❌ Create | Policy-as-code + guardrails + supply chain | — | Quality internal platform | CNCF Security, SLSA, SSDF |
-| **uFawkes.dev** | ✅ Live | Marketing site + learning hub | N/A | — | Drives adoption |
+### Repos (as of 2026-06-11)
+
+| Repo | Status | Description | Topics | DORA AI Capability |
+|------|--------|-------------|--------|-------------------|
+| **fawkes** | ✅ Exists | Modular GitOps IDP — core platform | 6 topics | Quality internal platform |
+| **uFawkesObs** | ✅ Fixed | Observability — Prometheus + Grafana + AI | 8 topics | Healthy data ecosystem, AI-accessible data |
+| **uFawkesPipe** | ✅ Exists | CI/CD — Jenkins + Buildpacks + DevSecOps | 13 topics | Strong version control, working in small batches |
+| **uFawkesAI** | ✅ Exists | Agent templates for golden paths | 10 topics | Clear AI stance, user-centric focus |
+| **uFawkesDevX** | ✅ Fixed | Golden paths + developer experience | 7 topics | Quality internal platform, user-centric focus |
+| **uFawkesDORA** | ✅ Created | DORA dashboards + VSM + metrics | 8 topics | All 7 capabilities measured |
+| **uFawkesSec** | ✅ Created | Policy-as-code + guardrails + supply chain | 7 topics | Quality internal platform |
+| **uFawkes.dev** | ✅ Live | Marketing site + learning hub | Set | Drives adoption |
+
+### Marketing Site (uFawkes.dev)
+
+- ✅ All stack pages link to real GitHub repos
+- ✅ DORA AI Capabilities section uses correct 7 capabilities from research
+- ✅ Research-backed positioning with citations
+- ✅ "Roadmap" link in navigation
+- ✅ Live badges on all stack pages
+- ✅ Features, quick start, compose-with on all stack pages
 
 ---
 
-## 4. DORA AI Capabilities → Stack Mapping
+## 4. Portfolio Map
+
+| Repo | Description | Stars | DORA AI Capability | Research Alignment |
+|------|-------------|-------|-------------------|-------------------|
+| **fawkes** | Modular GitOps IDP — core platform | 1 | Quality internal platform | CNCF Platforms White Paper |
+| **uFawkesObs** | Observability — Prometheus + Grafana + AI | 0 | Healthy data ecosystem, AI-accessible data | DORA AI Capabilities |
+| **uFawkesPipe** | CI/CD — Jenkins + Buildpacks + DevSecOps | 0 | Strong version control, working in small batches | CNCF App Delivery, DORA |
+| **uFawkesAI** | Agent templates for golden paths | 2 | Clear AI stance, user-centric focus | DORA AI Capabilities |
+| **uFawkesDevX** | Golden paths + developer experience | 0 | Quality internal platform, user-centric focus | CNCF Platforms, SPACE |
+| **uFawkesDORA** | DORA dashboards + VSM + metrics | 0 | All 7 capabilities measured | DORA metrics, VSM |
+| **uFawkesSec** | Policy-as-code + guardrails + supply chain | 0 | Quality internal platform | CNCF Security, SLSA, SSDF |
+| **uFawkes.dev** | Marketing site + learning hub | N/A | — | Drives adoption |
+
+---
+
+## 5. DORA AI Capabilities → Stack Mapping
 
 | Capability | Primary Stack | Supporting Stacks | Measurable Outcome |
 |------------|---------------|-------------------|-------------------|
@@ -86,7 +112,7 @@
 
 ---
 
-## 5. Team Archetype → Stack Profile Mapping
+## 6. Team Archetype → Stack Profile Mapping
 
 | DORA Archetype | Recommended Stacks | Entry Point | Priority |
 |----------------|-------------------|-------------|----------|
@@ -100,7 +126,7 @@
 
 ---
 
-## 6. Roadmap Phases
+## 7. Roadmap Phases
 
 ### Phase 0: Foundation (Now — 2 weeks)
 **Goal**: Establish governance, create missing repos, align marketing site
@@ -108,13 +134,13 @@
 | # | Task | Owner | Repo | Status |
 |---|------|-------|------|--------|
 | 0.1 | Create `fawkes/ROADMAP.md` (this doc) | You | fawkes | ✅ Done |
-| 0.2 | Create `uFawkesDORA` repo with description, topics, README | You | uFawkesDORA | ⬜ Pending |
-| 0.3 | Create `uFawkesSec` repo with description, topics, README | You | uFawkesSec | ⬜ Pending |
-| 0.4 | Fix uFawkesObs: add description, topics, README | You | uFawkesObs | ⬜ Pending |
-| 0.5 | Fix uFawkesDevX: add description, topics, README | You | uFawkesDevX | ⬜ Pending |
-| 0.6 | Add cross-repo links in all READMEs (↔ fawkes, ↔ uFawkes.dev) | You | All | ⬜ Pending |
-| 0.7 | Update uFawkes.dev stack pages to link real repos | You | uFawkes.dev | ⬜ Pending |
-| 0.8 | Add "Roadmap" link to uFawkes.dev navigation | You | uFawkes.dev | ⬜ Pending |
+| 0.2 | Create `uFawkesDORA` repo with description, topics, README | You | uFawkesDORA | ✅ Done (repo + topics) |
+| 0.3 | Create `uFawkesSec` repo with description, topics, README | You | uFawkesSec | ✅ Done (repo + topics) |
+| 0.4 | Fix uFawkesObs: add description, topics, README | You | uFawkesObs | ✅ Done (description + topics) |
+| 0.5 | Fix uFawkesDevX: add description, topics, README | You | uFawkesDevX | ✅ Done (description + topics) |
+| 0.6 | Add cross-repo links in all READMEs (↔ fawkes, ↔ uFawkes.dev) | You | All | ⬜ Pending (READMEs to add) |
+| 0.7 | Update uFawkes.dev stack pages to link real repos | You | uFawkes.dev | ✅ Done |
+| 0.8 | Add "Roadmap" link to uFawkes.dev navigation | You | uFawkes.dev | ✅ Done |
 | 0.9 | GitHub Sponsors setup | You | GitHub | ⬜ Pending |
 
 **Acceptance criteria**: All 7 repos exist, documented, linked. uFawkes.dev stack pages link to real repos.
@@ -126,9 +152,9 @@
 |-------|-------------|-----------------|--------|
 | **Obs** | Prometheus + Grafana + DORA dashboards pre-wired | Observability, Data ecosystem | In progress (ufawkesobs exists) |
 | **Pipe** | Jenkins + Buildpacks + DORA metric emission | Small batches, Version control | In progress (uFawkesPipe exists) |
-| **DORA** | Unified dashboard: 4 keys + AI capability maturity + VSM | All 7 capabilities measured | Not started (repo to create) |
-| **Sec** | Policy-as-code (OPA/Rego), supply chain scanning | Quality platform, AI stance | Not started (repo to create) |
-| **DevX** | Backstage-alternative templates, golden path scaffolding | User-centric, Internal platform | Not started (repo to create) |
+| **DORA** | Unified dashboard: 4 keys + AI capability maturity + VSM | All 7 capabilities measured | Repo created, ready for development |
+| **Sec** | Policy-as-code (OPA/Rego), supply chain scanning | Quality platform, AI stance | Repo created, ready for development |
+| **DevX** | Backstage-alternative templates, golden path scaffolding | User-centric, Internal platform | Repo created, ready for development |
 | **AI** | Agent templates per team archetype (7 types from DORA) | All capabilities via agents | Model repo exists (uFawkesAI) |
 
 **Acceptance criteria**: Each stack has `docker compose up` → running + DORA dashboards populated.
@@ -161,23 +187,23 @@
 
 ---
 
-## 7. Success Metrics (per Phase)
+## 8. Success Metrics (per Phase)
 
-| Phase | Metric | Target |
-|-------|--------|--------|
-| **Phase 0** | All 7 repos exist | 7/7 repos with description, topics, README |
-| **Phase 0** | Cross-repo links | Every README links to fawkes + uFawkes.dev |
-| **Phase 1** | Stack operability | Each stack `docker compose up` → running in <60s |
-| **Phase 1** | DORA dashboards | Each stack has at least 1 pre-configured DORA dashboard |
-| **Phase 1** | DORA metric emission | Each stack emits deployment frequency, lead time, change failure rate, MTTR |
-| **Phase 2** | Dojo modules | 3+ capability-based modules published |
-| **Phase 2** | Learner adoption | 100+ registered learners |
-| **Phase 3** | Research citations | Each stack README cites relevant research |
-| **Phase 3** | Quarterly review | Research library updated quarterly |
+| Phase | Metric | Target | Status |
+|-------|--------|--------|--------|
+| **Phase 0** | All 7 repos exist | 7/7 repos with description, topics | ✅ Done |
+| **Phase 0** | Cross-repo links | Every README links to fawkes + uFawkes.dev | ⬜ Pending |
+| **Phase 1** | Stack operability | Each stack `docker compose up` → running in <60s | Not started |
+| **Phase 1** | DORA dashboards | Each stack has at least 1 pre-configured DORA dashboard | Not started |
+| **Phase 1** | DORA metric emission | Each stack emits deployment frequency, lead time, change failure rate, MTTR | Not started |
+| **Phase 2** | Dojo modules | 3+ capability-based modules published | Not started |
+| **Phase 2** | Learner adoption | 100+ registered learners | Not started |
+| **Phase 3** | Research citations | Each stack README cites relevant research | Not started |
+| **Phase 3** | Quarterly review | Research library updated quarterly | Not started |
 
 ---
 
-## 8. Governance
+## 9. Governance
 
 - **Roadmap reviewed monthly** — update status, adjust priorities
 - **ADRs for architectural decisions** — stored in `fawkes/docs/adr/`
@@ -188,21 +214,21 @@
 
 ---
 
-## 9. Impact on uFawkes.dev (Marketing Site)
+## 10. Impact on uFawkes.dev (Marketing Site)
 
-| Current Item | Impact | Action |
-|--------------|--------|--------|
-| PR 4 Sprint 6 (Screenshots) | Blocked — needs real stack screenshots | Defer until Phase 1 stacks runnable |
-| PR 5 (Agent infrastructure) | Align — agents should reference uFawkesAI patterns | Update AGENTS.md to reference uFawkesAI |
-| Stack page content | Update — replace "coming soon" with real stack descriptions | Sync after Phase 1 repos ready |
-| DORA AI Capabilities section | Enhance — deepen capability-to-stack mapping | Already done in Sprint 4, add research citations |
-| Learn guides | Restructure — align to Dojo spin-out capability modules | Coordinate with Phase 2 |
-| Navigation | Add — "Roadmap" link to fawkes/ROADMAP.md | Add to nav dropdown |
-| Blog | Add — research summaries, stack launch posts | Ongoing content marketing |
+| Current Item | Impact | Action | Status |
+|--------------|--------|--------|--------|
+| PR 4 Sprint 6 (Screenshots) | Blocked — needs real stack screenshots | Defer until Phase 1 stacks runnable | ⬜ Deferred |
+| PR 5 (Agent infrastructure) | Align — agents should reference uFawkesAI patterns | Update AGENTS.md to reference uFawkesAI | ⬜ Pending |
+| Stack page content | Update — replace "coming soon" with real stack descriptions | Sync after Phase 1 repos ready | ✅ Done |
+| DORA AI Capabilities section | Enhance — deepen capability-to-stack mapping | Already done in Sprint 4, add research citations | ✅ Done |
+| Learn guides | Restructure — align to Dojo spin-out capability modules | Coordinate with Phase 2 | ⬜ Pending |
+| Navigation | Add — "Roadmap" link to fawkes/ROADMAP.md | Add to nav dropdown | ✅ Done |
+| Blog | Add — research summaries, stack launch posts | Ongoing content marketing | ⬜ Pending |
 
 ---
 
-## 10. Open Questions
+## 11. Open Questions
 
 1. **Backstage in DevX stack**: Adopt Backstage (CNCF "Adopt" status) or build lighter alternative? Backstage adds complexity but has ecosystem.
 2. **uFawkesAI scope**: Agent templates only, or also agent runtime framework? Currently templates align with uFawkesPipe golden paths.

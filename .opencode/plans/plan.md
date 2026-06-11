@@ -61,19 +61,36 @@
 | H | Add playwright MCP — test UX agent screenshot of live site | ⬜ Not started | Requires Node + npx |
 | I | Add GitHub MCP — test planning agent creating a test issue | ⬜ Not started | Requires GitHub Copilot subscription |
 
+### PR 6 — Product Suite Roadmap & Research Integration
+
+| # | Issue | Status | Notes |
+|---|-------|--------|-------|
+| R1 | Create `fawkes/ROADMAP.md` — comprehensive product suite roadmap | ✅ Done | `.opencode/plans/roadmap.md` (ready to move) |
+| R2 | Create `uFawkesDORA` repo with description, topics | ✅ Done | GitHub repo created, 8 topics added |
+| R3 | Create `uFawkesSec` repo with description, topics | ✅ Done | GitHub repo created, 7 topics added |
+| R4 | Fix `uFawkesObs` — add description, topics | ✅ Done | Description + 8 topics added |
+| R5 | Fix `uFawkesDevX` — add description, topics | ✅ Done | Description + 7 topics added |
+| R6 | Update homepage — correct 7 DORA AI Capabilities from research | ✅ Done | index.md updated with research-backed capabilities |
+| R7 | Update homepage — research citations section | ✅ Done | Added DORA, CNCF, SPACE research links |
+| R8 | Update stack pages — live badges for DORA/Sec/DevX | ✅ Done | All stack pages show "Live" badges |
+| R9 | Update stack pages — real GitHub repo URLs | ✅ Done | All stack pages link to real repos |
+| R10 | Add "Roadmap" link to navigation | ✅ Done | _data/navigation.yml updated |
+| R11 | Add research section CSS | ✅ Done | assets/css/main.css updated |
+
 ---
 
 ## Handoff
 
 ```
 [ ] Current branch: main
-[ ] Last completed: PR 4 Sprint 5 — Dark mode polish + per-stack accent colors
+[ ] Last completed: PR 6 — Product Suite Roadmap & Research Integration
 [ ] In progress: none
-[ ] Blockers: Sprint 6 blocked on real screenshots
-[ ] Next task: Push Sprint 5, deploy, then Sprint 6 if screenshots available
+[ ] Blockers: none
+[ ] Next task: Move .opencode/plans/roadmap.md → fawkes/ROADMAP.md
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
+[ ] Product roadmap: .opencode/plans/roadmap.md
 ```
 
 ---
 
-*Last updated: 2026-06-06*
+*Last updated: 2026-06-11*
