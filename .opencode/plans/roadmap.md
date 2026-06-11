@@ -129,7 +129,7 @@
 ## 7. Roadmap Phases
 
 ### Phase 0: Foundation (Now — 2 weeks)
-**Goal**: Establish governance, create missing repos, align marketing site
+**Goal**: Establish governance, create missing repos, align marketing site, GitOps standards
 
 | # | Task | Owner | Repo | Status |
 |---|------|-------|------|--------|
@@ -142,8 +142,13 @@
 | 0.7 | Update uFawkes.dev stack pages to link real repos | You | uFawkes.dev | ✅ Done |
 | 0.8 | Add "Roadmap" link to uFawkes.dev navigation | You | uFawkes.dev | ✅ Done |
 | 0.9 | GitHub Sponsors setup | You | GitHub | ⬜ Pending |
+| 0.10 | GitOps: Create `.gitops-templates/` in fawkes (pre-commit, CI, dependabot, CODEOWNERS, Makefile, configs) | You | fawkes | 🔄 In progress |
+| 0.11 | GitOps: Initialize DORA, Sec, DevX with GitOps templates | You | DORA, Sec, DevX | ⬜ Not started |
+| 0.12 | GitOps: Migrate Obs, Pipe, AI, .dev to GitOps standards | You | Obs, Pipe, AI, .dev | ⬜ Not started |
+| 0.13 | GitOps: Apply branch protection Rulesets (all 8 repos) | You | All | ⬜ Not started |
+| 0.14 | GitOps: Create opencode GitOps agent + update AGENTS.md | You | opencode config | ⬜ Not started |
 
-**Acceptance criteria**: All 7 repos exist, documented, linked. uFawkes.dev stack pages link to real repos.
+**Acceptance criteria**: All 7 repos exist, documented, linked. All 8 repos have pre-commit, CI validation, dependabot, CODEOWNERS, branch protection.
 
 ### Phase 1: Stack Parity & DORA Integration (2—6 weeks)
 **Goal**: Each stack runnable in 60s, DORA metrics integrated

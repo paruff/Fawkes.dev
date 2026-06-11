@@ -50,6 +50,19 @@
 | 5 | Dark mode polish, stack differentiation | P2l, P3c, P3g | ✅ Done — `main.css`, `_layouts/stack.html`, all stack `index.md` |
 | 6 | Screenshots & trust signals | P1a, P2 | Stack pages + `assets/images/` |
 
+### PR 7 — GitOps Migration (all repos)
+
+| # | Issue | Status | Notes |
+|---|-------|--------|-------|
+| G1 | Create `.gitops-templates/` in fawkes | 🔄 In progress | pre-commit, ci.yml, dependabot, CODEOWNERS, Makefile, configs |
+| G2 | Initialize uFawkesDORA, uFawkesSec, uFawkesDevX with GitOps | ⬜ Not started | Fresh repos — GitOps from day 1 |
+| G3 | Migrate uFawkesObs — add pre-commit, CODEOWNERS, dependabot | ⬜ Not started | Keep existing 10 workflows |
+| G4 | Migrate uFawkesPipe — rename ci.yml → lint, add GitOps | ⬜ Not started | Rename existing workflow descriptively |
+| G5 | Migrate uFawkesAI — add pre-commit, CODEOWNERS | ⬜ Not started | Keep existing 5 workflows |
+| G6 | Migrate uFawkes.dev — add pre-commit, CODEOWNERS, dependabot | ⬜ Not started | Keep existing 3 workflows |
+| G7 | Apply branch protection Rulesets (all 8 repos) | ⬜ Not started | PR required, status check `Validate` |
+| G8 | Create opencode GitOps agent + update AGENTS.md | ⬜ Not started | Enforce branch → validate → PR workflow |
+
 ### PR 5 — Agent & skill infrastructure (can run parallel)
 
 | # | Issue | Status | Notes |
@@ -85,11 +98,12 @@
 ```
 [ ] Current branch: main
 [ ] Last completed: PR 6 — Product Suite Roadmap & Research Integration
-[ ] In progress: none
+[ ] In progress: PR 7 — GitOps Migration (Phase 0: templates in fawkes)
 [ ] Blockers: none
-[ ] Next task: Move .opencode/plans/roadmap.md → fawkes/ROADMAP.md
+[ ] Next task: PR 7 G1 — Create .gitops-templates/ in fawkes
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
 [ ] Product roadmap: .opencode/plans/roadmap.md
+[ ] GitOps plan: .opencode/plans/gitops-migration.md
 ```
 
 ---
