@@ -138,7 +138,7 @@
 | 0.3 | Create `uFawkesSec` repo with description, topics, README | You | uFawkesSec | ✅ Done (repo + topics) |
 | 0.4 | Fix uFawkesObs: add description, topics, README | You | uFawkesObs | ✅ Done (description + topics) |
 | 0.5 | Fix uFawkesDevX: add description, topics, README | You | uFawkesDevX | ✅ Done (description + topics) |
-| 0.6 | Add cross-repo links in all READMEs (↔ fawkes, ↔ uFawkes.dev) | You | All | ⬜ Pending (READMEs to add) |
+| 0.6 | Add cross-repo links in all READMEs (↔ fawkes, ↔ uFawkes.dev) | You | All | ✅ Done (all 7 repos + fawkes) |
 | 0.7 | Update uFawkes.dev stack pages to link real repos | You | uFawkes.dev | ✅ Done |
 | 0.8 | Add "Roadmap" link to uFawkes.dev navigation | You | uFawkes.dev | ✅ Done |
 | 0.9 | GitHub Sponsors setup | You | GitHub | ⬜ Pending |
@@ -192,7 +192,7 @@
 | Phase | Metric | Target | Status |
 |-------|--------|--------|--------|
 | **Phase 0** | All 7 repos exist | 7/7 repos with description, topics | ✅ Done |
-| **Phase 0** | Cross-repo links | Every README links to fawkes + uFawkes.dev | ⬜ Pending |
+| **Phase 0** | Cross-repo links | Every README links to fawkes + uFawkes.dev | ✅ Done |
 | **Phase 1** | Stack operability | Each stack `docker compose up` → running in <60s | Not started |
 | **Phase 1** | DORA dashboards | Each stack has at least 1 pre-configured DORA dashboard | Not started |
 | **Phase 1** | DORA metric emission | Each stack emits deployment frequency, lead time, change failure rate, MTTR | Not started |
