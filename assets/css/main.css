@@ -1044,3 +1044,47 @@ a:focus-visible {
 .stack-hero .email-capture iframe {
   border: 0;
 }
+
+/* Research section */
+.research-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.research-section h2 {
+  margin-top: 0;
+}
+
+.research-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.research-section li {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.research-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .research-section {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .research-section a {
+    color: #93c5fd;
+  }
+}

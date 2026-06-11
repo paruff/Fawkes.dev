@@ -20,3 +20,6 @@ main:
     url: "https://paruff.github.io/fawkes/dojo/"
     external: true
     accent: true
+  - title: "Roadmap"
+    url: "https://github.com/paruff/fawkes/blob/main/ROADMAP.md"
+    external: true

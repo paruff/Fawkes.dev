@@ -7,8 +7,8 @@ title: ''
   <section class="hero-copy">
     <h1>Production platform engineering in minutes. Open source. DORA AI-ready.</h1>
     <p class="problem-statement">
-      Your team adopted AI coding tools. Your delivery metrics got worse. DORA research shows why:
-      AI amplifies weak platforms. uFawkes gives you the platform.
+      DORA 2025 research: AI amplifies your platform's strengths — and dysfunctions.
+      uFawkes gives you the platform foundation that makes AI delivery actually work.
     </p>
     <a href="{{ '/obs/' | relative_url }}" class="cta-button">Run Obs in 60 seconds →</a>
     <a href="#stack-family" class="cta-button cta-button--secondary">See the stacks ↓</a>
@@ -42,22 +42,22 @@ title: ''
     <p><a href="https://github.com/paruff/ufawkespipe" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="Coming soon" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" /></h3>
+    <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>DORA metrics and continuous delivery performance insights made implementation-ready.</p>
     <p><code>docker compose up dora</code></p>
-    <p>Coming soon — <a href="https://tally.so/embed/ODbbpR">get notified</a></p>
+    <p><a href="https://github.com/paruff/ufawkesdora" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/sec/' | relative_url }}">🛡️ Sec</a> <img alt="Coming soon" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" /></h3>
+    <h3><a class="stack-link" href="{{ '/sec/' | relative_url }}">🛡️ Sec</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>Secure-by-default guardrails and checks designed for high-speed AI shipping.</p>
     <p><code>docker compose up sec</code></p>
-    <p>Coming soon — <a href="https://tally.so/embed/ODbbpR">get notified</a></p>
+    <p><a href="https://github.com/paruff/ufawkessec" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/devx/' | relative_url }}">🧭 DevX</a> <img alt="Coming soon" src="https://img.shields.io/badge/status-coming%20soon-f59e0b" /></h3>
+    <h3><a class="stack-link" href="{{ '/devx/' | relative_url }}">🧭 DevX</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>Developer experience golden paths that make platform adoption simple and fast.</p>
     <p><code>docker compose up devx</code></p>
-    <p>Coming soon — <a href="https://tally.so/embed/ODbbpR">get notified</a></p>
+    <p><a href="https://github.com/paruff/ufawkesdevx" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
 </section>
 
@@ -69,32 +69,32 @@ title: ''
 
 ## DORA AI Capabilities
 
-<p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong> Each capability maps to one or more stacks — start with what you need, compose the rest.</p>
+<p><strong>uFawkes implements the 7 DORA AI Capabilities.</strong> Based on the <a href="https://dora.dev/research/2025/ai-capabilities-model/" target="_blank" rel="noopener noreferrer">DORA AI Capabilities Model</a>, these foundational practices amplify the positive impact of AI on organizational performance.</p>
 
 <section class="capability-map" aria-label="DORA AI capabilities by stack">
   <article class="capability-map__row">
     <div class="capability-map__capability">
-      <h3>1. Fast feedback loops</h3>
-      <p>Shorten cycle time with real-time pipeline insights and developer-centric alerts.</p>
+      <h3>1. Clear + communicated AI stance</h3>
+      <p>Define and communicate how your organization uses AI in software development.</p>
     </div>
     <div class="capability-map__stacks">
-      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
-      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--live">DevX</a>
     </div>
   </article>
   <article class="capability-map__row">
     <div class="capability-map__capability">
-      <h3>2. Reliable delivery flow</h3>
-      <p>Ensure consistent, repeatable deliveries with artifact promotion and approval gates.</p>
+      <h3>2. Healthy data ecosystems</h3>
+      <p>Ensure your telemetry, metrics, and operational data are structured and accessible.</p>
     </div>
     <div class="capability-map__stacks">
-      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+      <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
+      <a href="{{ '/dora/' | relative_url }}" class="badge badge--live">DORA</a>
     </div>
   </article>
   <article class="capability-map__row">
     <div class="capability-map__capability">
-      <h3>3. AI-ready observability</h3>
-      <p>Surface structured telemetry and anomaly signals designed for AI-assisted analysis.</p>
+      <h3>3. AI-accessible internal data</h3>
+      <p>Make your platform data consumable by AI tools and agents for better insights.</p>
     </div>
     <div class="capability-map__stacks">
       <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
@@ -102,41 +102,40 @@ title: ''
   </article>
   <article class="capability-map__row">
     <div class="capability-map__capability">
-      <h3>4. Secure-by-default controls</h3>
-      <p>Enforce policy-as-code and automated security checks throughout the delivery lifecycle.</p>
+      <h3>4. Quality internal platform</h3>
+      <p>Build a reliable, self-service platform that reduces cognitive load for developers.</p>
     </div>
     <div class="capability-map__stacks">
-      <a href="{{ '/sec/' | relative_url }}" class="badge badge--coming-soon">Sec</a>
-    </div>
-  </article>
-  <article class="capability-map__row">
-    <div class="capability-map__capability">
-      <h3>5. Outcome measurement</h3>
-      <p>Track DORA metrics and delivery trends to measure the real impact of platform improvements.</p>
-    </div>
-    <div class="capability-map__stacks">
-      <a href="{{ '/dora/' | relative_url }}" class="badge badge--coming-soon">DORA</a>
-      <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
-    </div>
-  </article>
-  <article class="capability-map__row">
-    <div class="capability-map__capability">
-      <h3>6. Golden path enablement</h3>
-      <p>Provide opinionated templates and golden paths that reduce cognitive load for teams.</p>
-    </div>
-    <div class="capability-map__stacks">
-      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--live">DevX</a>
       <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
     </div>
   </article>
   <article class="capability-map__row">
     <div class="capability-map__capability">
-      <h3>7. Continuous improvement</h3>
-      <p>Automate retrospective data collection and identify bottlenecks using platform telemetry.</p>
+      <h3>5. User-centric focus</h3>
+      <p>Prioritize developer experience and measure satisfaction across your platform.</p>
     </div>
     <div class="capability-map__stacks">
-      <a href="{{ '/dora/' | relative_url }}" class="badge badge--coming-soon">DORA</a>
-      <a href="{{ '/devx/' | relative_url }}" class="badge badge--coming-soon">DevX</a>
+      <a href="{{ '/devx/' | relative_url }}" class="badge badge--live">DevX</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>6. Strong version control practices</h3>
+      <p>Enforce trunk-based development, code review, and automated testing workflows.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+    </div>
+  </article>
+  <article class="capability-map__row">
+    <div class="capability-map__capability">
+      <h3>7. Working in small batches</h3>
+      <p>Enable frequent, small deployments with fast feedback loops and rollback capabilities.</p>
+    </div>
+    <div class="capability-map__stacks">
+      <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
+      <a href="{{ '/dora/' | relative_url }}" class="badge badge--live">DORA</a>
     </div>
   </article>
 </section>
@@ -152,6 +151,19 @@ title: ''
     loading="lazy"
     sandbox="allow-forms allow-scripts"
     referrerpolicy="no-referrer"></iframe>
+</section>
+
+<section class="research-section">
+  <h2>Backed by Research</h2>
+  <p>uFawkes is built on objective research from industry leaders:</p>
+  <ul>
+    <li><a href="https://dora.dev/research/2025" target="_blank" rel="noopener noreferrer">DORA 2025 State of AI-Assisted Software Development</a> — AI as amplifier, 7 AI Capabilities</li>
+    <li><a href="https://dora.dev/research/2025/ai-capabilities-model/" target="_blank" rel="noopener noreferrer">DORA AI Capabilities Model</a> — 7 foundational practices that amplify AI benefits</li>
+    <li><a href="https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development" target="_blank" rel="noopener noreferrer">DORA ROI of AI-Assisted Software Development 2026</a> — Framework for measuring AI investment returns</li>
+    <li><a href="https://tag-app-delivery.cncf.io/whitepapers/platforms" target="_blank" rel="noopener noreferrer">CNCF Platforms White Paper</a> — Internal developer platform best practices</li>
+    <li><a href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model" target="_blank" rel="noopener noreferrer">CNCF Platform Engineering Maturity Model</a> — 5 aspects × 4 levels maturity framework</li>
+    <li><a href="https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/" target="_blank" rel="noopener noreferrer">SPACE Framework</a> — Holistic developer productivity measurement</li>
+  </ul>
 </section>
 
 <p class="maintainer-bio">Built by <a href="https://github.com/paruff">@paruff</a> · <a href="https://www.linkedin.com/in/paruff/">LinkedIn</a> — 20+ years in platform engineering, CI/CD, and developer experience. Building uFawkes to give every team the platform foundation that makes AI delivery actually work.</p>
