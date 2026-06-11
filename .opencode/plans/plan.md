@@ -76,6 +76,7 @@
 | R9 | Update stack pages — real GitHub repo URLs | ✅ Done | All stack pages link to real repos |
 | R10 | Add "Roadmap" link to navigation | ✅ Done | _data/navigation.yml updated |
 | R11 | Add research section CSS | ✅ Done | assets/css/main.css updated |
+| R12 | Add cross-repo README links | ✅ Done | All 7 repos + fawkes updated |
 
 ---
 
