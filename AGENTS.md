@@ -154,6 +154,8 @@ uFawkes.dev/
 │   ├── dora-primer.html
 │   ├── ai-capabilities.html
 │   └── observability-primer.html
+├── docs/
+│   └── PR_STANDARD.md            ← Conventional Commits rules, PR standards
 ├── index.md
 ├── CNAME                        ← ufawkes.dev
 ├── Gemfile
@@ -183,6 +185,17 @@ Global (not in this repo):
     ├── code-quality/SKILL.md
     └── issue-format/SKILL.md
 ```
+
+---
+
+## 3b. Context Files
+
+| File | Why |
+|---|---|
+| `docs/PR_STANDARD.md` | Conventional Commits rules, branch naming, CI requirements |
+| `docs/ci-pipeline-master-plan.md` | CI pipeline architecture and rollout plan |
+| `docs/ci-pipeline-phase1.md` | Phase 1 implementation details |
+| `docs/ci-pipeline-status.md` | Current CI pipeline status |
 
 ---
 
@@ -390,6 +403,22 @@ All repos require:
 - Status check `Validate` must pass
 - No force pushes to main
 - Linear history enforced
+
+### Deployment Lifecycle Gates
+
+#### Main CI guard
+Every PR targeting `main` must pass `main-ci-guard.yml` before merge.
+This workflow calls the reusable guard from `paruff/ufawkespipe` and enforces
+branch protection policies, status checks, and merge readiness validation.
+
+#### Observability built-in
+Every CI job must include `job-start` and `job-finish` timestamp steps:
+- `job-start` at the **first step** of the job
+- `job-finish` at the **last step** of the job (with `if: always()`)
+- Each emits ISO 8601 UTC timestamps, along with `sha`, `workflow`, and `job`
+  metadata for traceability
+
+These timestamps feed DORA metric collection and pipeline observability.
 
 ---
 
