@@ -335,7 +335,65 @@ Valid scopes: `index` `obs` `pipe` `dora` `sec` `devx` `learn` `css` `nav` `incl
 
 ---
 
-## 10. Agent launch commands
+## 10. GitOps working rules
+
+All uFawkes repos follow GitOps methodology. **No exceptions.**
+
+### Branch → Validate → Commit → PR
+
+```bash
+# 1. Branch
+git checkout -b {type}/{scope}-{short-description}
+
+# 2. Implement changes
+
+# 3. Validate
+make validate    # or: pre-commit run --all-files
+
+# 4. Commit
+git add {file}
+git commit -m "{type}({scope}): {description}"
+
+# 5. Push & PR
+git push -u origin {branch}
+gh pr create
+```
+
+### Branch naming
+- `fix/css-hero-alignment`
+- `feat/dora-dashboards`
+- `chore/pre-commit-setup`
+- `docs/update-readme`
+- `ci/add-security-scanning`
+
+### Constrained commit types
+- `fix` — bug fix
+- `feat` — new feature
+- `chore` — maintenance, config, tooling
+- `docs` — documentation only
+- `style` — formatting, no code change
+- `refactor` — restructuring without behavior change
+- `test` — adding/fixing tests
+- `ci` — CI/CD changes
+
+### Hard rules
+- **NEVER** commit directly to main
+- **NEVER** skip pre-commit hooks (`--no-verify` is forbidden)
+- **NEVER** force push to main
+- **ALWAYS** create a PR for review (even solo — audit trail)
+- **ALWAYS** run `make validate` before pushing
+- ONE file per commit (except bulk config additions)
+
+### Branch protection (via Rulesets API)
+All repos require:
+- PR to merge to main
+- Status check `Validate` must pass
+- No force pushes to main
+- Linear history enforced
+
+---
+
+## 11. Agent launch commands
 
 ### OpenCode (recommended)
 ```bash
@@ -363,7 +421,7 @@ gemini
 
 ---
 
-## 11. Key URLs
+## 12. Key URLs
 
 | Page | URL |
 |------|-----|
@@ -384,14 +442,17 @@ gemini
 
 ---
 
-## 12. What to do next
+## 13. What to do next
 
 ```
 [ ] Current branch: main
-[ ] Last completed: #12 — DORA AI Capabilities descriptions — index.md
+[ ] Last completed: PR 7 — GitOps Migration (Phases 0-2 + branch protection)
 [ ] In progress: none
 [ ] Blockers: none
-[ ] Next task: #5 — Add Fawkes Dojo callout div between Stack Family and DORA AI Capabilities
+[ ] Next task: GitOps agent (Phase 4) — create opencode GitOps agent
+[ ] PR 4 plan: .opencode/plans/pr4-plan.md
+[ ] Product roadmap: .opencode/plans/roadmap.md
+[ ] GitOps plan: .opencode/plans/gitops-migration.md
 ```
 
 ---

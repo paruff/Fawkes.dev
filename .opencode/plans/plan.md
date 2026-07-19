@@ -98,12 +98,14 @@
 ```
 [ ] Current branch: main
 [ ] Last completed: PR 6 — Product Suite Roadmap & Research Integration
-[ ] In progress: PR 7 — GitOps Migration (Phase 0: templates in fawkes)
+[ ] In progress: CI Pipeline (PR #109 on ci/phase2-build-security)
 [ ] Blockers: none
-[ ] Next task: PR 7 G1 — Create .gitops-templates/ in fawkes
+[ ] Next task: Commit reordered pipeline + new reusable workflows to PR #109
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
 [ ] Product roadmap: .opencode/plans/roadmap.md
 [ ] GitOps plan: .opencode/plans/gitops-migration.md
+[ ] CI Pipeline plan: fawkes/docs/ci-pipeline-master-plan.md (5-gate architecture)
+[ ] CI Pipeline status: fawkes/docs/ci-pipeline-status.md
 ```
 
 ---
