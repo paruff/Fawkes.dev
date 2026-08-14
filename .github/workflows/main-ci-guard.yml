@@ -13,20 +13,7 @@ permissions:
 jobs:
   main-ci-guard:
     name: Main CI Guard
-    runs-on: ubuntu-latest
-    steps:
-      - name: DORA job start
-        run: |
-          echo "job-start:$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          echo "sha:${{ github.sha }}"
-          echo "workflow:${{ github.workflow }}"
-          echo "job:${{ github.job }}"
-
-      - name: Run reusable main CI guard
-        uses: paruff/ufawkespipe/.github/workflows/reusable-main-ci-guard.yml@v1.2.0
-        with:
-          workflow-id: ufawkes-dev-ci
-
-      - name: DORA job finish
-        if: always()
-        run: echo "job-finish:$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    uses: paruff/ufawkespipe/.github/workflows/reusable-main-ci-guard.yml@v1.2.0
+    with:
+      workflow-id: ci-pipeline.yml
+      workflow-name: "CI Pipeline"
