@@ -9,13 +9,13 @@ excerpt: "The founding story behind uFawkes, the delivery problem it solves, and
 
 Two years ago, I watched a team adopt AI coding assistants. Within a month, pull request volume doubled. Within three months, deployment failures tripled. The team was writing more code than ever — and shipping less of it.
 
-That pattern repeated everywhere I looked. AI coding tools increased output, but delivery systems were still fragile. Cycle time bounced unpredictably. Incident load stayed high. And nobody could answer a simple question: *did the AI actually help us deliver better?*
+That pattern repeated everywhere I looked. AI coding tools increased output, but delivery systems were still fragile. Cycle time bounced unpredictably. Incident load stayed high. And nobody could answer a simple question: _did the AI actually help us deliver better?_
 
 The problem wasn't the AI. The problem was the platform underneath it.
 
 ## The gap between writing code and shipping code
 
-Most teams treat platform engineering as a separate initiative — a long-running program that eventually produces golden paths and self-service infrastructure. But the teams I work with don't have six months to wait. They need practical building blocks they can run *now*, while the bigger platform takes shape.
+Most teams treat platform engineering as a separate initiative — a long-running program that eventually produces golden paths and self-service infrastructure. But the teams I work with don't have six months to wait. They need practical building blocks they can run _now_, while the bigger platform takes shape.
 
 That's the gap uFawkes fills. Instead of a platform program, it's a set of open-source, implementation-ready stacks. Each stack solves a specific part of the delivery problem: observability, CI/CD, metrics, security, developer experience. You can run any stack in 60 seconds with Docker Compose. You can compose them together as your needs grow.
 
@@ -57,7 +57,7 @@ I've spent 20+ years in platform engineering, CI/CD, and developer experience. T
 
 uFawkes makes the path available. Every stack is open source. Every stack runs locally. Every stack is designed to be evolved, replaced, or extended.
 
-The founding principle: *platform engineering should be accessible to every team, not just the ones with a dedicated platform group.*
+The founding principle: _platform engineering should be accessible to every team, not just the ones with a dedicated platform group._
 
 ## What's coming next
 
@@ -86,4 +86,4 @@ If you've ever felt the gap between "we adopted AI tools" and "we're actually sh
 
 ---
 
-*Follow the progress on [GitHub](https://github.com/paruff/uFawkes.dev) or [get notified](https://tally.so/embed/ODbbpR) when new stacks ship.*
+_Follow the progress on [GitHub](https://github.com/paruff/uFawkes.dev) or [get notified](https://tally.so/embed/ODbbpR) when new stacks ship._

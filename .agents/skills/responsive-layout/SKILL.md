@@ -11,10 +11,12 @@ compatibility: opencode
 
 ```css
 /* Tablet — stacks 2-col grids to 1-col */
-@media (max-width: 767px) { }
+@media (max-width: 767px) {
+}
 
 /* Mobile — reduces padding, font sizes */
-@media (max-width: 640px) { }
+@media (max-width: 640px) {
+}
 ```
 
 Always mobile-first in logic, even if CSS is written desktop-first. Test at 375px (iPhone SE), 768px (iPad), 1280px (desktop).
@@ -22,6 +24,7 @@ Always mobile-first in logic, even if CSS is written desktop-first. Test at 375p
 ## Core layout patterns
 
 ### Page wrapper
+
 ```css
 .page-wrapper {
   max-width: 960px;
@@ -29,11 +32,14 @@ Always mobile-first in logic, even if CSS is written desktop-first. Test at 375p
   padding: 0 24px;
 }
 @media (max-width: 640px) {
-  .page-wrapper { padding: 0 16px; }
+  .page-wrapper {
+    padding: 0 16px;
+  }
 }
 ```
 
 ### Hero section
+
 ```css
 .hero {
   max-width: 720px;
@@ -42,11 +48,14 @@ Always mobile-first in logic, even if CSS is written desktop-first. Test at 375p
   text-align: center;
 }
 @media (max-width: 640px) {
-  .hero { padding: 40px 16px 32px; }
+  .hero {
+    padding: 40px 16px 32px;
+  }
 }
 ```
 
 ### 2-column grid (stack family)
+
 ```css
 .grid--2col {
   display: grid;
@@ -54,11 +63,14 @@ Always mobile-first in logic, even if CSS is written desktop-first. Test at 375p
   gap: 16px;
 }
 @media (max-width: 767px) {
-  .grid--2col { grid-template-columns: 1fr; }
+  .grid--2col {
+    grid-template-columns: 1fr;
+  }
 }
 ```
 
 ### 2-column with sidebar
+
 ```css
 .grid--sidebar {
   display: grid;
@@ -66,24 +78,27 @@ Always mobile-first in logic, even if CSS is written desktop-first. Test at 375p
   gap: 32px;
 }
 @media (max-width: 767px) {
-  .grid--sidebar { grid-template-columns: 1fr; }
+  .grid--sidebar {
+    grid-template-columns: 1fr;
+  }
 }
 ```
 
 ## Typography responsive rules
 
 | Element | Desktop | Mobile (≤640px) |
-|---------|---------|-----------------|
-| H1 | 36px | 28px |
-| H2 | 24px | 20px |
-| H3 | 18px | 16px |
-| Body | 16px | 15px |
-| Code | 14px | 13px |
+| ------- | ------- | --------------- |
+| H1      | 36px    | 28px            |
+| H2      | 24px    | 20px            |
+| H3      | 18px    | 16px            |
+| Body    | 16px    | 15px            |
+| Code    | 14px    | 13px            |
 
 ## Touch targets
 
 All interactive elements: minimum 44×44px touch target.
 For links that appear smaller visually, use padding to extend the tap area:
+
 ```css
 .nav__link {
   padding: 12px 16px; /* ensures 44px height */
@@ -93,6 +108,7 @@ For links that appear smaller visually, use padding to extend the tap area:
 ## Nav responsive behavior
 
 At ≤767px:
+
 - Hamburger menu or collapsed nav
 - Dropdown becomes full-width
 - Logo remains visible

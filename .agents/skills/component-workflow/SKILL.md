@@ -49,12 +49,15 @@ Dependencies:
 ## Jekyll-specific integration patterns
 
 ### Include-based components
+
 For reusable components, Build agent creates `_includes/component-name.html`.
 Reference: `{% include component-name.html param="value" %}`
 Always verify the include file exists before referencing.
 
 ### Front-matter-driven components
+
 Stack pages use front matter arrays rendered by `_layouts/stack.html`:
+
 ```liquid
 {% for feature in page.features %}
   <li>{{ feature }}</li>
@@ -62,17 +65,18 @@ Stack pages use front matter arrays rendered by `_layouts/stack.html`:
 ```
 
 ### Liquid template rules for components
+
 - Use `{% if page.key %}...{% endif %}` for optional sections
 - Never use `{% unless %}` — use `{% if page.key == false %}`
 - Conditional classes: `class="component{% if page.coming_soon %} component--soon{% endif %}"`
 
 ## Current component inventory
 
-| Component | Status | BEM class | Location |
-|-----------|--------|-----------|----------|
-| Stack card | Exists | .stack-card (TBD) | index.md inline |
-| Nav dropdown | Exists | (minima override) | _includes/header.html |
-| Quick start block | Exists | (unstyled) | _layouts/stack.html |
-| Dojo callout | Planned | .dojo-callout | index.md + main.css |
-| Guide meta | Planned | .guide-meta | _includes/guide-meta.html |
-| Live badge | Exists | .badge--live (TBD) | inline |
+| Component         | Status  | BEM class          | Location                   |
+| ----------------- | ------- | ------------------ | -------------------------- |
+| Stack card        | Exists  | .stack-card (TBD)  | index.md inline            |
+| Nav dropdown      | Exists  | (minima override)  | \_includes/header.html     |
+| Quick start block | Exists  | (unstyled)         | \_layouts/stack.html       |
+| Dojo callout      | Planned | .dojo-callout      | index.md + main.css        |
+| Guide meta        | Planned | .guide-meta        | \_includes/guide-meta.html |
+| Live badge        | Exists  | .badge--live (TBD) | inline                     |

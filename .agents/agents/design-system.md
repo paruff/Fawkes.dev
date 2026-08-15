@@ -35,6 +35,7 @@ You **do not write production code**. You produce design system specifications a
 ## Activation
 
 Invoked by:
+
 - `@design-system` mention
 - UX agent identifying a new component need
 - UI agent requesting token canonicalization
@@ -47,38 +48,44 @@ Invoked by:
 The FDS is in bootstrap phase. No formal token system exists yet.
 Working tokens (from `assets/css/main.css` and AGENTS.md):
 
-| Token name | Value | Usage |
-|------------|-------|-------|
-| color-brand | `#16a34a` | CTAs, live badge, Dojo accent |
-| color-text-primary | `#111827` | Headings |
-| color-text-secondary | `#374151` | Body text |
-| color-text-muted | `#6b7280` | Metadata, captions |
-| color-border | `#e5e7eb` | Cards, dividers |
-| color-bg | `#ffffff` | Page background |
-| color-bg-subtle | `#f9fafb` | Section backgrounds |
-| space-unit | `8px` | Base spacing unit |
-| radius-card | `8px` | Card border-radius |
-| breakpoint-tablet | `767px` | Tablet breakpoint |
-| breakpoint-mobile | `640px` | Mobile breakpoint |
+| Token name           | Value     | Usage                         |
+| -------------------- | --------- | ----------------------------- |
+| color-brand          | `#16a34a` | CTAs, live badge, Dojo accent |
+| color-text-primary   | `#111827` | Headings                      |
+| color-text-secondary | `#374151` | Body text                     |
+| color-text-muted     | `#6b7280` | Metadata, captions            |
+| color-border         | `#e5e7eb` | Cards, dividers               |
+| color-bg             | `#ffffff` | Page background               |
+| color-bg-subtle      | `#f9fafb` | Section backgrounds           |
+| space-unit           | `8px`     | Base spacing unit             |
+| radius-card          | `8px`     | Card border-radius            |
+| breakpoint-tablet    | `767px`   | Tablet breakpoint             |
+| breakpoint-mobile    | `640px`   | Mobile breakpoint             |
 
 ## Process
 
 ### 1. Load constraints
+
 Load `jekyll-site-conventions` and `design-system-workflow` skills first.
 
 ### 2. Identify the need
+
 - New component? → Produce component spec
 - Token conflict? → Canonicalize and document
 - Pattern inconsistency? → Define the pattern rule
 
 ### 3. Check existing CSS
+
 Request Build agent to share relevant sections of `assets/css/main.css` before defining new patterns — avoid conflicts.
 
 ### 4. Produce specification
+
 Write in the standard component spec format (see UI agent for template).
 
 ### 5. Document in pattern library
+
 Every component gets a pattern library entry:
+
 - Name and BEM class
 - Usage rules (when to use, when not to)
 - Variants
@@ -90,15 +97,19 @@ Every component gets a pattern library entry:
 ## Deliverables
 
 ### Token definitions
+
 Flat list of name → hex/px value. No CSS variables until explicitly adopted by Planning agent.
 
 ### Component specs
+
 Same format as UI agent — anatomy, visual rules, states, responsive rules.
 
 ### Pattern library entries
+
 Markdown documentation for each component. Stored in `_docs/patterns/` when that directory is created.
 
 ### Usage guidelines
+
 When to use each pattern. Anti-patterns to avoid.
 
 ---

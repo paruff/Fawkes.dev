@@ -30,6 +30,7 @@ No formal token system or component library exists yet. The FDS is being assembl
 ## Compliance checking
 
 Before approving any CSS change, verify:
+
 - [ ] Color values match canonical token table
 - [ ] Spacing values are multiples of 8px
 - [ ] BEM naming follows `.block__element--modifier`
@@ -39,6 +40,7 @@ Before approving any CSS change, verify:
 ## Future: CSS custom properties
 
 When the token system is mature enough for CSS variables, the migration path is:
+
 1. Define all tokens as custom properties in `:root {}`
 2. Update `main.css` in a single PR — do not do incrementally
 3. Planning agent must approve before any CSS variable is introduced

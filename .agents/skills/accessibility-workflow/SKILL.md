@@ -14,53 +14,60 @@ Target: **WCAG 2.1 AA** minimum. AAA where achievable without design compromise.
 ### What to check
 
 **Structure**
+
 - [ ] One `<h1>` per page (no double H1 — see issue #1 in tracker)
 - [ ] Heading levels sequential: h1 → h2 → h3, no skips
 - [ ] Landmark regions present: `<header>`, `<main>`, `<nav>`, `<footer>`
 - [ ] Skip-to-content link at top of page
 
 **Images**
+
 - [ ] All `<img>` have `alt` attribute
 - [ ] Decorative images have `alt=""`
 - [ ] Informative images have descriptive alt text (not "image of...")
 - [ ] Badge images have meaningful alt text (not raw URL)
 
 **Links**
+
 - [ ] No "click here" or "read more" links without context
 - [ ] External links have `rel="noopener noreferrer"` and `target="_blank"`
 - [ ] External links that open new tab warn users (visually or via aria-label)
 
 **Color and contrast**
+
 - [ ] Normal text (< 18px or < 14px bold): contrast ratio ≥ 4.5:1
 - [ ] Large text (≥ 18px or ≥ 14px bold): contrast ratio ≥ 3:1
 - [ ] UI components and focus indicators: ≥ 3:1
 - [ ] Color is never the only means of conveying information
 
 **Keyboard navigation**
+
 - [ ] All interactive elements reachable by Tab key
 - [ ] Focus order is logical (matches visual order)
 - [ ] Focus rings visible on all interactive elements
 - [ ] Dropdown nav keyboard-operable
 
 **Forms**
+
 - [ ] All inputs have associated `<label>` elements
 - [ ] Error messages are descriptive and associated with inputs
 - [ ] Required fields are marked (not color-only)
 
 **Motion**
+
 - [ ] Animations respect `prefers-reduced-motion`
 - [ ] No content flashes more than 3 times per second
 
 ### Contrast reference (brand palette)
 
-| Foreground | Background | Ratio | Pass/Fail |
-|------------|------------|-------|-----------|
-| `#111827` (text primary) | `#ffffff` | 16.1:1 | ✅ AAA |
-| `#374151` (text secondary) | `#ffffff` | 9.7:1 | ✅ AAA |
-| `#6b7280` (text muted) | `#ffffff` | 5.9:1 | ✅ AA |
-| `#16a34a` (brand green) | `#ffffff` | 4.7:1 | ✅ AA |
-| `#ffffff` | `#16a34a` | 4.7:1 | ✅ AA |
-| `#111827` | `#f9fafb` | 15.3:1 | ✅ AAA |
+| Foreground                 | Background | Ratio  | Pass/Fail |
+| -------------------------- | ---------- | ------ | --------- |
+| `#111827` (text primary)   | `#ffffff`  | 16.1:1 | ✅ AAA    |
+| `#374151` (text secondary) | `#ffffff`  | 9.7:1  | ✅ AAA    |
+| `#6b7280` (text muted)     | `#ffffff`  | 5.9:1  | ✅ AA     |
+| `#16a34a` (brand green)    | `#ffffff`  | 4.7:1  | ✅ AA     |
+| `#ffffff`                  | `#16a34a`  | 4.7:1  | ✅ AA     |
+| `#111827`                  | `#f9fafb`  | 15.3:1 | ✅ AAA    |
 
 ⚠️ Always verify contrast with a tool when adding new color combinations.
 
@@ -120,6 +127,7 @@ Add to `_layouts/default.html` immediately after `<body>`:
 ```
 
 Add CSS:
+
 ```css
 .skip-nav {
   position: absolute;

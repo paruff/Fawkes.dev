@@ -10,19 +10,19 @@ type(scope): description
 
 ### Allowed types
 
-| Type | Usage |
-|------|-------|
-| `feat` | New feature |
-| `fix` | Bug fix |
-| docs | Documentation only |
-| style | Formatting, no code change |
+| Type     | Usage                                 |
+| -------- | ------------------------------------- |
+| `feat`   | New feature                           |
+| `fix`    | Bug fix                               |
+| docs     | Documentation only                    |
+| style    | Formatting, no code change            |
 | refactor | Restructuring without behavior change |
-| test | Adding or fixing tests |
-| chore | Maintenance, config, tooling |
-| ci | CI/CD changes |
-| perf | Performance improvement |
-| build | Build system or dependency changes |
-| revert | Revert a previous commit |
+| test     | Adding or fixing tests                |
+| chore    | Maintenance, config, tooling          |
+| ci       | CI/CD changes                         |
+| perf     | Performance improvement               |
+| build    | Build system or dependency changes    |
+| revert   | Revert a previous commit              |
 
 ### Scope
 
@@ -82,13 +82,13 @@ ci/add-security-scanning
 
 ### CI checks that must pass
 
-| Check | Required | Description |
-|-------|----------|-------------|
-| Pre-flight | ✅ | Commit format, PR size, pre-commit hooks, secret detection |
-| Lint | ✅ | Language-specific linting + markdown + format |
-| Build Site | ✅ | Jekyll build + HTML validation + spell check |
-| Security | ✅ | Gitleaks secrets + Trivy vulnerabilities + dependency scan |
-| Main CI Guard | ✅ | Branch protection and merge gate checks |
+| Check         | Required | Description                                                |
+| ------------- | -------- | ---------------------------------------------------------- |
+| Pre-flight    | ✅       | Commit format, PR size, pre-commit hooks, secret detection |
+| Lint          | ✅       | Language-specific linting + markdown + format              |
+| Build Site    | ✅       | Jekyll build + HTML validation + spell check               |
+| Security      | ✅       | Gitleaks secrets + Trivy vulnerabilities + dependency scan |
+| Main CI Guard | ✅       | Branch protection and merge gate checks                    |
 
 ### PR title format
 

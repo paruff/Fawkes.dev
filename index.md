@@ -1,6 +1,6 @@
 ---
 layout: home
-title: ''
+title: ""
 ---
 
 <div class="hero-layout">
@@ -13,7 +13,6 @@ title: ''
     <a href="{{ '/obs/' | relative_url }}" class="cta-button">Run Obs in 60 seconds →</a>
     <a href="#stack-family" class="cta-button cta-button--secondary">See the stacks ↓</a>
   </section>
-
 
 </div>
 

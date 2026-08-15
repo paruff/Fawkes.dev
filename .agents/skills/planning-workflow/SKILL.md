@@ -10,18 +10,22 @@ compatibility: opencode
 ## Prioritization framework
 
 ### P0 — Broken (fix immediately, before any other work)
+
 Trust-damaging content that is live on the site right now.
 Examples: zero-star badges, "Screenshot placeholder" text, raw Liquid rendering as text.
 
 ### P1 — Conversion (fix this sprint)
+
 Blocks the primary visitor action. A Builder or Operator cannot complete their journey.
 Examples: no CTA above fold, buried quick start, broken cross-links.
 
 ### P2 — Quality (fix next sprint)
+
 Weakens credibility or comprehension. Visitor can still act but leaves with less confidence.
 Examples: generic meta descriptions, stub content, repeated "coming soon" notices.
 
 ### P3 — Polish (deferred)
+
 Minor improvements. No visitor impact, just cleaner.
 Examples: section label tweaks, formatting consistency.
 
@@ -44,6 +48,7 @@ Can run in parallel with Sprint 2. No site file conflicts.
 ## Success criteria per issue
 
 An issue is ✅ Done when:
+
 1. Build passes (`make build` exits 0)
 2. Review agent has approved
 3. Commit is on `main` (merged)
@@ -53,10 +58,12 @@ An issue is ✅ Done when:
 ## AGENTS.md update checklist
 
 After each issue completes:
+
 - [ ] Change `⬜ Not started` → `✅ Done` in Section 8
 - [ ] Update Section 12 handoff block
 - [ ] Commit: `docs(agents): mark issue #N complete`
 
 After each PR merges:
+
 - [ ] Verify all issues in the PR are marked ✅
 - [ ] Update Section 12 to show next sprint starting

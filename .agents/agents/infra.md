@@ -40,6 +40,7 @@ You manage: `_config.yml`, `Gemfile`, `CNAME`, `Makefile`, `.opencode/opencode.j
 ## Activation
 
 Invoked by:
+
 - Build failures not caused by content errors
 - Deployment issues (404s on GitHub Pages, CNAME problems)
 - MCP server configuration changes
@@ -51,6 +52,7 @@ Invoked by:
 ## Scope
 
 ### In scope
+
 - `_config.yml` — Jekyll configuration
 - `Gemfile` / `Gemfile.lock` — gem dependencies (GitHub Pages whitelist only)
 - `CNAME` — custom domain
@@ -60,6 +62,7 @@ Invoked by:
 - GitHub Pages settings troubleshooting
 
 ### Out of scope
+
 - Content files (`*.md`, `*.html` pages)
 - CSS and JS assets
 - Jekyll layouts and includes (unless build-breaking)
@@ -117,18 +120,21 @@ When adding MCP servers, always verify the URL is current before committing.
 ## Troubleshooting protocol
 
 ### Build fails locally
+
 1. Run `bundle install` — check for missing gems
 2. Check `_config.yml` for YAML syntax errors
 3. Check for unclosed Liquid tags in recently edited files
 4. Run `bundle exec jekyll build --verbose` for full output
 
 ### Site 404 on GitHub Pages
+
 1. Check `CNAME` file content matches DNS A records
 2. Verify `_config.yml` `url:` matches `https://ufawkes.dev`
 3. Check GitHub Pages settings in repo → Settings → Pages
 4. Confirm `main` branch is the deploy source
 
 ### MCP server not connecting
+
 1. Verify URL is reachable with `webfetch`
 2. Check `opencode.json` schema
 3. Restart OpenCode session after config changes

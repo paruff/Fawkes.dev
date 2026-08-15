@@ -9,15 +9,15 @@ compatibility: opencode
 
 ## Agent responsibility matrix
 
-| Task type | Responsible | Reviews | Approves |
-|-----------|-------------|---------|---------|
-| UX audit finding | UX | — | Planning |
-| Visual spec | UI | UX | Planning |
-| Token definition | Design-System | UI | Planning |
-| Implementation | Build | Review | Planning |
-| Build failure | Build | Infra | — |
-| AGENTS.md update | Planning | — | — |
-| Deployment issue | Infra | — | Planning |
+| Task type        | Responsible   | Reviews | Approves |
+| ---------------- | ------------- | ------- | -------- |
+| UX audit finding | UX            | —       | Planning |
+| Visual spec      | UI            | UX      | Planning |
+| Token definition | Design-System | UI      | Planning |
+| Implementation   | Build         | Review  | Planning |
+| Build failure    | Build         | Infra   | —        |
+| AGENTS.md update | Planning      | —       | —        |
+| Deployment issue | Infra         | —       | Planning |
 
 ## Handoff protocol
 
@@ -42,10 +42,12 @@ Acceptance: [how you know it's done]
 ## Parallel task rules
 
 Agents can work in parallel when:
+
 - Tasks are in different files (e.g., Build on index.md, UI speccing obs/index.md)
 - Tasks have no shared dependency (e.g., Infra fixing CNAME, Build fixing CSS)
 
 Agents must NOT work in parallel when:
+
 - Both touch `assets/css/main.css` (append-only — sequential only)
 - Both touch `AGENTS.md`
 - A downstream agent depends on the upstream agent's output
@@ -53,6 +55,7 @@ Agents must NOT work in parallel when:
 ## Conflict resolution
 
 If two agents produce conflicting outputs:
+
 1. Planning agent is the tiebreaker
 2. Jekyll constraints (Section 2 of AGENTS.md) override all agent preferences
 3. Accessibility requirements override visual preferences

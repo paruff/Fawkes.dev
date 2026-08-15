@@ -6,6 +6,7 @@ permalink: /blog/
 
 {% if site.posts.size > 0 %}
 {% for post in site.posts limit:10 %}
+
 ## [{{ post.title }}]({{ post.url | relative_url }})
 
 _{{ post.date | date: "%B %-d, %Y" }}_

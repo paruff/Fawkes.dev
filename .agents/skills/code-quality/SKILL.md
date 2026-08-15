@@ -10,19 +10,23 @@ compatibility: opencode
 ## Liquid quality rules
 
 ### Syntax
+
 - Every `{% if %}` has `{% endif %}`
 - Every `{% for %}` has `{% endfor %}`
 - Every `{% capture %}` has `{% endcapture %}`
 - No unclosed tags — `make build` will fail, but catch manually before running
 
 ### Filter usage
+
 Only use whitelisted filters. If unsure, check:
+
 ```
 relative_url  absolute_url  url_encode  date
 markdownify   strip_html    truncate    slugify
 ```
 
 ### Logic
+
 - Simple conditions only: `{% if page.key %}` or `{% if page.key == 'value' %}`
 - Never: `{% unless %}`, `{% case %}`, chained captures
 - For booleans in front matter: `{% if page.coming_soon %}` (not `{% if page.coming_soon == true %}`)
@@ -39,24 +43,33 @@ markdownify   strip_html    truncate    slugify
 ## CSS quality rules
 
 ### Structure
+
 - Append only — never reorder existing rules
 - One blank line between rule blocks
 - Comment section boundaries: `/* === Section Name === */`
 
 ### Naming
+
 ```css
 /* Correct BEM */
-.stack-card { }
-.stack-card__header { }
-.stack-card__header--featured { }
+.stack-card {
+}
+.stack-card__header {
+}
+.stack-card__header--featured {
+}
 
 /* Wrong */
-.stackCard { }           /* camelCase */
-.stack_card { }          /* underscores */
-.card-header-featured { } /* not BEM */
+.stackCard {
+} /* camelCase */
+.stack_card {
+} /* underscores */
+.card-header-featured {
+} /* not BEM */
 ```
 
 ### Values
+
 - Colors: hex only (`#16a34a` not `green` not `rgb(22, 163, 74)`)
 - Spacing: multiples of 8px
 - No `!important` except in accessibility utilities (sr-only, prefers-reduced-motion)
@@ -66,12 +79,12 @@ markdownify   strip_html    truncate    slugify
 
 All must pass before Review agent approves:
 
-| Check | Command | Expected |
-|-------|---------|---------|
-| Build success | `make build` | Exit 0, no errors |
-| No placeholder text | `grep -r "Screenshot placeholder" _site/` | No output |
-| No raw Liquid | `grep -r "{{" _site/` | No output |
-| Heading structure | Manual check | Single H1, sequential levels |
+| Check               | Command                                   | Expected                     |
+| ------------------- | ----------------------------------------- | ---------------------------- |
+| Build success       | `make build`                              | Exit 0, no errors            |
+| No placeholder text | `grep -r "Screenshot placeholder" _site/` | No output                    |
+| No raw Liquid       | `grep -r "{{" _site/`                     | No output                    |
+| Heading structure   | Manual check                              | Single H1, sequential levels |
 
 ## Commit quality
 

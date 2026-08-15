@@ -8,77 +8,85 @@
 ## Current State Audit
 
 ### fawkes (reference model) — ✅ COMPLETE
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ✅ 40+ hooks (gitleaks, yamllint, shellcheck, shfmt, hadolint, trivy, tflint, tfsec, kubeconform, markdownlint, prettier, black, ruff, flake8, golangci-lint) |
-| CI workflows | ✅ 14 workflows (pre-commit 4-layer, code-quality, security-scanning, supply-chain, policy-enforcement, sbom-generation, image-signing, tracer-bullet, accessibility-testing, terraform-tests, ci-pr-size, deploy, build-mcp-k8s-server, idp-e2e-tests) |
-| Dependabot | ✅ Docker + GitHub Actions weekly |
-| Branch protection | ❌ None (needs Rulesets API) |
-| CODEOWNERS | ❌ Missing |
-| Setup script | ✅ `make pre-commit-setup` |
+
+| Component         | Status                                                                                                                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pre-commit        | ✅ 40+ hooks (gitleaks, yamllint, shellcheck, shfmt, hadolint, trivy, tflint, tfsec, kubeconform, markdownlint, prettier, black, ruff, flake8, golangci-lint)                                                                                           |
+| CI workflows      | ✅ 14 workflows (pre-commit 4-layer, code-quality, security-scanning, supply-chain, policy-enforcement, sbom-generation, image-signing, tracer-bullet, accessibility-testing, terraform-tests, ci-pr-size, deploy, build-mcp-k8s-server, idp-e2e-tests) |
+| Dependabot        | ✅ Docker + GitHub Actions weekly                                                                                                                                                                                                                       |
+| Branch protection | ❌ None (needs Rulesets API)                                                                                                                                                                                                                            |
+| CODEOWNERS        | ❌ Missing                                                                                                                                                                                                                                              |
+| Setup script      | ✅ `make pre-commit-setup`                                                                                                                                                                                                                              |
 
 ### uFawkesObs — ⚠️ NEEDS MIGRATION
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ⚠️ 10 workflows (apps-test, ci-pr-size, compose-smoke, deploy, integration-tests, lint, security, supply-chain, unit-tests, validate-config) — many overlapping/duplicated |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status                                                                                                                                                                     |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pre-commit        | ❌ Missing                                                                                                                                                                 |
+| CI workflows      | ⚠️ 10 workflows (apps-test, ci-pr-size, compose-smoke, deploy, integration-tests, lint, security, supply-chain, unit-tests, validate-config) — many overlapping/duplicated |
+| Dependabot        | ❌ Missing                                                                                                                                                                 |
+| Branch protection | ❌ None                                                                                                                                                                    |
+| CODEOWNERS        | ❌ Missing                                                                                                                                                                 |
 
 ### uFawkesPipe — ⚠️ NEEDS MIGRATION
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ⚠️ 1 workflow (ci.yml) — minimal |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status                           |
+| ----------------- | -------------------------------- |
+| Pre-commit        | ❌ Missing                       |
+| CI workflows      | ⚠️ 1 workflow (ci.yml) — minimal |
+| Dependabot        | ❌ Missing                       |
+| Branch protection | ❌ None                          |
+| CODEOWNERS        | ❌ Missing                       |
 
 ### uFawkesAI — ⚠️ NEEDS MIGRATION
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ⚠️ 5 workflows (ci-quality, ci, dependency-review, doc-freshness, secret-scan) |
-| Dependabot | ✅ Has dependabot.yml |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status                                                                         |
+| ----------------- | ------------------------------------------------------------------------------ |
+| Pre-commit        | ❌ Missing                                                                     |
+| CI workflows      | ⚠️ 5 workflows (ci-quality, ci, dependency-review, doc-freshness, secret-scan) |
+| Dependabot        | ✅ Has dependabot.yml                                                          |
+| Branch protection | ❌ None                                                                        |
+| CODEOWNERS        | ❌ Missing                                                                     |
 
 ### uFawkesDORA — 🆕 FRESH (GitOps from day 1)
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ❌ None |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status     |
+| ----------------- | ---------- |
+| Pre-commit        | ❌ Missing |
+| CI workflows      | ❌ None    |
+| Dependabot        | ❌ Missing |
+| Branch protection | ❌ None    |
+| CODEOWNERS        | ❌ Missing |
 
 ### uFawkesSec — 🆕 FRESH (GitOps from day 1)
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ❌ None |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status     |
+| ----------------- | ---------- |
+| Pre-commit        | ❌ Missing |
+| CI workflows      | ❌ None    |
+| Dependabot        | ❌ Missing |
+| Branch protection | ❌ None    |
+| CODEOWNERS        | ❌ Missing |
 
 ### uFawkesDevX — 🆕 FRESH (GitOps from day 1)
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ❌ None |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status     |
+| ----------------- | ---------- |
+| Pre-commit        | ❌ Missing |
+| CI workflows      | ❌ None    |
+| Dependabot        | ❌ Missing |
+| Branch protection | ❌ None    |
+| CODEOWNERS        | ❌ Missing |
 
 ### uFawkes.dev — ⚠️ NEEDS MIGRATION
-| Component | Status |
-|-----------|--------|
-| Pre-commit | ❌ Missing |
-| CI workflows | ⚠️ 3 workflows (ci.yml, deploy.yml, opencode.yml) |
-| Dependabot | ❌ Missing |
-| Branch protection | ❌ None |
-| CODEOWNERS | ❌ Missing |
+
+| Component         | Status                                            |
+| ----------------- | ------------------------------------------------- |
+| Pre-commit        | ❌ Missing                                        |
+| CI workflows      | ⚠️ 3 workflows (ci.yml, deploy.yml, opencode.yml) |
+| Dependabot        | ❌ Missing                                        |
+| Branch protection | ❌ None                                           |
+| CODEOWNERS        | ❌ Missing                                        |
 
 ---
 
@@ -208,12 +216,12 @@ Create `fawkes/.gitops-templates/Makefile-fragment`:
 
 ```makefile
 pre-commit-setup: ## Install pre-commit hooks
-	@pip install pre-commit
-	@pre-commit install
-	@echo "✅ Pre-commit hooks installed"
+ @pip install pre-commit
+ @pre-commit install
+ @echo "✅ Pre-commit hooks installed"
 
 pre-commit-run: ## Run all pre-commit hooks
-	@pre-commit run --all-files
+ @pre-commit run --all-files
 
 validate: pre-commit-run ## Validate all files
 ```
@@ -224,17 +232,17 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 
 ### 0.7 Deliverable
 
-| File | Location |
-|------|----------|
-| `.gitops-templates/pre-commit-config.yaml` | fawkes repo |
-| `.gitops-templates/ci-validate.yml` | fawkes repo |
-| `.gitops-templates/dependabot.yml` | fawkes repo |
-| `.gitops-templates/CODEOWNERS` | fawkes repo |
-| `.gitops-templates/Makefile-fragment` | fawkes repo |
-| `.gitops-templates/.yamllint` | fawkes repo |
-| `.gitops-templates/.markdownlint.json` | fawkes repo |
-| `.gitops-templates/.gitleaks.toml` | fawkes repo |
-| `.gitops-templates/.secrets.baseline` | fawkes repo (generated) |
+| File                                       | Location                |
+| ------------------------------------------ | ----------------------- |
+| `.gitops-templates/pre-commit-config.yaml` | fawkes repo             |
+| `.gitops-templates/ci-validate.yml`        | fawkes repo             |
+| `.gitops-templates/dependabot.yml`         | fawkes repo             |
+| `.gitops-templates/CODEOWNERS`             | fawkes repo             |
+| `.gitops-templates/Makefile-fragment`      | fawkes repo             |
+| `.gitops-templates/.yamllint`              | fawkes repo             |
+| `.gitops-templates/.markdownlint.json`     | fawkes repo             |
+| `.gitops-templates/.gitleaks.toml`         | fawkes repo             |
+| `.gitops-templates/.secrets.baseline`      | fawkes repo (generated) |
 
 ---
 
@@ -244,7 +252,7 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 
 **Repos:** ufawkesdora, ufawkessec, uFawkesDevX
 
-### For each repo:
+### For each repo
 
 1. Clone repo locally
 2. Copy template files from `.gitops-templates/` in fawkes:
@@ -262,7 +270,8 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 6. Commit: `chore(gitops): initialize GitOps standards`
 7. Push to main — CI workflow runs and passes
 
-### Deliverables per repo:
+### Deliverables per repo
+
 - `.pre-commit-config.yaml`
 - `.github/workflows/ci.yml`
 - `.github/dependabot.yml`
@@ -285,6 +294,7 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 **Current:** 10 workflows (apps-test, ci-pr-size, compose-smoke, deploy, integration-tests, lint, security, supply-chain, unit-tests, validate-config)
 
 **Action:**
+
 1. Add pre-commit config + supporting files (from templates)
 2. Add CODEOWNERS
 3. Add Makefile targets
@@ -301,6 +311,7 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 **Current:** 1 workflow (ci.yml)
 
 **Action:**
+
 1. Add pre-commit config + supporting files
 2. Add CODEOWNERS
 3. Add Makefile targets
@@ -314,6 +325,7 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 **Current:** 5 workflows (ci-quality, ci, dependency-review, doc-freshness, secret-scan)
 
 **Action:**
+
 1. Add pre-commit config + supporting files
 2. Add CODEOWNERS
 3. Add Makefile targets
@@ -327,6 +339,7 @@ Create `fawkes/.gitops-templates/.yamllint`, `.markdownlint.json`, `.gitleaks.to
 **Current:** 3 workflows (ci.yml, deploy.yml, opencode.yml)
 
 **Action:**
+
 1. Add pre-commit config + supporting files
 2. Add CODEOWNERS
 3. Add Makefile targets
@@ -384,12 +397,13 @@ EOF
 ```
 
 ### 3.2 Notes
+
 - `required_approving_review_count: 0` — PR required but no reviewers needed (solo maintainer)
 - Status check name must match the job name in CI workflow (`Validate`)
 - `required_linear_history` ensures merge commits (no force pushes)
 - `non_fast_forward` prevents force pushes to main
 
-### 3.3 Apply to all repos:
+### 3.3 Apply to all repos
 
 ```bash
 for repo in fawkes uFawkesObs uFawkesPipe uFawkesAI ufawkesdora ufawkessec uFawkesDevX uFawkes.dev; do
@@ -408,7 +422,7 @@ done
 
 New agent definition that enforces GitOps workflow:
 
-```markdown
+````markdown
 ---
 description: GitOps-enforced build agent — creates branches, runs pre-commit, opens PRs
 mode: subagent
@@ -425,43 +439,54 @@ permission:
 # Agent: GitOps Build
 
 ## Role
+
 You are the GitOps-enforced build agent. ALL changes follow this workflow:
 
 ### 1. Branch
+
 ```bash
 git checkout -b {type}/{scope}-{short-description}
 ```
+````
+
 Branch naming: `fix/css-hero-alignment`, `feat/dora-dashboards`, `chore/pre-commit-setup`
 
 ### 2. Implement
+
 - One file per commit
 - Run `make validate` (or `pre-commit run --all-files`) before committing
 - If pre-commit fails, fix ALL failures before committing
 
 ### 3. Commit
+
 ```bash
 git add {file}
 git commit -m "{type}({scope}): {description}"
 ```
+
 Conventional commits: `fix`, `feat`, `chore`, `docs`, `style`, `refactor`, `test`, `ci`
 
 ### 4. Push & PR
+
 ```bash
 git push -u origin {branch}
 gh pr create --title "{type}({scope}): {description}" --body "..."
 ```
 
 ### 5. Verify
+
 - CI must pass (pre-commit validation)
 - If CI fails, fix on same branch (don't merge broken code)
 
 ## Constraints
+
 - NEVER commit directly to main
 - NEVER skip pre-commit hooks
 - NEVER force push to main
 - ALWAYS create a PR for review
 - ONE file per commit (except bulk config additions)
-```
+
+````
 
 ### 4.2 Update `AGENTS.md`
 
@@ -486,7 +511,8 @@ make validate           # run all checks
 git commit -m "fix(scope): description"
 git push -u origin fix/something
 gh pr create
-```
+````
+
 ```
 
 ### 4.3 Update planning agent
@@ -495,9 +521,11 @@ Modify `~/.config/opencode/agents/planning.md` to include GitOps enforcement in 
 
 Add to the "Sequence next tasks" section:
 ```
+
 Next: @build → implement issue #N on branch {type}/{scope}-{desc}
 Then: @review → validate #N
 Then: @build → commit fix(scope): description (#N) and open PR
+
 ```
 
 ---
@@ -551,3 +579,4 @@ Then: @build → commit fix(scope): description (#N) and open PR
 
 *Created: 2026-06-11*
 *Status: Ready for execution*
+```

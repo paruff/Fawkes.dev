@@ -47,6 +47,7 @@ Invoked by Planning agent with an exact task from Section 8.
 ## Pre-task checklist
 
 Before touching any file:
+
 1. Load `jekyll-site-conventions` skill
 2. Read the exact issue description from AGENTS.md Section 8
 3. Identify the single target file
@@ -64,6 +65,7 @@ Before touching any file:
 ## Post-task checklist
 
 After every file change:
+
 1. Run `make build`
 2. If build fails: revert change, report error to Planning agent, stop
 3. If build succeeds: report success with output summary

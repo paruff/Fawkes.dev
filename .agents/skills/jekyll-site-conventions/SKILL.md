@@ -9,15 +9,15 @@ compatibility: opencode
 
 ## Stack (never deviate)
 
-| Layer | Value |
-|-------|-------|
-| Generator | Jekyll 4.4.1 |
-| Theme | minima (overridden via `_layouts/`, `_includes/`) |
-| Plugins | `jekyll-feed` ONLY — no others |
-| CSS | Vanilla CSS in `assets/css/main.css` — BEM naming — append-only |
-| JS | Vanilla JS only in `assets/js/nav.js` |
-| Templating | Liquid (Jekyll-flavored) — whitelisted filters only |
-| Deployment | GitHub Pages from `main` root — no build step |
+| Layer      | Value                                                           |
+| ---------- | --------------------------------------------------------------- |
+| Generator  | Jekyll 4.4.1                                                    |
+| Theme      | minima (overridden via `_layouts/`, `_includes/`)               |
+| Plugins    | `jekyll-feed` ONLY — no others                                  |
+| CSS        | Vanilla CSS in `assets/css/main.css` — BEM naming — append-only |
+| JS         | Vanilla JS only in `assets/js/nav.js`                           |
+| Templating | Liquid (Jekyll-flavored) — whitelisted filters only             |
+| Deployment | GitHub Pages from `main` root — no build step                   |
 
 **Never introduce:** npm, webpack, Vite, Tailwind, SCSS build pipeline, CSS custom properties (variables), React, Astro, Vue, Jekyll plugins not on GitHub Pages whitelist, or any server-side logic.
 
@@ -33,6 +33,7 @@ Run `make build` after **every** file change. If it fails, revert and report.
 ## Liquid safety rules
 
 ### Allowed filters only
+
 ```
 relative_url    absolute_url    url_encode
 date            markdownify     strip_html
@@ -40,32 +41,42 @@ truncate        slugify
 ```
 
 ### Never use
+
 - `{% unless %}` — confuses small models, use `{% if %}` with negation
 - `{% case %}` — use chained `{% elsif %}` instead
 - Multi-variable assign chains
 - Invented filter names
 
 ### Include safety
+
 - Always verify the included file exists before referencing it
 - After adding any `{% include %}`, run `make build` and confirm output is not empty at that location
 
 ## CSS conventions
 
 ### File
+
 - Single file: `assets/css/main.css`
 - **Append new rules at the END only** — never reorder or restructure existing rules
 
 ### Naming
+
 - BEM strictly: `.block`, `.block__element`, `.block--modifier`
 - No camelCase, no underscores in class names, no utility classes
 
 ### Breakpoints (canonical — do not invent others)
+
 ```css
-@media (max-width: 767px) { /* tablet */ }
-@media (max-width: 640px) { /* mobile */ }
+@media (max-width: 767px) {
+  /* tablet */
+}
+@media (max-width: 640px) {
+  /* mobile */
+}
 ```
 
 ### Brand tokens (use hex directly — no CSS variables yet)
+
 ```
 #16a34a   brand green — CTAs, live badge, Dojo accent
 #111827   text primary — headings
@@ -77,22 +88,25 @@ truncate        slugify
 ```
 
 ### Spacing
+
 - All spacing in multiples of 8px
 - No arbitrary pixel values
 
 ## Front matter conventions
 
 ### General pages
+
 ```yaml
 ---
-layout: default          # or home, post, stack
+layout: default # or home, post, stack
 title: Page Title
 description: "Page-specific meta description — NOT the global tagline"
-permalink: /path/        # only when overriding Jekyll default
+permalink: /path/ # only when overriding Jekyll default
 ---
 ```
 
 ### Stack pages (required keys)
+
 ```yaml
 ---
 layout: stack
@@ -116,6 +130,7 @@ compose_with:
 ```
 
 ### Blog posts
+
 ```yaml
 ---
 layout: post
@@ -127,6 +142,7 @@ excerpt: "One-sentence excerpt."
 ```
 
 ### Learn guides (.html extension, not .md)
+
 ```yaml
 ---
 layout: default
@@ -139,18 +155,19 @@ next_guide_title: Next Guide Title
 ```
 
 ### Front matter safety rules
+
 - **Preserve ALL existing keys** on any page you edit
 - Only add new keys — never remove unless explicitly instructed AND verified unused
 - `description` must be page-specific — never the global tagline
 
 ## URL patterns
 
-| Page type | Pattern | Example |
-|-----------|---------|---------|
-| Stack pages | trailing slash | `/obs/` |
-| Learn guides | `.html` extension | `/learn/dora-primer.html` |
-| Blog posts | trailing slash | `/blog/slug/` |
-| External links | `rel="noopener noreferrer" target="_blank"` | |
+| Page type      | Pattern                                     | Example                   |
+| -------------- | ------------------------------------------- | ------------------------- |
+| Stack pages    | trailing slash                              | `/obs/`                   |
+| Learn guides   | `.html` extension                           | `/learn/dora-primer.html` |
+| Blog posts     | trailing slash                              | `/blog/slug/`             |
+| External links | `rel="noopener noreferrer" target="_blank"` |                           |
 
 ## Internal links
 
