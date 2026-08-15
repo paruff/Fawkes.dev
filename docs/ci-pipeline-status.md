@@ -12,37 +12,40 @@
 **Branch**: `ci/phase2-build-security` | **Status**: MERGED
 
 **Files merged:**
-| File | Status |
-|------|--------|
-| `reusable-preflight.yml` | ✅ Merged |
-| `reusable-lint.yml` | ✅ Merged |
-| `reusable-build.yml` | ✅ Merged |
-| `reusable-security-scanning.yml` | ✅ Merged |
-| `reusable-dependency-review.yml` | ✅ Merged |
-| `reusable-tests.yml` | ✅ Merged |
-| `ci-pipeline.yml` | ✅ Merged |
-| `.pipeline.yml` | ✅ Merged (v2 schema) |
-| `scripts/preflight.sh` | ✅ Merged |
-| `.env.example` | ✅ Merged |
-| `.markdownlint.json` | ✅ Merged |
-| `.prettierignore` | ✅ Merged |
+
+| File                             | Status                |
+| -------------------------------- | --------------------- |
+| `reusable-preflight.yml`         | ✅ Merged             |
+| `reusable-lint.yml`              | ✅ Merged             |
+| `reusable-build.yml`             | ✅ Merged             |
+| `reusable-security-scanning.yml` | ✅ Merged             |
+| `reusable-dependency-review.yml` | ✅ Merged             |
+| `reusable-tests.yml`             | ✅ Merged             |
+| `ci-pipeline.yml`                | ✅ Merged             |
+| `.pipeline.yml`                  | ✅ Merged (v2 schema) |
+| `scripts/preflight.sh`           | ✅ Merged             |
+| `.env.example`                   | ✅ Merged             |
+| `.markdownlint.json`             | ✅ Merged             |
+| `.prettierignore`                | ✅ Merged             |
 
 ### PR #110 (uFawkesObs — Fix main branch failures)
 
 **Branch**: `fix/ci-main-failures` | **Status**: OPEN
 
 **Issues fixed:**
-| Issue | Root Cause | Fix |
-|-------|-----------|-----|
-| Dependency Review: wrong input | `comment-summary` → `comment-summary-in-pr` | ✅ Fixed |
-| Dependency Review: missing refs | No base/head refs on push events | ✅ Fixed |
-| Security Scanning: Gitleaks v2 | Node.js 20 deprecated | ✅ Updated to v3 |
-| Security Scanning: exit code 1 | False positives from test fixtures | ✅ Added warning handling |
-| Trivy version | 0.35.0 outdated | ✅ Updated to 0.38.0 |
+
+| Issue                           | Root Cause                                  | Fix                       |
+| ------------------------------- | ------------------------------------------- | ------------------------- |
+| Dependency Review: wrong input  | `comment-summary` → `comment-summary-in-pr` | ✅ Fixed                  |
+| Dependency Review: missing refs | No base/head refs on push events            | ✅ Fixed                  |
+| Security Scanning: Gitleaks v2  | Node.js 20 deprecated                       | ✅ Updated to v3          |
+| Security Scanning: exit code 1  | False positives from test fixtures          | ✅ Added warning handling |
+| Trivy version                   | 0.35.0 outdated                             | ✅ Updated to 0.38.0      |
 
 **Remaining issue (configuration, not code):**
-| Issue | Root Cause | Action Required |
-|-------|-----------|-----------------|
+
+| Issue                   | Root Cause                                          | Action Required                |
+| ----------------------- | --------------------------------------------------- | ------------------------------ |
 | Deploy: missing secrets | DEPLOY_KEY, DEPLOY_USER, DEPLOY_HOST not configured | Add in repo Settings → Secrets |
 
 ### Pipeline Coverage (current state)
