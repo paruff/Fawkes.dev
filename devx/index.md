@@ -25,8 +25,5 @@ compose_with:
     description: Observe developer workflow and productivity signals.
   - name: uFawkesPipe
     url: /pipe/
-    description: Wire golden paths to CI/CD delivery pipelines.
-  - name: uFawkesSec
-    url: /sec/
-    description: Embed security guardrails into golden paths.
+    description: Wire golden paths to CI/CD delivery pipelines with built-in security guardrails.
 ---
