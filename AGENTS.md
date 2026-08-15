@@ -9,13 +9,13 @@
 
 ## 1. Project identity
 
-| Key | Value |
-|-----|-------|
-| Site | https://ufawkes.dev |
-| Repo | https://github.com/paruff/uFawkes.dev |
-| Branch model | `main` is prod — every merge auto-deploys via GitHub Pages |
-| Maintainer | @paruff (Phil Ruff) |
-| Purpose | Public marketing + education site for the uFawkes open-source platform engineering ecosystem |
+| Key          | Value                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| Site         | https://ufawkes.dev                                                                          |
+| Repo         | https://github.com/paruff/uFawkes.dev                                                        |
+| Branch model | `main` is prod — every merge auto-deploys via GitHub Pages                                   |
+| Maintainer   | @paruff (Phil Ruff)                                                                          |
+| Purpose      | Public marketing + education site for the uFawkes open-source platform engineering ecosystem |
 
 ---
 
@@ -53,43 +53,43 @@ Run `./consolidate-agents.sh` to execute it.
 
 ### Primary agents (Tab to switch in OpenCode)
 
-| Agent | Mode | Purpose |
-|-------|------|---------|
+| Agent            | Mode    | Purpose                           |
+| ---------------- | ------- | --------------------------------- |
 | build (built-in) | primary | Default — full file + bash access |
-| plan (built-in) | primary | Analysis only — no edits |
+| plan (built-in)  | primary | Analysis only — no edits          |
 
 ### Custom subagents (@ mention)
 
-| Agent | File | Purpose | Key permissions |
-|-------|------|---------|-----------------|
-| ux | `~/.config/opencode/agents/ux.md` | Audit live pages, define IA, wireframes, content strategy | webfetch: allow, edit: deny |
-| ui | `~/.config/opencode/agents/ui.md` | Visual specs — typography, layout, component styling | read: allow, edit: deny |
-| design-system | `~/.config/opencode/agents/design-system.md` | Token definitions, pattern library, DS compliance | read: allow, edit: deny |
-| planning | `~/.config/opencode/agents/planning.md` | Prioritize issues, update `.opencode/plans/plan.md` | edit: `.opencode/plans/plan.md` only |
-| review | `~/.config/opencode/agents/review.md` | Validate builds — read-only, no edits | bash: make build only |
-| build | built-in | Default — full file + bash access | all tools enabled |
-| build-pages | `~/.config/opencode/agents/build-pages.md` | Implement Jekyll/CSS/Liquid changes — one file per task | edit: allow, bash: make build |
-| infra | `~/.config/opencode/agents/infra.md` | GitHub Pages, _config.yml, Gemfile, opencode.json | bash: allow |
+| Agent         | File                                         | Purpose                                                   | Key permissions                      |
+| ------------- | -------------------------------------------- | --------------------------------------------------------- | ------------------------------------ |
+| ux            | `~/.config/opencode/agents/ux.md`            | Audit live pages, define IA, wireframes, content strategy | webfetch: allow, edit: deny          |
+| ui            | `~/.config/opencode/agents/ui.md`            | Visual specs — typography, layout, component styling      | read: allow, edit: deny              |
+| design-system | `~/.config/opencode/agents/design-system.md` | Token definitions, pattern library, DS compliance         | read: allow, edit: deny              |
+| planning      | `~/.config/opencode/agents/planning.md`      | Prioritize issues, update `.opencode/plans/plan.md`       | edit: `.opencode/plans/plan.md` only |
+| review        | `~/.config/opencode/agents/review.md`        | Validate builds — read-only, no edits                     | bash: make build only                |
+| build         | built-in                                     | Default — full file + bash access                         | all tools enabled                    |
+| build-pages   | `~/.config/opencode/agents/build-pages.md`   | Implement Jekyll/CSS/Liquid changes — one file per task   | edit: allow, bash: make build        |
+| infra         | `~/.config/opencode/agents/infra.md`         | GitHub Pages, \_config.yml, Gemfile, opencode.json        | bash: allow                          |
 
 ### Skills (auto-discovered — no linking required)
 
 Skills live at `~/.config/opencode/skills/`. Agents load them on demand.
 Permission overrides in `.opencode/opencode.json` (tailwind-tokens: deny, astro-components: deny).
 
-| Skill | Used by | Purpose |
-|-------|---------|---------|
-| `jekyll-site-conventions` | ALL agents | Hard constraints: stack, plugins, CSS rules, Liquid safety, commit format |
-| `ux-audit` | ux, planning | Audit protocol: what to check, severity ranking (P0–P3), output format |
-| `accessibility-workflow` | ux, ui, review | Three-phase: audit → remediate → verify. WCAG AA rules + CSS patterns |
-| `visual-design` | ui, design-system | Typography scale, spacing rhythm, color tokens, component visual rules |
-| `component-workflow` | ui, build | Component anatomy → spec → Jekyll/Liquid integration patterns |
-| `responsive-layout` | ui, build | Canonical breakpoints (767px/640px), grid patterns, touch targets |
-| `design-system-workflow` | design-system | Token lifecycle, pattern library, compliance checking. PR 3 deferred |
-| `content-strategy` | ux, planning | Narrative framework (Why→What→How→Proof→Next), tone, CTA copy, trust signals |
-| `cross-agent-coordination` | planning, all | Handoff protocol, dependency sequencing, parallel task rules |
-| `planning-workflow` | planning | P0–P3 prioritization, sprint sequencing, success criteria |
-| `code-quality` | review, build | Liquid/HTML/CSS linting rules, build quality gates |
-| `issue-format` | planning | Section 8 table format, Section 12 handoff, GitHub issue template, commit format |
+| Skill                      | Used by           | Purpose                                                                          |
+| -------------------------- | ----------------- | -------------------------------------------------------------------------------- |
+| `jekyll-site-conventions`  | ALL agents        | Hard constraints: stack, plugins, CSS rules, Liquid safety, commit format        |
+| `ux-audit`                 | ux, planning      | Audit protocol: what to check, severity ranking (P0–P3), output format           |
+| `accessibility-workflow`   | ux, ui, review    | Three-phase: audit → remediate → verify. WCAG AA rules + CSS patterns            |
+| `visual-design`            | ui, design-system | Typography scale, spacing rhythm, color tokens, component visual rules           |
+| `component-workflow`       | ui, build         | Component anatomy → spec → Jekyll/Liquid integration patterns                    |
+| `responsive-layout`        | ui, build         | Canonical breakpoints (767px/640px), grid patterns, touch targets                |
+| `design-system-workflow`   | design-system     | Token lifecycle, pattern library, compliance checking. PR 3 deferred             |
+| `content-strategy`         | ux, planning      | Narrative framework (Why→What→How→Proof→Next), tone, CTA copy, trust signals     |
+| `cross-agent-coordination` | planning, all     | Handoff protocol, dependency sequencing, parallel task rules                     |
+| `planning-workflow`        | planning          | P0–P3 prioritization, sprint sequencing, success criteria                        |
+| `code-quality`             | review, build     | Liquid/HTML/CSS linting rules, build quality gates                               |
+| `issue-format`             | planning          | Section 8 table format, Section 12 handoff, GitHub issue template, commit format |
 
 ### Consolidated from 29 → 12 skills
 
@@ -102,10 +102,10 @@ Deleted: `tailwind-tokens` (contradicts vanilla CSS), `astro-components`
 
 ### MCP servers (configured in `.opencode/opencode.json`)
 
-| Server | URL | Purpose |
-|--------|-----|---------|
-| GitHub MCP | `https://api.githubcopilot.com/mcp/` | Planning agent reads/creates GitHub issues |
-| Playwright MCP | `npx @playwright/mcp@latest --headless` | UX agent takes screenshots of live site |
+| Server         | URL                                     | Purpose                                    |
+| -------------- | --------------------------------------- | ------------------------------------------ |
+| GitHub MCP     | `https://api.githubcopilot.com/mcp/`    | Planning agent reads/creates GitHub issues |
+| Playwright MCP | `npx @playwright/mcp@latest --headless` | UX agent takes screenshots of live site    |
 
 ### Recommended workflow per issue
 
@@ -189,6 +189,7 @@ Global (not in this repo):
 ## 4. Front matter conventions
 
 ### General pages
+
 ```yaml
 ---
 layout: default
@@ -199,6 +200,7 @@ permalink: /path/
 ```
 
 ### Stack pages
+
 ```yaml
 ---
 layout: stack
@@ -224,6 +226,7 @@ compose_with:
 ```
 
 ### Blog posts
+
 ```yaml
 ---
 layout: post
@@ -235,6 +238,7 @@ excerpt: "One-sentence excerpt."
 ```
 
 ### Learn guides (.html extension, not .md)
+
 ```yaml
 ---
 layout: default
@@ -308,29 +312,35 @@ The planning agent (`@planning`) reads and updates this file.
 ## 9. Agentic working rules
 
 ### Per-task discipline
+
 - **One file per task** — never combine edits to multiple files in one instruction
 - **Verify before staging** — run `make build` after every file change
 - **Exact text matching** — quote the exact string to find including whitespace
 - **Await review** — Build agent proposes; Review agent approves; Build commits
 
 ### Liquid safety
+
 - Never add `{% unless %}`, `{% case %}`, or multi-variable assign chains
 - Verify included files exist before referencing
 - Run `make build` after any Liquid change; confirm output is not empty
 
 ### CSS safety
+
 - Append only — never reorder or restructure `main.css`
 - One blank line between rule blocks
 - Run `make build` and visually check affected pages after appending
 
 ### Front matter safety
+
 - Preserve ALL existing front matter keys on any page you edit
 - Only add new keys — never remove unless explicitly instructed AND verified unused
 
 ### Commit format
+
 ```
 fix(scope): description (#issue-number)
 ```
+
 Valid scopes: `index` `obs` `pipe` `dora` `sec` `devx` `learn` `css` `nav` `includes` `agents` `skills` `infra` `docs`
 
 ---
@@ -360,6 +370,7 @@ gh pr create
 ```
 
 ### Branch naming
+
 - `fix/css-hero-alignment`
 - `feat/dora-dashboards`
 - `chore/pre-commit-setup`
@@ -367,6 +378,7 @@ gh pr create
 - `ci/add-security-scanning`
 
 ### Constrained commit types
+
 - `fix` — bug fix
 - `feat` — new feature
 - `chore` — maintenance, config, tooling
@@ -377,6 +389,7 @@ gh pr create
 - `ci` — CI/CD changes
 
 ### Hard rules
+
 - **NEVER** commit directly to main
 - **NEVER** skip pre-commit hooks (`--no-verify` is forbidden)
 - **NEVER** force push to main
@@ -385,7 +398,9 @@ gh pr create
 - ONE file per commit (except bulk config additions)
 
 ### Branch protection (via Rulesets API)
+
 All repos require:
+
 - PR to merge to main
 - Status check `Validate` must pass
 - No force pushes to main
@@ -396,6 +411,7 @@ All repos require:
 ## 11. Agent launch commands
 
 ### OpenCode (recommended)
+
 ```bash
 opencode                                    # launch TUI
 Tab                                         # switch Build ↔ Plan
@@ -405,15 +421,18 @@ Tab                                         # switch Build ↔ Plan
 ```
 
 ### Claude Code
+
 ```bash
 claude --model claude-sonnet-4-6
 # /model to switch interactively
 ```
 
 ### GitHub Copilot Coding Agent
+
 Governed by `.copilotinstructions.md`. Assign GitHub issues directly from the Issues UI.
 
 ### Gemini CLI
+
 ```bash
 gemini
 # /read AGENTS.md then paste task
@@ -423,22 +442,22 @@ gemini
 
 ## 12. Key URLs
 
-| Page | URL |
-|------|-----|
-| Homepage | https://ufawkes.dev |
-| Obs | https://ufawkes.dev/obs/ |
-| Pipe | https://ufawkes.dev/pipe/ |
-| DORA | https://ufawkes.dev/dora/ |
-| Sec | https://ufawkes.dev/sec/ |
-| DevX | https://ufawkes.dev/devx/ |
-| Learn hub | https://ufawkes.dev/learn/ |
-| DORA Primer | https://ufawkes.dev/learn/dora-primer.html |
-| AI Capabilities | https://ufawkes.dev/learn/ai-capabilities.html |
+| Page                 | URL                                                 |
+| -------------------- | --------------------------------------------------- |
+| Homepage             | https://ufawkes.dev                                 |
+| Obs                  | https://ufawkes.dev/obs/                            |
+| Pipe                 | https://ufawkes.dev/pipe/                           |
+| DORA                 | https://ufawkes.dev/dora/                           |
+| Sec                  | https://ufawkes.dev/sec/                            |
+| DevX                 | https://ufawkes.dev/devx/                           |
+| Learn hub            | https://ufawkes.dev/learn/                          |
+| DORA Primer          | https://ufawkes.dev/learn/dora-primer.html          |
+| AI Capabilities      | https://ufawkes.dev/learn/ai-capabilities.html      |
 | Observability Primer | https://ufawkes.dev/learn/observability-primer.html |
-| Blog | https://ufawkes.dev/blog/ |
-| Fawkes Dojo | https://paruff.github.io/fawkes/dojo/ |
-| GitHub Sponsors | https://github.com/sponsors/paruff |
-| Email form (Tally) | https://tally.so/embed/ODbbpR |
+| Blog                 | https://ufawkes.dev/blog/                           |
+| Fawkes Dojo          | https://paruff.github.io/fawkes/dojo/               |
+| GitHub Sponsors      | https://github.com/sponsors/paruff                  |
+| Email form (Tally)   | https://tally.so/embed/ODbbpR                       |
 
 ---
 
@@ -451,11 +470,11 @@ gemini
 [ ] Blockers: none
 [ ] Next task: GitOps agent (Phase 4) — create opencode GitOps agent
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
-[ ] Product roadmap: .opencode/plans/roadmap.md
+[ ] Product roadmap: docs/roadmap.md
 [ ] GitOps plan: .opencode/plans/gitops-migration.md
 ```
 
 ---
 
-*Last updated: 2026-06-06*
-*Update `.opencode/plans/plan.md` before every handoff.*
+_Last updated: 2026-06-06_
+_Update `.opencode/plans/plan.md` before every handoff._
