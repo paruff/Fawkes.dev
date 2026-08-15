@@ -1,20 +1,20 @@
 # uFawkes.dev
 
-Open-source platform engineering ecosystem — observability, pipelines, DORA metrics, security, and developer experience.
+Open-source platform engineering ecosystem — observability, pipelines, and developer experience.
 
-**Live site:** [ufawkes.dev](https://ufawkes.dev) | **Roadmap:** [fawkes/ROADMAP.md](https://github.com/paruff/fawkes/blob/main/ROADMAP.md)
+**Live site:** [ufawkes.dev](https://ufawkes.dev) | **Roadmap:** [docs/roadmap.md](docs/roadmap.md)
 
 ## What is uFawkes?
 
 uFawkes is a collection of opinionated, ready-to-run stacks for platform engineering teams. Each stack ships with sensible defaults so you can go from zero to running in 60 seconds.
 
-| Stack | Status | Description | GitHub |
-|-------|--------|-------------|--------|
-| [uFawkesObs](https://ufawkes.dev/obs/) | Live | Prometheus + Grafana + AI observability | [GitHub](https://github.com/paruff/ufawkesobs) |
-| [uFawkesPipe](https://ufawkes.dev/pipe/) | Live | CI/CD pipeline orchestration | [GitHub](https://github.com/paruff/ufawkespipe) |
-| [uFawkesDORA](https://ufawkes.dev/dora/) | Live | DORA metrics dashboards | [GitHub](https://github.com/paruff/ufawkesdora) |
-| [uFawkesSec](https://ufawkes.dev/sec/) | Live | Secure-by-default guardrails | [GitHub](https://github.com/paruff/ufawkessec) |
-| [uFawkesDevX](https://ufawkes.dev/devx/) | Live | Golden paths for platform adoption | [GitHub](https://github.com/paruff/ufawkesdevx) |
+| Stack                                    | Status | Description                                                                     | GitHub                                          |
+| ---------------------------------------- | ------ | ------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [uFawkesObs](https://ufawkes.dev/obs/)   | Live   | Prometheus + Grafana + AI observability + DORA dashboards (merged uFawkesDORA)  | [GitHub](https://github.com/paruff/ufawkesobs)  |
+| [uFawkesPipe](https://ufawkes.dev/pipe/) | Live   | CI/CD pipeline orchestration + secure-by-default guardrails (merged uFawkesSec) | [GitHub](https://github.com/paruff/ufawkespipe) |
+| [uFawkesDevX](https://ufawkes.dev/devx/) | Live   | Golden paths for platform adoption                                              | [GitHub](https://github.com/paruff/ufawkesdevx) |
+
+> uFawkesDORA and uFawkesSec are retired as standalone stacks — see [docs/roadmap.md](docs/roadmap.md) for the consolidation notes.
 
 ## Research Foundation
 
