@@ -41,18 +41,6 @@ title: ""
     <p><a href="https://github.com/paruff/ufawkespipe" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
   </article>
   <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/dora/' | relative_url }}">📈 DORA</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
-    <p>DORA metrics and continuous delivery performance insights made implementation-ready.</p>
-    <p><code>docker compose up dora</code></p>
-    <p><a href="https://github.com/paruff/ufawkesdora" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
-  </article>
-  <article class="stack-card">
-    <h3><a class="stack-link" href="{{ '/sec/' | relative_url }}">🛡️ Sec</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
-    <p>Secure-by-default guardrails and checks designed for high-speed AI shipping.</p>
-    <p><code>docker compose up sec</code></p>
-    <p><a href="https://github.com/paruff/ufawkessec" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
-  </article>
-  <article class="stack-card">
     <h3><a class="stack-link" href="{{ '/devx/' | relative_url }}">🧭 DevX</a> <img alt="Live" src="https://img.shields.io/badge/status-live-16a34a" /></h3>
     <p>Developer experience golden paths that make platform adoption simple and fast.</p>
     <p><code>docker compose up devx</code></p>
@@ -87,7 +75,6 @@ title: ""
     </div>
     <div class="capability-map__stacks">
       <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
-      <a href="{{ '/dora/' | relative_url }}" class="badge badge--live">DORA</a>
     </div>
   </article>
   <article class="capability-map__row">
@@ -134,7 +121,7 @@ title: ""
     </div>
     <div class="capability-map__stacks">
       <a href="{{ '/pipe/' | relative_url }}" class="badge badge--live">Pipe</a>
-      <a href="{{ '/dora/' | relative_url }}" class="badge badge--live">DORA</a>
+      <a href="{{ '/obs/' | relative_url }}" class="badge badge--live">Obs</a>
     </div>
   </article>
 </section>

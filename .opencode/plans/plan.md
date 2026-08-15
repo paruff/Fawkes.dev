@@ -102,7 +102,7 @@
 [ ] Blockers: none
 [ ] Next task: Commit reordered pipeline + new reusable workflows to PR #109
 [ ] PR 4 plan: .opencode/plans/pr4-plan.md
-[ ] Product roadmap: .opencode/plans/roadmap.md
+[ ] Product roadmap: docs/roadmap.md
 [ ] GitOps plan: .opencode/plans/gitops-migration.md
 [ ] CI Pipeline plan: fawkes/docs/ci-pipeline-master-plan.md (5-gate architecture)
 [ ] CI Pipeline status: fawkes/docs/ci-pipeline-status.md
