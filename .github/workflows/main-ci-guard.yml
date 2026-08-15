@@ -1,0 +1,19 @@
+name: Main CI Guard
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+  actions: read
+
+jobs:
+  main-ci-guard:
+    name: Main CI Guard
+    uses: paruff/ufawkespipe/.github/workflows/reusable-main-ci-guard.yml@v1.2.0
+    with:
+      workflow-id: ci-pipeline.yml
+      workflow-name: "CI Pipeline"

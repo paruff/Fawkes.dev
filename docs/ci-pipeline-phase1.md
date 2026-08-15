@@ -8,23 +8,24 @@ Phase 1 of the Canonical CI Pipeline has been implemented for **uFawkesAI** as a
 
 ### New Files
 
-| File | Purpose |
-|------|---------|
-| `.pipeline.yml` | Pipeline configuration for uFawkesAI |
-| `.github/workflows/reusable-preflight.yml` | Stage 0: Pre-flight checks (reusable) |
-| `.github/workflows/reusable-lint.yml` | Stage 1: Static analysis (reusable) |
-| `docs/pipeline-schema.md` | Schema documentation for `.pipeline.yml` |
+| File                                       | Purpose                                  |
+| ------------------------------------------ | ---------------------------------------- |
+| `.pipeline.yml`                            | Pipeline configuration for uFawkesAI     |
+| `.github/workflows/reusable-preflight.yml` | Stage 0: Pre-flight checks (reusable)    |
+| `.github/workflows/reusable-lint.yml`      | Stage 1: Static analysis (reusable)      |
+| `docs/pipeline-schema.md`                  | Schema documentation for `.pipeline.yml` |
 
 ### Updated Files
 
-| File | Changes |
-|------|---------|
-| `.github/workflows/ci.yml` | Refactored to use reusable workflows |
+| File                               | Changes                                            |
+| ---------------------------------- | -------------------------------------------------- |
+| `.github/workflows/ci.yml`         | Refactored to use reusable workflows               |
 | `.github/workflows/ci-quality.yml` | Updated to use reusable workflows + existing gates |
 
 ## What's Implemented
 
 ### Stage 0: Pre-flight Checks
+
 - ✅ Pre-commit hook validation
 - ✅ PR size gate (≤400 lines, with override labels)
 - ✅ Commit message format enforcement (Conventional Commits)
@@ -33,6 +34,7 @@ Phase 1 of the Canonical CI Pipeline has been implemented for **uFawkesAI** as a
 - ✅ DORA timestamp logging
 
 ### Stage 1: Static Analysis
+
 - ✅ Language auto-detection from file changes
 - ✅ Shell linting (ShellCheck)
 - ✅ YAML linting (yamllint)
@@ -43,6 +45,7 @@ Phase 1 of the Canonical CI Pipeline has been implemented for **uFawkesAI** as a
 - ✅ Emergency bypass support
 
 ### Configuration
+
 - ✅ `.pipeline.yml` schema with YAML anchors for DRY config
 - ✅ Repo-type profiles (template, core, stack, site, bootstrap)
 - ✅ Per-stage enable/disable
@@ -78,6 +81,7 @@ Phase 1 of the Canonical CI Pipeline has been implemented for **uFawkesAI** as a
 ## Testing
 
 ### Local Testing
+
 ```bash
 cd uFawkesAI
 
@@ -92,7 +96,9 @@ python3 -c "import yaml; yaml.safe_load(open('.github/workflows/reusable-lint.ym
 ```
 
 ### CI Testing
+
 Push changes to a PR branch and verify:
+
 1. `preflight` job runs and passes
 2. `lint` job runs language-specific linters
 3. `pipeline-summary` reports overall status
@@ -100,21 +106,25 @@ Push changes to a PR branch and verify:
 ## Next Steps
 
 ### Phase 2: Build & Security (Week 2)
+
 - Create `reusable-build.yml`
 - Create `reusable-security-scanning.yml`
 - Test with `uFawkesObs`
 
 ### Phase 3: Test Integration (Week 3)
+
 - Create `reusable-tests.yml`
 - Create `reusable-load-test.yml`
 - Test with `fawkes`
 
 ### Phase 4: Quality & Deploy (Week 4)
+
 - Create `reusable-quality.yml`
 - Create `reusable-deploy.yml`
 - Test with `uFawkes.dev`
 
 ### Phase 5: Rollout (Week 5)
+
 - Roll out to all repos
 - Documentation and training
 
@@ -129,13 +139,13 @@ Push changes to a PR branch and verify:
 
 ## Rollout Plan
 
-| Repo | Phase | Stages | Target Date |
-|------|-------|--------|-------------|
-| uFawkesAI | Phase 1 | 0, 1 | Current |
-| uFawkesObs | Phase 2 | 0, 1, 2, 3 | Week 2 |
-| fawkes | Phase 3 | 0-5 | Week 3 |
-| uFawkes.dev | Phase 4 | 0-6 | Week 4 |
-| uFawkesPipe | Phase 5 | 0-3 | Week 5 |
-| uFawkesDevX | Phase 5 | 0-3 | Week 5 |
-| ufawkessec | Phase 5 | 0, 1 | Week 5 |
-| ufawkesdora | Phase 5 | 0, 1 | Week 5 |
+| Repo        | Phase   | Stages     | Target Date |
+| ----------- | ------- | ---------- | ----------- |
+| uFawkesAI   | Phase 1 | 0, 1       | Current     |
+| uFawkesObs  | Phase 2 | 0, 1, 2, 3 | Week 2      |
+| fawkes      | Phase 3 | 0-5        | Week 3      |
+| uFawkes.dev | Phase 4 | 0-6        | Week 4      |
+| uFawkesPipe | Phase 5 | 0-3        | Week 5      |
+| uFawkesDevX | Phase 5 | 0-3        | Week 5      |
+| ufawkessec  | Phase 5 | 0, 1       | Week 5      |
+| ufawkesdora | Phase 5 | 0, 1       | Week 5      |

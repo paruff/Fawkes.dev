@@ -23,14 +23,14 @@ Visitors skim. If "How" is buried under three paragraphs of "Why", builders drop
 
 ## Tone guidelines
 
-| Do | Don't |
-|----|-------|
-| Direct and specific | Vague and promotional |
-| "60 seconds to running" | "Get started today" |
-| "Prometheus + Grafana + AI" | "Powerful observability solution" |
+| Do                            | Don't                                  |
+| ----------------------------- | -------------------------------------- |
+| Direct and specific           | Vague and promotional                  |
+| "60 seconds to running"       | "Get started today"                    |
+| "Prometheus + Grafana + AI"   | "Powerful observability solution"      |
 | "Repos launching soon" (once) | "GitHub repo coming soon" (five times) |
-| "Built by @paruff" | "Enterprise-grade" |
-| Honest about early status | Fake social proof (zero-star badges) |
+| "Built by @paruff"            | "Enterprise-grade"                     |
+| Honest about early status     | Fake social proof (zero-star badges)   |
 
 Voice: confident engineer talking to engineers. Not a sales page. Not a startup pitch deck.
 
@@ -60,24 +60,26 @@ Voice: confident engineer talking to engineers. Not a sales page. Not a startup 
 
 ## CTA copy patterns
 
-| Context | Good copy | Bad copy |
-|---------|-----------|----------|
-| Primary homepage | "See the stacks ↓" | "Get started" |
-| Stack quick start | "Run in 60 seconds" | "Try it now" |
-| Coming soon | "Notify me when it launches" | "Coming soon" |
-| Learn hub | "Read the DORA primer →" | "Learn more" |
-| Dojo | "Practice in the Dojo →" | "Click here" |
-| Contribute | "View on GitHub →" | "GitHub" |
+| Context           | Good copy                    | Bad copy      |
+| ----------------- | ---------------------------- | ------------- |
+| Primary homepage  | "See the stacks ↓"           | "Get started" |
+| Stack quick start | "Run in 60 seconds"          | "Try it now"  |
+| Coming soon       | "Notify me when it launches" | "Coming soon" |
+| Learn hub         | "Read the DORA primer →"     | "Learn more"  |
+| Dojo              | "Practice in the Dojo →"     | "Click here"  |
+| Contribute        | "View on GitHub →"           | "GitHub"      |
 
 ## Trust signal rules
 
 **Real trust signals (use these):**
+
 - Honest "repos launching soon" with a notify form
 - Maintainer bio with real GitHub profile
 - Blog post with a real date showing active development
 - Docker compose commands that actually work
 
 **Anti-trust signals (remove these):**
+
 - Zero-star GitHub badges
 - "Screenshot placeholder" text
 - "GitHub repo coming soon" repeated 5 times
@@ -88,11 +90,11 @@ Voice: confident engineer talking to engineers. Not a sales page. Not a startup 
 
 Each page must have a unique `description` in front matter:
 
-| Page | Description pattern |
-|------|---------------------|
-| Homepage | "uFawkes — open source platform engineering stacks. Prometheus, Grafana, DORA metrics, and AI capabilities. 60 seconds to running." |
-| Stack page | "[StackName] — [what it is] for [who]. [key differentiator]." |
-| Learn guide | "[Topic] explained for platform engineers. [what you'll learn]." |
-| Blog post | Use the `excerpt` field |
+| Page        | Description pattern                                                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Homepage    | "uFawkes — open source platform engineering stacks. Prometheus, Grafana, DORA metrics, and AI capabilities. 60 seconds to running." |
+| Stack page  | "[StackName] — [what it is] for [who]. [key differentiator]."                                                                       |
+| Learn guide | "[Topic] explained for platform engineers. [what you'll learn]."                                                                    |
+| Blog post   | Use the `excerpt` field                                                                                                             |
 
 Never use the global tagline as a page description.

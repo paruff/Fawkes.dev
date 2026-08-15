@@ -6,29 +6,29 @@
 ## Version
 
 ```yaml
-version: "1"  # Required. Currently only version 1 is supported.
+version: "1" # Required. Currently only version 1 is supported.
 ```
 
 ## Repo Type
 
 ```yaml
-repo-type: stack  # Required. Options: core | stack | template | site | bootstrap
+repo-type: stack # Required. Options: core | stack | template | site | bootstrap
 ```
 
-| Type | Description | Example |
-|------|-------------|---------|
-| `core` | Full IDP monorepo with all languages | `fawkes` |
-| `stack` | Individual stack component | `uFawkesObs`, `uFawkesPipe`, `uFawkesDevX` |
-| `template` | AI agent starter template | `uFawkesAI` |
-| `site` | Static site / marketing | `uFawkes.dev` |
-| `bootstrap` | Minimal bootstrap repo | `ufawkessec`, `ufawkesdora` |
+| Type        | Description                          | Example                                    |
+| ----------- | ------------------------------------ | ------------------------------------------ |
+| `core`      | Full IDP monorepo with all languages | `fawkes`                                   |
+| `stack`     | Individual stack component           | `uFawkesObs`, `uFawkesPipe`, `uFawkesDevX` |
+| `template`  | AI agent starter template            | `uFawkesAI`                                |
+| `site`      | Static site / marketing              | `uFawkes.dev`                              |
+| `bootstrap` | Minimal bootstrap repo               | `ufawkessec`, `ufawkesdora`                |
 
 ## Emergency Bypass
 
 ```yaml
 emergency:
-  label: emergency-bypass  # GitHub label that skips merge gates
-  allow-override: true     # Allow bypass for emergency fixes
+  label: emergency-bypass # GitHub label that skips merge gates
+  allow-override: true # Allow bypass for emergency fixes
 ```
 
 ## YAML Anchors (DRY Config)
@@ -57,8 +57,8 @@ stages:
 ```yaml
 stages:
   preflight:
-    enabled: true              # Enable/disable this stage
-    pr-size-limit: 400         # Max lines changed in PR (0 = no limit)
+    enabled: true # Enable/disable this stage
+    pr-size-limit: 400 # Max lines changed in PR (0 = no limit)
     commit-format: conventional # Enforce Conventional Commits
 ```
 
@@ -68,7 +68,7 @@ stages:
 stages:
   lint:
     enabled: true
-    languages:                 # List of languages to lint (auto-detect if omitted)
+    languages: # List of languages to lint (auto-detect if omitted)
       - python
       - shell
       - yaml
@@ -77,12 +77,12 @@ stages:
       - typescript
       - go
       - terraform
-    thresholds:                # Per-language thresholds
+    thresholds: # Per-language thresholds
       python:
         min-coverage: 80
       typescript:
         min-coverage: 80
-    auto-detect: true          # Auto-detect languages from file extensions
+    auto-detect: true # Auto-detect languages from file extensions
 ```
 
 ### Stage 2: Build & Validate
@@ -91,9 +91,9 @@ stages:
 stages:
   build:
     enabled: true
-    docker: true               # Build Docker images if Dockerfiles exist
-    registry: ghcr.io/paruff   # Container registry
-    artifact-retention: 7      # Days to keep build artifacts
+    docker: true # Build Docker images if Dockerfiles exist
+    registry: ghcr.io/paruff # Container registry
+    artifact-retention: 7 # Days to keep build artifacts
 ```
 
 ### Stage 3: Security
@@ -102,11 +102,11 @@ stages:
 stages:
   security:
     enabled: true
-    sca: true                  # Software Composition Analysis (Trivy)
-    sast: true                 # Static Application Security Testing (CodeQL)
-    container-scan: true       # Container image scanning (Trivy)
-    policy-enforcement: false  # OPA/Rego policy checks
-    sbom: true                 # Generate SBOM (Syft)
+    sca: true # Software Composition Analysis (Trivy)
+    sast: true # Static Application Security Testing (CodeQL)
+    container-scan: true # Container image scanning (Trivy)
+    policy-enforcement: false # OPA/Rego policy checks
+    sbom: true # Generate SBOM (Syft)
 ```
 
 ### Stage 4: Tests
@@ -115,7 +115,7 @@ stages:
 stages:
   tests:
     enabled: true
-    tiers:                     # Test tiers to run (in order)
+    tiers: # Test tiers to run (in order)
       - unit
       - integration
       - e2e
@@ -125,9 +125,9 @@ stages:
       - acceptance
       - load
     coverage-thresholds:
-      unit: 80                 # Minimum unit test coverage %
-      integration: 70          # Minimum integration test coverage %
-    timeout: 30                # Total timeout in minutes
+      unit: 80 # Minimum unit test coverage %
+      integration: 70 # Minimum integration test coverage %
+    timeout: 30 # Total timeout in minutes
 ```
 
 ### Stage 5: Quality Gates
@@ -136,18 +136,18 @@ stages:
 stages:
   quality:
     enabled: true
-    lighthouse: true           # Lighthouse performance audit
-    accessibility: true        # axe-core WCAG AA checks
-    visual-regression: true    # Playwright screenshot comparison
-    link-check: true           # html-proofer broken link detection
-    load-test: true            # k6 load testing
+    lighthouse: true # Lighthouse performance audit
+    accessibility: true # axe-core WCAG AA checks
+    visual-regression: true # Playwright screenshot comparison
+    link-check: true # html-proofer broken link detection
+    load-test: true # k6 load testing
     thresholds:
       lighthouse:
-        performance: 90        # Minimum Lighthouse performance score
-        accessibility: 95      # Minimum Lighthouse accessibility score
+        performance: 90 # Minimum Lighthouse performance score
+        accessibility: 95 # Minimum Lighthouse accessibility score
       load:
-        p95-latency: 500       # Max p95 latency in ms
-        error-rate: 1          # Max error rate %
+        p95-latency: 500 # Max p95 latency in ms
+        error-rate: 1 # Max error rate %
 ```
 
 ### Stage 6: Deploy
@@ -156,9 +156,9 @@ stages:
 stages:
   deploy:
     enabled: true
-    target: github-pages       # Options: github-pages | argocd | helm | static
-    environment: production     # GitHub environment name
-    requires-approval: true    # Manual approval required
+    target: github-pages # Options: github-pages | argocd | helm | static
+    environment: production # GitHub environment name
+    requires-approval: true # Manual approval required
 ```
 
 ## Full Example
@@ -224,7 +224,7 @@ The `.pipeline.yml` is read by reusable workflows via the `pipeline-config` acti
 ```yaml
 # In .github/workflows/ci.yml
 - name: Load pipeline config
-  uses: ./.github/actions/load-pipeline  # Or inline script
+  uses: ./.github/actions/load-pipeline # Or inline script
   id: pipeline
   with:
     config-path: .pipeline.yml

@@ -84,6 +84,8 @@
 - ✅ Step 5: PR #14 merged (uFawkesPipe CI pipeline)
 - ✅ Step 6: PR #1 created (uFawkesDORA CI pipeline)
 - ✅ Step 8: PR #51 created (uFawkesAI test templates)
+- ✅ Step 9: PR #1 created (ufawkessec CI pipeline)
+- ✅ Step 10: PR #14 created (uFawkesDevX CI pipeline)
 
 ### Current PRs
 
@@ -92,6 +94,8 @@
 | #110 | uFawkesObs | fix/ci-main-failures | OPEN |
 | #1 | ufawkesdora | feat/dora-ci-pipeline | OPEN |
 | #51 | uFawkesAI | feat/test-templates | OPEN |
+| #1 | ufawkessec | feat/sec-ci-pipeline | OPEN |
+| #14 | uFawkesDevX | feat/devx-ci-pipeline | OPEN |
 
 ---
 

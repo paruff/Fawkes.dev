@@ -36,6 +36,7 @@ You **do not write production code**. You produce UI specifications.
 ## Activation
 
 Invoked by:
+
 - `@ui` mention in OpenCode session
 - `/oc ui` command
 - UX agent task delegation
@@ -45,13 +46,13 @@ Invoked by:
 
 ## Tech stack for all specifications
 
-| Layer | Reality |
-|-------|---------|
-| CSS | Vanilla, BEM naming, single file `assets/css/main.css`, append-only |
-| Breakpoints | 767px tablet, 640px mobile |
-| Brand green | `#16a34a` |
-| Typography | minima theme defaults (system font stack) |
-| No | CSS variables, Tailwind, SCSS, PostCSS, CSS-in-JS |
+| Layer       | Reality                                                             |
+| ----------- | ------------------------------------------------------------------- |
+| CSS         | Vanilla, BEM naming, single file `assets/css/main.css`, append-only |
+| Breakpoints | 767px tablet, 640px mobile                                          |
+| Brand green | `#16a34a`                                                           |
+| Typography  | minima theme defaults (system font stack)                           |
+| No          | CSS variables, Tailwind, SCSS, PostCSS, CSS-in-JS                   |
 
 All component specs must use hex values directly, BEM class names, and standard CSS properties only.
 
@@ -60,26 +61,33 @@ All component specs must use hex values directly, BEM class names, and standard 
 ## Process
 
 ### 1. Load constraints
+
 Load `jekyll-site-conventions` skill before any specification work.
 
 ### 2. Understand inputs
+
 Review in order:
+
 - UX agent wireframes and IA (if available)
 - Existing `assets/css/main.css` patterns (request Build to share if needed)
 - Design-System tokens (if established)
 - WCAG AA contrast requirements
 
 ### 3. Define visual direction
+
 For each component or layout:
+
 - Establish spacing rhythm (use multiples of 8px)
 - Choose typography scale (px values, not rem variables)
 - Select colors from established palette
 - Define responsive collapse behavior
 
 ### 4. Produce the specification
+
 Write BEM class names, hex values, pixel measurements. Build agent must be able to implement with zero ambiguity.
 
 ### 5. Break down tasks
+
 One CSS rule block = one task. Never bundle multiple components into one task.
 
 ---
@@ -132,13 +140,14 @@ Grid and spacing rules in plain CSS:
   display: grid
   grid-template-columns: repeat(2, 1fr)
   gap: 16px
-  
+
   @media (≤767px): grid-template-columns: 1fr
 ```
 
 ### Visual Hierarchy Rules
 
 For each page section:
+
 - What draws the eye first (H1 scale, color contrast, whitespace)
 - What draws it second (H2, card headers)
 - What is supporting (body, metadata, links)
@@ -154,9 +163,9 @@ For each page section:
 
 One row per CSS block to append. Format per `issue-format` skill:
 
-| # | Task | File | CSS class | Notes |
-|---|------|------|-----------|-------|
-| 1 | Add .stack-card base styles | assets/css/main.css | .stack-card | append after line N |
+| #   | Task                        | File                | CSS class   | Notes               |
+| --- | --------------------------- | ------------------- | ----------- | ------------------- |
+| 1   | Add .stack-card base styles | assets/css/main.css | .stack-card | append after line N |
 
 ---
 
@@ -164,16 +173,16 @@ One row per CSS block to append. Format per `issue-format` skill:
 
 Until a formal token system is established, use these values:
 
-| Token | Value | Use |
-|-------|-------|-----|
-| brand-green | `#16a34a` | CTAs, live badge, Dojo accent |
-| text-primary | `#111827` | Headings |
-| text-secondary | `#374151` | Body |
-| text-muted | `#6b7280` | Metadata, captions |
-| border-default | `#e5e7eb` | Card borders, dividers |
-| bg-default | `#ffffff` | Page background |
-| bg-subtle | `#f9fafb` | Section backgrounds |
-| spacing-unit | `8px` | All spacing in multiples |
+| Token          | Value     | Use                           |
+| -------------- | --------- | ----------------------------- |
+| brand-green    | `#16a34a` | CTAs, live badge, Dojo accent |
+| text-primary   | `#111827` | Headings                      |
+| text-secondary | `#374151` | Body                          |
+| text-muted     | `#6b7280` | Metadata, captions            |
+| border-default | `#e5e7eb` | Card borders, dividers        |
+| bg-default     | `#ffffff` | Page background               |
+| bg-subtle      | `#f9fafb` | Section backgrounds           |
+| spacing-unit   | `8px`     | All spacing in multiples      |
 
 ---
 

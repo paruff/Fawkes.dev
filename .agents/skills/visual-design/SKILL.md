@@ -12,6 +12,7 @@ compatibility: opencode
 uFawkes.dev is a **developer-facing platform site**. Visual decisions must serve comprehension and trust, not decoration. Every visual choice should answer: does this help a builder evaluate the stack faster?
 
 Principles:
+
 1. **Signal over noise** — remove everything that doesn't help the visitor decide
 2. **Generous whitespace** — breathing room signals confidence
 3. **Contrast hierarchy** — the most important thing on each page must be obviously most important
@@ -21,15 +22,15 @@ Principles:
 
 Use px values directly (no rem, no CSS variables yet):
 
-| Level | Size | Weight | Color | Usage |
-|-------|------|--------|-------|-------|
-| H1 | 36px | 700 | `#111827` | Page title — one per page |
-| H2 | 24px | 600 | `#111827` | Section headings |
-| H3 | 18px | 600 | `#111827` | Card headers, subsections |
-| Body | 16px | 400 | `#374151` | Paragraph text |
-| Small | 14px | 400 | `#6b7280` | Metadata, captions, badges |
-| Code | 14px | 400 | `#111827` | Monospace — system-ui fallback |
-| Line height | — | — | 1.6 | All body text |
+| Level       | Size | Weight | Color     | Usage                          |
+| ----------- | ---- | ------ | --------- | ------------------------------ |
+| H1          | 36px | 700    | `#111827` | Page title — one per page      |
+| H2          | 24px | 600    | `#111827` | Section headings               |
+| H3          | 18px | 600    | `#111827` | Card headers, subsections      |
+| Body        | 16px | 400    | `#374151` | Paragraph text                 |
+| Small       | 14px | 400    | `#6b7280` | Metadata, captions, badges     |
+| Code        | 14px | 400    | `#111827` | Monospace — system-ui fallback |
+| Line height | —    | —      | 1.6       | All body text                  |
 
 Mobile (≤640px): reduce H1 to 28px, H2 to 20px.
 
@@ -37,14 +38,14 @@ Mobile (≤640px): reduce H1 to 28px, H2 to 20px.
 
 All spacing in multiples of 8px:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| space-1 | 8px | Tight — between related elements |
-| space-2 | 16px | Standard — card padding (mobile), between items |
-| space-3 | 24px | Card padding (desktop), section internal spacing |
-| space-4 | 32px | Between major sections |
-| space-6 | 48px | Hero padding, major section breaks |
-| space-8 | 64px | Page-level vertical rhythm |
+| Token   | Value | Usage                                            |
+| ------- | ----- | ------------------------------------------------ |
+| space-1 | 8px   | Tight — between related elements                 |
+| space-2 | 16px  | Standard — card padding (mobile), between items  |
+| space-3 | 24px  | Card padding (desktop), section internal spacing |
+| space-4 | 32px  | Between major sections                           |
+| space-6 | 48px  | Hero padding, major section breaks               |
+| space-8 | 64px  | Page-level vertical rhythm                       |
 
 ## Color usage rules
 
@@ -56,10 +57,10 @@ All spacing in multiples of 8px:
 
 #111827  — text primary
   Use: H1, H2, H3, strong emphasis
-  
-#374151  — text secondary  
+
+#374151  — text secondary
   Use: body paragraphs, card descriptions
-  
+
 #6b7280  — text muted
   Use: metadata, dates, read time, repo name labels
 
@@ -78,6 +79,7 @@ All spacing in multiples of 8px:
 ## Component visual rules
 
 ### Cards (stack cards, learn cards)
+
 ```
 background:    #ffffff
 border:        1px solid #e5e7eb
@@ -88,6 +90,7 @@ transition:    border-color 150ms ease, box-shadow 150ms ease
 ```
 
 ### Primary CTA buttons
+
 ```
 background:    #16a34a
 color:         #ffffff
@@ -101,6 +104,7 @@ focus:         outline 2px solid #16a34a, outline-offset 2px
 ```
 
 ### Code blocks / quick start commands
+
 ```
 background:    #f9fafb
 border:        1px solid #e5e7eb
@@ -114,6 +118,7 @@ overflow-x:    auto
 ```
 
 ### Live / status badges
+
 ```
 background:    #dcfce7
 color:         #16a34a
@@ -126,6 +131,7 @@ font-weight:   600
 ## Layout grid
 
 ### Homepage stack family
+
 ```css
 .stack-family__grid {
   display: grid;
@@ -140,6 +146,7 @@ font-weight:   600
 ```
 
 ### Hero section
+
 ```
 max-width:  720px
 margin:     0 auto
@@ -148,6 +155,7 @@ padding:    64px 24px 48px
 ```
 
 ### Content sections
+
 ```
 max-width:  960px
 margin:     0 auto
@@ -157,15 +165,18 @@ padding:    48px 24px
 ## Interaction patterns
 
 ### Hover states
+
 - Duration: 150ms ease (not faster — feels jittery; not slower — feels sluggish)
 - Only border-color, box-shadow, background-color — never layout properties
 - Always pair with `prefers-reduced-motion` override (see accessibility-workflow skill)
 
 ### Focus rings
+
 - 2px solid `#16a34a`, outline-offset 2px
 - Never remove focus rings — only style them
 
 ### Transitions to avoid
+
 - Transform on cards (causes layout thrash on low-end hardware)
 - Opacity transitions on large blocks
 - Color transitions on text (readability flash)

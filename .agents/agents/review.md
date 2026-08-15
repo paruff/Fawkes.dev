@@ -42,12 +42,15 @@ Invoked after every Build agent implementation, before any commit.
 Run this checklist in order for every review:
 
 ### 1. Build check
+
 ```bash
 make build
 ```
+
 If build fails: stop. Report exact error. Do not continue.
 
 ### 2. Jekyll constraint check (load `jekyll-site-conventions` skill)
+
 - [ ] No new npm dependencies introduced
 - [ ] No new Jekyll plugins (only jekyll-feed allowed)
 - [ ] No Tailwind, SCSS, PostCSS, or CSS variables
@@ -56,6 +59,7 @@ If build fails: stop. Report exact error. Do not continue.
 - [ ] All `{% include %}` files verified to exist
 
 ### 3. CSS convention check
+
 - [ ] New CSS appended at END of `assets/css/main.css`
 - [ ] BEM naming used (`.block`, `.block__element`, `.block--modifier`)
 - [ ] Breakpoints use only 767px or 640px
@@ -63,11 +67,13 @@ If build fails: stop. Report exact error. Do not continue.
 - [ ] No reordering of existing CSS rules
 
 ### 4. Front matter check
+
 - [ ] All existing front matter keys preserved
 - [ ] `description` is page-specific (not the global tagline)
 - [ ] No keys removed
 
 ### 5. Accessibility check (load `accessibility-workflow` skill)
+
 - [ ] Heading hierarchy is logical (no skipped levels)
 - [ ] All images have descriptive alt text
 - [ ] Links have descriptive text (not "click here")
@@ -75,15 +81,18 @@ If build fails: stop. Report exact error. Do not continue.
 - [ ] Color contrast ≥ 4.5:1 for normal text
 
 ### 6. Content check
+
 - [ ] No "Screenshot placeholder" text visible
 - [ ] No zero-star badges
 - [ ] No raw Liquid syntax rendered as text
 - [ ] CTA language is clear and action-oriented
 
 ### 7. Commit format check
+
 ```
 fix(scope): description (#issue-number)
 ```
+
 Valid scopes: `index`, `obs`, `learn`, `css`, `nav`, `includes`, `agents`, `skills`
 
 ---

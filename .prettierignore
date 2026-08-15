@@ -1,0 +1,3 @@
+# Jekyll Liquid templates — not valid HTML, Prettier's parser can't handle Liquid tags
+_layouts/
+_includes/

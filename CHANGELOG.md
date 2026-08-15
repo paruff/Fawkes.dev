@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - GitOps standards: dependabot, issue templates, CODEOWNERS, CONTRIBUTING, CHANGELOG
 - Navigation hamburger with hover/focus states and accessible toggle
 - Dark mode support across all components
@@ -17,12 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Email capture with Tally form
 
 ### Changed
+
 - Improved hamburger icon visibility (thicker bars, darker color)
 - Typography scale with explicit heading sizes and mobile breakpoints
 - Standardized card borders to #e5e7eb
 - Blog listing now renders before footer on homepage
 
 ### Fixed
+
 - Double footer on homepage (minima theme override)
 - Maintainer bio rendering as h2 instead of paragraph
 - Broken dark mode CSS nesting for cta-button--secondary and dojo-callout
@@ -31,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2026-06-07
 
 ### Added
+
 - Initial release of uFawkes.dev marketing site
 - Homepage with hero, stack family, DORA capabilities, email capture
 - Stack pages: Obs, Pipe, DORA, Sec, DevX
