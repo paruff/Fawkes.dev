@@ -346,9 +346,9 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Run markdownlint
-        uses: avto-dev/markdownlint-lint@main
+        uses: DavidAnson/markdownlint-cli2-action@v24
         with:
-          args: "--config .markdownlint.json -- $(find . -name '*.md' -not -path './node_modules/*' -not -path './.git/*')"
+          globs: "**/*.md"
 
       - name: DORA job finish
         if: always()
@@ -377,13 +377,9 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: "20"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Run Prettier check
-        run: npx prettier --check .
+        run: npx --yes prettier --check .
 
       - name: DORA job finish
         if: always()
