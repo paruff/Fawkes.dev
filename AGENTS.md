@@ -330,6 +330,7 @@ The planning agent (`@planning`) reads and updates this file.
 - **Verify before staging** — run `make build` after every file change
 - **Exact text matching** — quote the exact string to find including whitespace
 - **Await review** — Build agent proposes; Review agent approves; Build commits
+- **Never swallow a build/check error** — if `make build` or any validation step fails, surface the actual error rather than catching and continuing; a silently-caught failure looks identical to a clean pass and hides real breakage
 
 ### Liquid safety
 
