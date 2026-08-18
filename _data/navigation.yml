@@ -13,7 +13,7 @@ main:
   - title: "Blog"
     url: "/blog/"
   - title: "🟢 Dojo"
-    url: "https://paruff.github.io/fawkes/dojo/"
+    url: "https://paruff.github.io/uFawkesDojo/"
     external: true
     accent: true
   - title: "Roadmap"

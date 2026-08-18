@@ -309,7 +309,7 @@ next_guide_title: Next Guide Title
 - title: Blog
   url: /blog/
 - title: "🟢 Dojo"
-  url: https://paruff.github.io/fawkes/dojo/
+  url: https://paruff.github.io/uFawkesDojo/
   external: true
 ```
 
@@ -487,7 +487,7 @@ gemini
 | AI Capabilities      | https://ufawkes.dev/learn/ai-capabilities.html      |
 | Observability Primer | https://ufawkes.dev/learn/observability-primer.html |
 | Blog                 | https://ufawkes.dev/blog/                           |
-| Fawkes Dojo          | https://paruff.github.io/fawkes/dojo/               |
+| Fawkes Dojo          | https://paruff.github.io/uFawkesDojo/               |
 | GitHub Sponsors      | https://github.com/sponsors/paruff                  |
 | Email form (Tally)   | https://tally.so/embed/ODbbpR                       |
 

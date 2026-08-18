@@ -201,7 +201,7 @@
     | **Phase 1** | Stack operability | Each stack `docker compose up` → running in <60s | Not started |
     | **Phase 1** | DORA dashboards | Each stack has at least 1 pre-configured DORA dashboard | Not started |
     | **Phase 1** | DORA metric emission | Each stack emits deployment frequency, lead time, change failure rate, MTTR | Not started |
-    | **Phase 2** | Dojo modules | 3+ capability-based modules published | Not started |
+    | **Phase 2** | Dojo modules | 3+ capability-based modules published | 🟡 In progress — uFawkesDojo repo live (5 belt modules: White/Yellow/Green/Brown/Black), learner-count unverified |
     | **Phase 2** | Learner adoption | 100+ registered learners | Not started |
     | **Phase 3** | Research citations | Each stack README cites relevant research | Not started |
     | **Phase 3** | Quarterly review | Research library updated quarterly | Not started |
